@@ -1,0 +1,174 @@
+:root{
+  --afriq-charcoal-deep:#1A2228;
+  --afriq-charcoal:#2D3436;
+  --afriq-lime:#B1FF09;
+  --afriq-green:#86E715;
+}
+
+/* Override theme/global palette to remove non-AfriQ blues sitewide */
+:root,
+.elementor-kit-354{
+  --e-global-color-primary: var(--afriq-lime) !important;
+  --e-global-color-secondary: var(--afriq-charcoal) !important;
+  --e-global-color-text: #FFFFFF !important;
+  --e-global-color-background: var(--afriq-charcoal-deep) !important;
+  --e-global-color-astglobalcolor0: var(--afriq-lime) !important;
+  --e-global-color-astglobalcolor1: var(--afriq-charcoal) !important;
+  --e-global-color-astglobalcolor2: var(--afriq-charcoal-deep) !important;
+  --e-global-color-astglobalcolor3: var(--afriq-charcoal) !important;
+  --e-global-color-astglobalcolor4: var(--afriq-lime) !important;
+  --e-global-color-astglobalcolor5: var(--afriq-green) !important;
+  --e-global-color-astglobalcolor6: #FFFFFF !important;
+  --e-global-color-astglobalcolor7: var(--afriq-charcoal-deep) !important;
+  --ast-global-color-0: var(--afriq-lime) !important;
+  --ast-global-color-1: var(--afriq-charcoal) !important;
+  --ast-global-color-2: var(--afriq-charcoal-deep) !important;
+  --ast-global-color-3: var(--afriq-charcoal) !important;
+  --ast-global-color-4: var(--afriq-lime) !important;
+  --ast-global-color-5: var(--afriq-green) !important;
+  --ast-global-color-6: #FFFFFF !important;
+  --ast-global-color-7: var(--afriq-charcoal-deep) !important;
+}
+
+body{
+  background: var(--afriq-charcoal-deep) !important;
+  background-image: none !important;
+}
+
+.afriq-attached,
+.elementor .elementor-button,
+.elementor .elementor-button-link,
+.btn,
+a.btn{
+  text-transform:none !important;
+  letter-spacing:0 !important;
+  font-size:12px !important;
+  padding:12px 28px !important;
+  min-width:180px;
+}
+.elementor .elementor-button .elementor-button-text,
+.elementor .elementor-button-link .elementor-button-text{
+  text-transform:none !important;
+}
+
+.elementor-element-41a791fb{
+  background: var(--afriq-charcoal-deep) !important;
+  background-image: none !important;
+  padding:64px 0 !important;
+}
+.elementor-element-41a791fb .elementor-background-overlay,
+.elementor-element-41a791fb > .elementor-background-overlay{
+  background: transparent !important;
+  background-image: none !important;
+}
+.elementor-element-41a791fb:before,
+.elementor-element-41a791fb:after{
+  content:none !important;
+  background: none !important;
+  background-image: none !important;
+}
+
+/* Default top-level Elementor sections to charcoal unless explicitly white/card */
+.elementor .elementor-section.elementor-top-section{
+  background-color: var(--afriq-charcoal-deep) !important;
+}
+.elementor .elementor-section .elementor-background-overlay{
+  background-image: none !important;
+}
+
+.elementor-element-3c22a0e{
+  position:relative;
+  background:#FFFFFF !important;
+  box-shadow: 0 14px 40px rgba(45,52,54,.22);
+  border-radius:0 !important;
+  overflow:hidden;
+  width:min(1240px, calc(100% - 120px)) !important;
+  margin:0 auto !important;
+}
+.elementor-element-3c22a0e > .elementor-background-overlay{
+  background: transparent !important;
+  background-image: none !important;
+}
+.elementor-element-3c22a0e:before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  width:132px;
+  height:132px;
+  background:
+    linear-gradient(var(--afriq-lime),var(--afriq-lime)) 0 0/28px 92px no-repeat,
+    linear-gradient(var(--afriq-lime),var(--afriq-lime)) 0 0/92px 28px no-repeat,
+    linear-gradient(var(--afriq-charcoal),var(--afriq-charcoal)) 18px 18px/40px 106px no-repeat,
+    linear-gradient(var(--afriq-charcoal),var(--afriq-charcoal)) 18px 18px/106px 40px no-repeat;
+  z-index:2;
+}
+.elementor-element-3c22a0e:after{
+  content:none;
+}
+
+.elementor-element-3c22a0e > .elementor-container{
+  gap:0 !important;
+}
+.elementor-element-3c22a0e .elementor-column{
+  padding:58px 60px !important;
+}
+.elementor-element-3c22a0e .elementor-column.elementor-col-50.elementor-inner-column.elementor-element-6fb0a38{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:48px 60px !important;
+}
+.elementor-element-3c22a0e,
+.elementor-element-3c22a0e *{
+  color: var(--afriq-charcoal) !important;
+  font-family: ui-rounded, "Segoe UI Rounded", "SF Pro Rounded", "Nunito", "Inter", system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif !important;
+}
+.elementor-element-3c22a0e h2.elementor-heading-title{
+  font-size:56px !important;
+  line-height:1.05 !important;
+  letter-spacing:-0.02em !important;
+  font-weight:900 !important;
+}
+.elementor-element-3c22a0e p{
+  font-size:18px !important;
+  line-height:1.65 !important;
+}
+.elementor-element-3c22a0e p strong{
+  color: var(--afriq-green) !important;
+  font-weight:900 !important;
+}
+.elementor-element-3c22a0e .lime-dot{
+  display:inline-block;
+  width:10px;
+  height:10px;
+  margin-right:12px;
+  border-radius:3px;
+  background: var(--afriq-lime);
+  vertical-align:middle;
+}
+.elementor-element-3c22a0e .elementor-widget-image img{
+  max-width:460px;
+  height:auto;
+}
+.elementor-element-3c22a0e .elementor-invisible{
+  opacity:1 !important;
+  visibility:visible !important;
+  transform:none !important;
+}
+
+/* Home: Save Time, Get Results block text to white */
+.elementor-element-8264310 .elementor-heading-title{
+  color:#FFFFFF !important;
+}
+.elementor-element-646e6afb p{
+  color:#FFFFFF !important;
+}
+
+/* Home: Training Wherever Your Team Goes block text to white */
+.elementor-element-5288da2 .elementor-heading-title{
+  color:#FFFFFF !important;
+}
+.elementor-element-6ed1592c p{
+  color:#FFFFFF !important;
+}

@@ -1,0 +1,142 @@
+/* #iplrc-nav {} */
+
+#iplrc-nav a {
+  text-decoration: none !important;
+  color:#333;
+  background:#eaeaea;
+  padding:5px 10px;
+  font-size:16px
+}
+
+#iplrc-nav a.active, #iplrc-nav a:hover, #iplrc-nav a:active {
+  background:#1d3557;
+  color:#fff
+}
+
+.iplrc-screen-hold {
+  border:1px solid #ccc !important;
+  max-width:800px;
+  padding:15px;
+  color:#333;
+  font-size:16px;
+}
+
+.iplrc-screen-hold table{
+    color:#333;
+    font-size:14px !important;
+    width:100%;
+    text-align:left
+}
+
+.iplrc-screen-hold table td, .iplrc-screen-hold table th {
+  border:1px solid #eaeaea !important;
+  padding:5px;
+}
+
+.iplrc-screen-hold h2 {
+  margin-top:0px;
+  font-size:22px
+}
+.iplrc-screen-hold h3 {
+  margin-top:0px;
+  font-size:20px;
+  font-family: 'Montserrat',sans-serif;
+  font-weight:bold
+}
+
+#iplrc-screen-2, #iplrc-screen-3 {display:none}
+  
+.iplrc_formfield {
+  display:block;
+  margin-bottom:10px
+}
+
+.iplrc_formfield span {
+  padding:0px 2px;
+  display:inline-block;
+  width:10px;
+  margin: 0px 5px;
+}
+
+.iplrc-btn {
+  margin-top:30px
+}
+
+.iplrc-btn button, .iplrc-btn a {
+  background:#D8FF00;
+  border:none;
+  color:#fff !important;
+  padding:10px;
+  font-size:0.94rem;
+  box-shadow:0px 0px 1px 1px #eaeaea;
+  text-decoration: none !important;
+  cursor: pointer;
+  font-weight:600
+}
+
+.iplrc-btn button:hover, .iplrc-btn a:hover {
+  background:#FFE600 !important;
+}
+
+.iplrc-gen-inputs label {
+  display:inline-block;
+
+  margin-right: 10px;
+}
+
+.iplrc_formfield input[type="number"]{
+  width:80px;
+  height:30px;
+  border:1px solid #ccc !important;
+  padding:5px;
+  color:#333;
+  font-size: 14px;
+}
+
+.iplrc_formfield select{
+  padding: .75em 1em;
+}
+
+.iplrc_formfield input.error { border-color:red}
+
+.iplrc-fieldblock {
+  margin-bottom:20px;
+  border:1px solid #ccc !important;
+  padding:10px;
+  background: #fff;
+}
+
+.iplrc-fieldblock > div {
+  display:flex;
+  gap:10px;
+  justify-content: space-between;
+}
+
+.iplrc-li-head {
+  font-weight:bold
+}
+
+.iplrc-li-head > div:nth-child(2), .iplrc-li-head > div:nth-child(3){padding-right:35px}
+
+.iplroi_restable_5 div {
+  margin:0px !important; 
+  padding:5px;
+  color:#fff;
+  font-weight:bold
+}
+
+.iplroi_restable_5{ background:#D8FF00; padding:0px}
+
+.iplrc-fieldblock > div > div:first-child {
+  flex-basis:460px
+}
+
+.iplrc-fieldblock > div > div {
+  margin-bottom:10px
+}
+
+#iplrc-error {color:red; display:inline-block; margin-left:20px}
+.uferror {color:red; font-size:14px;display:none}
+.show {display:block !important}
+
+.ipldlbtn {cursor:pointer}

@@ -1,0 +1,704 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/afriq-site.css?v=1" />
+    <title>AfriQ ArtisanSkills â€” Resources</title>
+    <link rel="stylesheet" href="/wp-content/themes/astra/assets/css/minified/style.min.css" />
+    <link rel="stylesheet" href="/wp-content/uploads/elementor/css/custom-frontend.min.css" />
+    <link rel="stylesheet" href="/wp-content/uploads/elementor/css/post-6.css" />
+    <link rel="stylesheet" href="/wp-content/uploads/elementor/css/post-2420.css" />
+    <link rel="stylesheet" href="/wp-content/plugins/elementor/assets/css/widget-heading.min.css" />
+    <link rel="stylesheet" href="/wp-content/plugins/elementor/assets/css/widget-image.min.css" />
+    <link rel="stylesheet" href="/wp-content/plugins/elementor/assets/css/widget-spacer.min.css" />
+    <link rel="stylesheet" href="/wp-content/plugins/elementor/assets/css/widget-video.min.css" />
+    <style>
+      :root{
+        --charcoal:#2A353D;
+        --lime:#D8FF00;
+        --yellow:#FFE600;
+        --ink:#2A353D;
+        --hero-bg:#1A2228;
+        --card-bg:#FFFFFF;
+        --surface:#FFFFFF;
+        --muted:#F3F6FB;
+        --border:rgba(15,23,42,.12);
+        --shadow:0 10px 30px rgba(0,0,0,.18);
+        --radius:16px;
+      }
+      *{box-sizing:border-box}
+      body{
+        margin:0;
+        font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+        color:var(--ink);
+        background:#F7F9FC;
+      }
+      a{color:inherit}
+      .container{
+        width:min(1120px, calc(100% - 48px));
+        margin-inline:auto;
+      }
+
+      .hero{
+        background:radial-gradient(1000px 500px at 15% 20%, rgba(216,255,0,.22), transparent 60%),
+                   radial-gradient(900px 520px at 85% 15%, rgba(255,255,255,.08), transparent 60%),
+                   var(--hero-bg);
+        color:#FFFFFF;
+        padding:72px 0 72px;
+        position:relative;
+        overflow:hidden;
+      }
+
+      .hero-grid{
+        display:grid;
+        grid-template-columns: 1.15fr .85fr;
+        gap:40px;
+        align-items:center;
+      }
+      @media (max-width: 900px){
+        .hero{padding:56px 0 64px}
+        .hero-grid{grid-template-columns:1fr}
+      }
+
+      .eyebrow{
+        display:inline-flex;
+        align-items:center;
+        gap:10px;
+        font-weight:600;
+        letter-spacing:.08em;
+        text-transform:uppercase;
+        font-size:12px;
+        color:rgba(255,255,255,.86);
+      }
+      .eyebrow .dot{
+        width:10px;height:10px;border-radius:999px;background:var(--lime);
+        box-shadow:0 0 0 6px rgba(216,255,0,.18);
+      }
+
+      h1{
+        margin:14px 0 14px;
+        font-size:clamp(34px, 4.2vw, 54px);
+        line-height:1.06;
+        letter-spacing:-.02em;
+      }
+      .subhead{
+        margin:0;
+        font-size:18px;
+        line-height:1.55;
+        color:rgba(255,255,255,.82);
+        max-width:56ch;
+      }
+
+      .cta-row{
+        margin-top:22px;
+        display:flex;
+        gap:12px;
+        flex-wrap:wrap;
+        align-items:center;
+      }
+      .btn{
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        padding:12px 18px;
+        border-radius:12px;
+        font-weight:700;
+        text-decoration:none;
+        border:1px solid transparent;
+        line-height:1;
+        min-height:44px;
+      }
+      .btn-primary{
+        background:var(--lime);
+        color:var(--hero-bg);
+        box-shadow:0 10px 18px rgba(216,255,0,.28);
+      }
+      .btn-primary:hover{
+        background:var(--yellow);
+      }
+      .btn-primary:focus-visible{
+        outline:3px solid rgba(216,255,0,.55);
+        outline-offset:3px;
+      }
+      .btn-secondary{
+        background:transparent;
+        color:#FFFFFF;
+        border-color:rgba(255,255,255,.24);
+      }
+      .btn-secondary:focus-visible{
+        outline:3px solid rgba(255,255,255,.5);
+        outline-offset:3px;
+      }
+
+      .hero-panel{
+        background:rgba(255,255,255,.06);
+        border:1px solid rgba(255,255,255,.12);
+        border-radius:var(--radius);
+        padding:18px;
+        backdrop-filter: blur(10px);
+      }
+      .hero-panel-title{
+        margin:0 0 10px;
+        font-weight:700;
+        font-size:14px;
+        color:rgba(255,255,255,.9);
+      }
+      .hero-panel-list{
+        margin:0;
+        padding:0 0 0 18px;
+        color:rgba(255,255,255,.78);
+        line-height:1.55;
+        font-size:14px;
+      }
+
+      .attached{
+        margin-top:-34px;
+        padding-bottom:36px;
+      }
+      @media (max-width: 900px){
+        .attached{margin-top:-24px}
+      }
+
+      .cards{
+        display:grid;
+        grid-template-columns:repeat(4, 1fr);
+        gap:14px;
+      }
+      @media (max-width: 1100px){
+        .cards{grid-template-columns:repeat(2, 1fr)}
+      }
+      @media (max-width: 520px){
+        .cards{grid-template-columns:1fr}
+      }
+
+      .feature-card{
+        background:var(--card-bg);
+        border:1px solid var(--border);
+        border-radius:var(--radius);
+        box-shadow:var(--shadow);
+        padding:16px 16px 14px;
+        position:relative;
+        color:var(--charcoal);
+      }
+
+      .feature-card .kicker{
+        display:inline-flex;
+        gap:8px;
+        align-items:center;
+        font-weight:800;
+        font-size:12px;
+        letter-spacing:.06em;
+        text-transform:uppercase;
+        color:var(--charcoal);
+        margin-bottom:10px;
+      }
+      .feature-card .kicker .bar{
+        width:10px;height:10px;border-radius:3px;background:var(--lime);
+      }
+      .feature-card h3{
+        margin:0 0 8px;
+        font-size:16px;
+        line-height:1.25;
+        color:var(--charcoal);
+      }
+      .feature-card p{
+        margin:0;
+        font-size:13.5px;
+        line-height:1.45;
+        color:var(--charcoal);
+        opacity:.92;
+      }
+
+      .section{
+        padding:56px 0;
+      }
+      .section.alt{
+        background:var(--muted);
+      }
+      .section-header{
+        display:flex;
+        justify-content:space-between;
+        align-items:flex-end;
+        gap:18px;
+        margin-bottom:18px;
+      }
+      .section-title{
+        margin:0;
+        font-size:28px;
+        letter-spacing:-.01em;
+        line-height:1.15;
+      }
+      .section-lede{
+        margin:8px 0 0;
+        max-width:70ch;
+        color:rgba(15,23,42,.75);
+        line-height:1.6;
+      }
+
+      .logo-strip{
+        display:grid;
+        grid-template-columns:repeat(6, 1fr);
+        gap:12px;
+        margin-top:18px;
+      }
+      @media (max-width: 1000px){
+        .logo-strip{grid-template-columns:repeat(3, 1fr)}
+      }
+      @media (max-width: 520px){
+        .logo-strip{grid-template-columns:repeat(2, 1fr)}
+      }
+      .logo-chip{
+        border:1px solid var(--border);
+        background:var(--surface);
+        border-radius:14px;
+        padding:12px 14px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        min-height:52px;
+        color:rgba(15,23,42,.72);
+        font-weight:700;
+        letter-spacing:.02em;
+      }
+
+      .two-col{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        gap:24px;
+        align-items:start;
+      }
+      @media (max-width: 900px){
+        .two-col{grid-template-columns:1fr}
+      }
+
+      .panel{
+        background:var(--surface);
+        border:1px solid var(--border);
+        border-radius:var(--radius);
+        box-shadow:0 10px 24px rgba(15,23,42,.08);
+        padding:18px;
+      }
+
+      .stats{
+        display:grid;
+        grid-template-columns:repeat(3, 1fr);
+        gap:14px;
+        margin-top:16px;
+      }
+      @media (max-width: 900px){
+        .stats{grid-template-columns:1fr}
+      }
+      .stat{
+        border:1px solid var(--border);
+        border-radius:14px;
+        background:linear-gradient(180deg, #FFFFFF, #FBFCFF);
+        padding:14px;
+      }
+      .stat .value{
+        font-size:26px;
+        font-weight:900;
+        letter-spacing:-.02em;
+        color:var(--ink);
+      }
+      .stat .label{
+        margin-top:6px;
+        color:rgba(15,23,42,.74);
+        line-height:1.45;
+        font-size:13.5px;
+      }
+
+      .feature-grid{
+        display:grid;
+        grid-template-columns:repeat(3, 1fr);
+        gap:14px;
+        margin-top:16px;
+      }
+      @media (max-width: 1000px){
+        .feature-grid{grid-template-columns:1fr}
+      }
+      .mini-card{
+        background:var(--surface);
+        border:1px solid var(--border);
+        border-radius:var(--radius);
+        padding:16px;
+      }
+      .mini-card h3{
+        margin:0 0 6px;
+        font-size:16px;
+        line-height:1.25;
+        color:var(--ink);
+      }
+      .mini-card p{
+        margin:0;
+        color:rgba(15,23,42,.78);
+        line-height:1.55;
+        font-size:14px;
+      }
+      .mini-card .accent{
+        width:46px;
+        height:10px;
+        border-radius:999px;
+        background:rgba(216,255,0,.22);
+        border:1px solid rgba(216,255,0,.35);
+        margin-bottom:12px;
+      }
+
+      .quote{
+        display:grid;
+        grid-template-columns: 1fr;
+        gap:12px;
+      }
+      .quote blockquote{
+        margin:0;
+        padding:0;
+        font-size:18px;
+        line-height:1.6;
+        letter-spacing:-.01em;
+        color:var(--ink);
+      }
+      .quote .meta{
+        display:flex;
+        gap:12px;
+        align-items:center;
+        color:rgba(15,23,42,.72);
+        font-weight:650;
+      }
+      .avatar{
+        width:42px;height:42px;border-radius:999px;
+        background:linear-gradient(180deg, rgba(216,255,0,.35), rgba(15,23,42,.12));
+        border:1px solid var(--border);
+      }
+
+      .faq{
+        display:grid;
+        grid-template-columns:1fr;
+        gap:10px;
+        margin-top:16px;
+      }
+      details{
+        background:var(--surface);
+        border:1px solid var(--border);
+        border-radius:14px;
+        padding:14px 14px;
+      }
+      summary{
+        cursor:pointer;
+        font-weight:800;
+        color:var(--ink);
+        list-style:none;
+      }
+      summary::-webkit-details-marker{display:none}
+      details p{
+        margin:10px 0 0;
+        color:rgba(15,23,42,.78);
+        line-height:1.6;
+      }
+
+      .footer{
+        padding:28px 0;
+        background:#0B1220;
+        color:rgba(255,255,255,.82);
+      }
+      .footer-row{
+        display:flex;
+        justify-content:space-between;
+        gap:14px;
+        flex-wrap:wrap;
+        align-items:center;
+      }
+      .footer a{
+        color:rgba(255,255,255,.82);
+        text-decoration:none;
+      }
+      .footer a:hover{
+        text-decoration:underline;
+      }
+
+      :root{
+        --AfriQ-lime:#D8FF00;
+        --AfriQ-charcoal:#2A353D;
+        --ast-global-color-0: var(--AfriQ-lime);
+        --e-global-color-astglobalcolor0: var(--AfriQ-lime);
+      }
+
+      .elementor-background-video-container{
+        position:absolute;
+        inset:0;
+        overflow:hidden;
+      }
+      .elementor-background-video-hosted{
+        width:100%;
+        height:100%;
+        object-fit:cover;
+      }
+
+      .attached-box,
+      .attached-box *{
+        color: var(--AfriQ-charcoal) !important;
+      }
+      .attached-box .lime-dot{
+        display:inline-block;
+        width:10px;
+        height:10px;
+        margin-right:10px;
+        border-radius:3px;
+        background: var(--AfriQ-lime);
+        vertical-align:middle;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div>
+            <div class="eyebrow">
+              <span class="dot" aria-hidden="true"></span>
+              AfriQ ArtisanSkills
+            </div>
+
+            <h1>Upskill African artisans for job-ready performance.</h1>
+            <p class="subhead">
+              Practical, hands-on learning pathways for HVAC, electrical, plumbing, solar, and facilitiesâ€”built for employability and impact.
+            </p>
+
+            <div class="cta-row">
+              <a class="btn btn-primary" href="#demo">Explore Programs</a>
+              <a class="btn btn-secondary" href="#tour">See Learning Pathways</a>
+            </div>
+          </div>
+
+          <aside class="hero-panel" aria-label="Hero highlights">
+            <p class="hero-panel-title">Why teams choose AfriQ</p>
+            <ul class="hero-panel-list">
+              <li>Role-based pathways aligned to real work</li>
+              <li>Practical training with measurable outcomes</li>
+              <li>Mobile-friendly access for learners anywhere</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </header>
+
+    <section class="attached" aria-label="Attached feature cards">
+      <div class="container">
+        <div class="cards">
+          <article class="feature-card">
+            <div class="kicker"><span class="bar" aria-hidden="true"></span>Outcomes</div>
+            <h3>Skills that show up on the job</h3>
+            <p>Practice scenarios that translate directly to field performance.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="kicker"><span class="bar" aria-hidden="true"></span>Managers</div>
+            <h3>Visibility and accountability</h3>
+            <p>Track progress, completion, and readiness across locations.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="kicker"><span class="bar" aria-hidden="true"></span>Learners</div>
+            <h3>Engaging, easy to finish</h3>
+            <p>Short, focused modules with clear next steps and momentum.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="kicker"><span class="bar" aria-hidden="true"></span>Scale</div>
+            <h3>Built for large deployments</h3>
+            <p>Standardize training across teams without slowing operations.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-label="Trusted by teams">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <h2 class="section-title">Trusted by teams that keep operations moving</h2>
+            <p class="section-lede">A platform built to support frontline learning, manager insights, and measurable outcomes.</p>
+          </div>
+        </div>
+
+        <div class="logo-strip" aria-label="Customer logos">
+          <div class="logo-chip">Company One</div>
+          <div class="logo-chip">Company Two</div>
+          <div class="logo-chip">Company Three</div>
+          <div class="logo-chip">Company Four</div>
+          <div class="logo-chip">Company Five</div>
+          <div class="logo-chip">Company Six</div>
+        </div>
+
+        <div class="stats" aria-label="Impact stats">
+          <div class="stat">
+            <div class="value">Faster</div>
+            <div class="label">Ramp time with structured, role-based pathways.</div>
+          </div>
+          <div class="stat">
+            <div class="value">Visible</div>
+            <div class="label">Progress tracking and reporting managers can use.</div>
+          </div>
+          <div class="stat">
+            <div class="value">Scalable</div>
+            <div class="label">Consistency across teams, sites, and regions.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="tour" aria-label="Product overview">
+      <div class="container">
+        <div class="two-col">
+          <div>
+            <h2 class="section-title">A training experience built for real work</h2>
+            <p class="section-lede">
+              Give learners a clear path, give managers the visibility they need, and keep training aligned to performance.
+            </p>
+
+            <div class="feature-grid" aria-label="Platform features">
+              <div class="mini-card">
+                <div class="accent" aria-hidden="true"></div>
+                <h3>Role-based learning paths</h3>
+                <p>Assign training by role and skill level to keep learning relevant and efficient.</p>
+              </div>
+              <div class="mini-card">
+                <div class="accent" aria-hidden="true"></div>
+                <h3>Manager insights</h3>
+                <p>See completion, progress, and readiness without chasing spreadsheets.</p>
+              </div>
+              <div class="mini-card">
+                <div class="accent" aria-hidden="true"></div>
+                <h3>Standardization at scale</h3>
+                <p>Roll out consistent training across locations while supporting local needs.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel" aria-label="Product visual">
+            <div style="display:grid; gap:12px;">
+              <div style="display:flex; align-items:center; justify-content:space-between; gap:12px;">
+                <div style="font-weight:900; letter-spacing:-.01em;">Dashboard Preview</div>
+                <a class="btn btn-primary" href="#demo">Get Started</a>
+              </div>
+
+              <div style="border:1px solid var(--border); border-radius:14px; background:linear-gradient(180deg, rgba(216,255,0,.10), rgba(15,23,42,.02)); height:260px;"></div>
+
+              <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:10px;">
+                <div style="border:1px solid var(--border); border-radius:14px; padding:12px; background:#fff;">
+                  <div style="font-weight:900; color:var(--ink);">Assignments</div>
+                  <div style="margin-top:6px; color:rgba(15,23,42,.74); font-size:13.5px; line-height:1.4;">
+                    Set pathways by role
+                  </div>
+                </div>
+                <div style="border:1px solid var(--border); border-radius:14px; padding:12px; background:#fff;">
+                  <div style="font-weight:900; color:var(--ink);">Progress</div>
+                  <div style="margin-top:6px; color:rgba(15,23,42,.74); font-size:13.5px; line-height:1.4;">
+                    Track completion
+                  </div>
+                </div>
+                <div style="border:1px solid var(--border); border-radius:14px; padding:12px; background:#fff;">
+                  <div style="font-weight:900; color:var(--ink);">Reporting</div>
+                  <div style="margin-top:6px; color:rgba(15,23,42,.74); font-size:13.5px; line-height:1.4;">
+                    Prove outcomes
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-label="Testimonial">
+      <div class="container">
+        <div class="two-col">
+          <div class="panel quote">
+            <blockquote>
+              â€œAfriQ ArtisanSkills makes it easy to standardize skills training while keeping it practical and job-relevant.
+              We can see progress clearly and help learners move into work faster.â€
+            </blockquote>
+            <div class="meta">
+              <div class="avatar" aria-hidden="true"></div>
+              <div>
+                <div>Training & Operations Leader</div>
+                <div style="font-weight:650; color:rgba(15,23,42,.62);">Skilled Trades Organization</div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h2 class="section-title">Make training easy to startâ€”and easy to finish</h2>
+            <p class="section-lede">
+              Keep learners engaged with clear pathways and strong reinforcement. Give leaders a simple way to measure results.
+            </p>
+            <div class="cta-row">
+              <a class="btn btn-primary" href="#demo">Explore Programs</a>
+              <a class="btn btn-secondary" style="color:var(--ink); border-color:var(--border); background:#fff;" href="#faq">View FAQs</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="faq" aria-label="Frequently asked questions">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <h2 class="section-title">FAQs</h2>
+            <p class="section-lede">Quick answers about rollout, management, and learner experience.</p>
+          </div>
+        </div>
+
+        <div class="faq">
+          <details>
+            <summary>How does onboarding work for multiple locations?</summary>
+            <p>Set pathways by role, assign by team or location, and use shared reporting to keep standards consistent across sites.</p>
+          </details>
+          <details>
+            <summary>Can managers track progress and completion?</summary>
+            <p>Yesâ€”managers can view learner progress, completion, and readiness to support coaching and accountability.</p>
+          </details>
+          <details>
+            <summary>Can we track progress and outcomes?</summary>
+            <p>Yesâ€”track completion and progress so you can measure learning and support coaching.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="demo" aria-label="Get started">
+      <div class="container">
+        <div class="panel">
+          <div class="two-col" style="align-items:center;">
+            <div>
+              <h2 class="section-title" style="margin:0;">Get started with AfriQ ArtisanSkills</h2>
+              <p class="section-lede" style="margin-bottom:0;">
+                Get a walkthrough tailored to your learners, roles, and outcomes.
+              </p>
+            </div>
+            <div style="display:flex; gap:12px; justify-content:flex-end; flex-wrap:wrap;">
+              <a class="btn btn-primary" href="#">Contact Us</a>
+              <a class="btn btn-secondary" style="color:var(--ink); border-color:var(--border); background:#fff;" href="#">Contact</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer" aria-label="Footer">
+      <div class="container">
+        <div class="footer-row">
+          <div style="font-weight:900; letter-spacing:-.01em; color:#fff;">AfriQ ArtisanSkills</div>
+          <div style="display:flex; gap:14px; flex-wrap:wrap;">
+            <a href="#tour">Product</a>
+            <a href="#faq">FAQs</a>
+            <a href="#demo">Demo</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
