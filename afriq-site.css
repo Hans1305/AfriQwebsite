@@ -278,6 +278,21 @@ video{
     line-height:1.15 !important;
     letter-spacing:-0.01em !important;
   }
+  .elementor-element-3c22a0e .elementor-widget-text-editor p{
+    font-size:15px !important;
+    line-height:1.6 !important;
+  }
+  .elementor-element-3c22a0e .lime-dot{
+    width:8px;
+    height:8px;
+    margin-right:10px;
+    border-radius:2px;
+    vertical-align:baseline;
+    transform: translateY(2px);
+  }
+  .elementor-element-3c22a0e p strong{
+    margin-right:6px;
+  }
   .elementor-element-3c22a0e p{
     font-size:16px !important;
   }
