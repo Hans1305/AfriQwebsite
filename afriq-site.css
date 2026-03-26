@@ -3,6 +3,7 @@
   --afriq-charcoal:#2D3436;
   --afriq-lime:#B1FF09;
   --afriq-green:#86E715;
+  --afriq-lime-soft:#D9FF66;
 }
 
 /* Override theme/global palette to remove non-AfriQ blues sitewide */
@@ -35,6 +36,51 @@ body{
   background-image: none !important;
 }
 
+.be-ix-link-block{
+  background-image: url(/wp-content/uploads/2020/08/footer_BG.png?v=4) !important;
+}
+
+.elementor-element-720f7902:not(.elementor-motion-effects-element-type-background),
+.elementor-element-720f7902 > .elementor-motion-effects-container > .elementor-motion-effects-layer{
+  background-image: url("/wp-content/uploads/2022/11/footer_BG.png?v=4") !important;
+  background-size: cover !important;
+  background-position: 50% 50% !important;
+}
+
+.elementor-2420 .elementor-element.elementor-element-01b9e5b:not(.elementor-motion-effects-element-type-background),
+.elementor-2420 .elementor-element.elementor-element-01b9e5b > .elementor-motion-effects-container > .elementor-motion-effects-layer{
+  background-image: url("/wp-content/uploads/2020/08/footer_BG.png?v=4") !important;
+  background-size: cover !important;
+  background-position: top center !important;
+  background-repeat: no-repeat !important;
+}
+
+.elementor-element-14ef515d .card,
+.elementor-element-14ef515d .card > .elementor-widget-wrap.elementor-element-populated{
+  background-color: var(--afriq-lime-soft) !important;
+  background-image: none !important;
+}
+
+.elementor-element-14ef515d:not(.elementor-motion-effects-element-type-background),
+.elementor-element-14ef515d > .elementor-motion-effects-container > .elementor-motion-effects-layer{
+  background-image: url("/wp-content/uploads/2022/11/1920x92_bg.png?v=2") !important;
+}
+
+.elementor-element-7499a87d .card,
+.elementor-element-7499a87d .card > .elementor-widget-wrap.elementor-element-populated{
+  background-color: var(--afriq-lime-soft) !important;
+  background-image: none !important;
+}
+
+.elementor-element-407efb4d .elementor-heading-title,
+.elementor-element-407efb4d,
+.elementor-element-407efb4d a,
+.elementor-element-407efb4d p,
+.elementor-element-407efb4d li,
+.elementor-element-407efb4d span{
+  color: var(--afriq-lime) !important;
+}
+
 .afriq-attached,
 .elementor .elementor-button,
 .elementor .elementor-button-link,
@@ -63,6 +109,23 @@ a.btn{
 }
 .elementor-element-41a791fb:before,
 .elementor-element-41a791fb:after{
+  content:none !important;
+  background: none !important;
+  background-image: none !important;
+}
+
+/* Home: "The AfriQ ArtisanSkills Approach" section - remove remaining blue background */
+.elementor-element-37b684e1{
+  background: var(--afriq-charcoal-deep) !important;
+  background-image: none !important;
+}
+.elementor-element-37b684e1 > .elementor-background-overlay,
+.elementor-element-37b684e1 .elementor-background-overlay{
+  background: transparent !important;
+  background-image: none !important;
+}
+.elementor-element-37b684e1:before,
+.elementor-element-37b684e1:after{
   content:none !important;
   background: none !important;
   background-image: none !important;
@@ -171,4 +234,12 @@ a.btn{
 }
 .elementor-element-6ed1592c p{
   color:#FFFFFF !important;
+}
+
+/* Home: Testimonials heading to lime */
+.elementor-element-df5d5c7 .elementor-heading-title{
+  color: var(--afriq-lime) !important;
+}
+.elementor-element-7c1a1a0 .elementor-heading-title{
+  color: var(--afriq-lime) !important;
 }
