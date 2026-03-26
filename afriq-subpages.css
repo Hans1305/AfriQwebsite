@@ -49,9 +49,10 @@
   color:inherit;
 }
 .afriq-header__logo img{
-  width:170px;
-  height:auto;
+  width:166px !important;
+  height:66px !important;
   display:block;
+  object-fit:contain;
 }
 .afriq-nav{
   display:flex;
