@@ -37,12 +37,12 @@ def normalize_html(content: str, prefix: str) -> str:
         content,
     )
     content = re.sub(
-        r"""url\((["'])/(wp-content/[^"')]+)\1\)""",
+        r"""url\((["']?)/(wp-content/[^"')]+)\1\)""",
         lambda m: f'url({m.group(1)}{prefix}{m.group(2)}{m.group(1)})',
         content,
     )
     content = re.sub(
-        r"""url\((["'])/(wp-includes/[^"')]+)\1\)""",
+        r"""url\((["']?)/(wp-includes/[^"')]+)\1\)""",
         lambda m: f'url({m.group(1)}{prefix}{m.group(2)}{m.group(1)})',
         content,
     )
