@@ -7,11 +7,11 @@
 !function(){var h=location.hostname,p=location.pathname.split("/").filter(Boolean),b="";if(/github\.io$/i.test(h)&&p.length>0)b="/"+p[0];function run(){if(!b)return;var head=document.getElementsByTagName("head")[0],links=head?head.getElementsByTagName("link"):[],scripts=head?head.getElementsByTagName("script"):[];function fix(el,attr){var v=el.getAttribute(attr);if(!v)return;if(/^(?:[a-z]+:)?\/\//i.test(v))return;if(v[0]!=="/")return;if(v.indexOf(b+"/")===0)return;el.setAttribute(attr,b+v)}for(var i=0;i<links.length;i++)fix(links[i],"href");for(var j=0;j<scripts.length;j++)fix(scripts[j],"src")}run();document.addEventListener("DOMContentLoaded",run);}();
 </script>
 <script>
-!function(){function b(){var h=location.hostname,p=location.pathname.split("/").filter(Boolean);return /github\.io$/i.test(h)&&p.length?"/"+p[0]:""}function f(v,x){if(!v)return v;if(/^(?:[a-z]+:)?\/\//i.test(v))return v;if(v[0]!=="/")return v;if(!x)return v;if(v.indexOf(x+"/")===0)return v;return x+v}function g(){var x=b(),imgs=document.getElementsByTagName("img");for(var i=0;i<imgs.length;i++){var m=imgs[i],s=m.getAttribute("src");if(!s)continue;var c=false;s=f(s,x);if(s.indexOf("/wp-content/uploads/2025/afriq/")===0){s=s.replace("/wp-content/uploads/2025/afriq/","/wp-content/uploads/afriq/");c=true}s=f(s,x);if(/\/wp-content\/uploads\/2023\/12\/IMG-23-08-Icons_.+\.png/i.test(s.replace(x,""))){s=f("/wp-content/uploads/2024/07/L_lime.svg?v=1",x);c=true}if(s.replace(x,"").indexOf("/wp-content/uploads/2023/05/IMG-23-05-537x471-Scalable.png")===0){s=f("/wp-content/uploads/2023/05/IMG-23-05-Secondary-393x502-John-HVAC.png",x);c=true}if(c||s!==m.getAttribute("src")){m.setAttribute("src",s);m.removeAttribute("srcset");m.removeAttribute("sizes")}}var media=document.querySelectorAll("source[src],video[src]");for(var j=0;j<media.length;j++){var el=media[j],ms=el.getAttribute("src"),ns=f(ms,x);if(ns!==ms)el.setAttribute("src",ns)}}if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",g)}else{g()}}();
+!function(){function b(){var h=location.hostname,p=location.pathname.split("/").filter(Boolean);return /github\.io$/i.test(h)&&p.length?"/"+p[0]:""}function f(v,x){if(!v)return v;if(/^(?:[a-z]+:)?\/\//i.test(v))return v;if(v[0]!=="/")return v;if(!x)return v;if(v.indexOf(x+"/")===0)return v;return x+v}function g(){var x=b(),imgs=document.getElementsByTagName("img");for(var i=0;i<imgs.length;i++){var m=imgs[i],s=m.getAttribute("src");if(!s)continue;var c=false;s=f(s,x);if(s.indexOf("/wp-content/uploads/2025/afriq/")===0){s=s.replace("/wp-content/uploads/2025/afriq/","/wp-content/uploads/afriq/");c=true}s=f(s,x);if(/wp-content\/uploads\/2023\/12\/IMG-23-08-Icons_.+\.png/i.test(s.replace(x,""))){s=f("/wp-content/uploads/2024/07/L_lime.svg?v=1",x);c=true}if(s.replace(x,"").indexOf("/wp-content/uploads/2023/05/IMG-23-05-537x471-Scalable.png")===0){s=f("/wp-content/uploads/2023/05/IMG-23-05-Secondary-393x502-John-HVAC.png",x);c=true}if(c||s!==m.getAttribute("src")){m.setAttribute("src",s);m.removeAttribute("srcset");m.removeAttribute("sizes")}}var media=document.querySelectorAll("source[src],video[src]");for(var j=0;j<media.length;j++){var el=media[j],ms=el.getAttribute("src"),ns=f(ms,x);if(ns!==ms)el.setAttribute("src",ns)}}if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",g)}else{g()}}();
 </script>
 <link rel="stylesheet" href="/afriq-site.css?v=6">
 	<link rel="profile" href="https://gmpg.org/xfn/11"> 
-	<link rel="preload" href="/wp-content/astra-local-fonts/montserrat/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/wp-content/astra-local-fonts/oswald/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUZiZQ.woff2" as="font" type="font/woff2" crossorigin><meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+	<link rel="preload" href="wp-content/astra-local-fonts/montserrat/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="wp-content/astra-local-fonts/oswald/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUZiZQ.woff2" as="font" type="font/woff2" crossorigin><meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
 
 <meta name="be:wp" content="1.1.18">
 <!-- be_ixf, sdk, gho-->
@@ -325,7 +325,7 @@ if (window.BELinkBlockGenerator === undefined) {
 	<meta property="og:url" content="/" />
 	<meta property="og:site_name" content="AfriQ ArtisanSkills" />
 	<meta property="article:modified_time" content="2026-03-16T18:41:10+00:00" />
-	<meta property="og:image" content="/wp-content/uploads/2022/06/Screen-Shot-2022-06-05-at-8.14.17-PM-1024x470.png" />
+	<meta property="og:image" content="wp-content/uploads/2022/06/Screen-Shot-2022-06-05-at-8.14.17-PM-1024x470.png" />
 	<meta property="og:image:width" content="1024" />
 	<meta property="og:image:height" content="470" />
 	<meta property="og:image:type" content="image/png" />
@@ -1021,7 +1021,7 @@ jQuery(document).ready(function($) {
 });</script>
 <!-- end Simple Custom CSS and JS -->
  
-<script type="application/ld+json" data-source="DataFeed:WordPress" data-schema="6-page-Default">{"@context":"https:\/\/schema.org\/","@type":"Article","@id":"https:\/\/#Article","mainEntityOfPage":"https:\/\/","headline":"AfriQ ArtisanSkills: Online &#038; VR Skilled Trades Training","name":"AfriQ ArtisanSkills: Online &#038; VR Skilled Trades Training","description":"AfriQ ArtisanSkills offers comprehensive, 3D and sim-based skilled trades training. Learn more about how our online courses help level up your techs' skills.","datePublished":"2020-05-22","dateModified":"2026-03-16","author":{"@type":"Person","@id":"https:\/\/\/author\/afriq-artizanskills\/#Person","name":"AfriQ ArtisanSkills","url":"https:\/\/\/author\/afriq-artizanskills\/","identifier":50,"image":{"@type":"ImageObject","@id":"https:\/\/\/wp-content\/uploads\/2020\/08\/favicon.png","url":"https:\/\/\/wp-content\/uploads\/2020\/08\/favicon.png","height":96,"width":96}},"publisher":{"@type":"Organization","name":"AfriQ ArtisanSkills","logo":{"@type":"ImageObject","@id":"https:\/\/\/wp-content\/uploads\/2020\/08\/favicon.png","url":"https:\/\/\/wp-content\/uploads\/2020\/08\/favicon.png","width":96,"height":96}},"image":{"@type":"ImageObject","@id":"https:\/\/\/wp-content\/uploads\/2020\/08\/favicon.png","url":"https:\/\/\/wp-content\/uploads\/2020\/08\/favicon.png","height":96,"width":96},"url":"https:\/\/"}</script>
+<script type="application/ld+json" data-source="DataFeed:WordPress" data-schema="6-page-Default">{"@context":"https:\/\/schema.org\/","@type":"Article","@id":"https:\/\/#Article","mainEntityOfPage":"https:\/\/","headline":"AfriQ ArtisanSkills: Online &#038; VR Skilled Trades Training","name":"AfriQ ArtisanSkills: Online &#038; VR Skilled Trades Training","description":"AfriQ ArtisanSkills offers comprehensive, 3D and sim-based skilled trades training. Learn more about how our online courses help level up your techs' skills.","datePublished":"2020-05-22","dateModified":"2026-03-16","author":{"@type":"Person","@id":"https:\/\/\/author\/afriq-artizanskills\/#Person","name":"AfriQ ArtisanSkills","url":"https:\/\/\/author\/afriq-artizanskills\/","identifier":50,"image":{"@type":"ImageObject","@id":"https:\/wp-content\/uploads\/2020\/08\/favicon.png","url":"https:\/wp-content\/uploads\/2020\/08\/favicon.png","height":96,"width":96}},"publisher":{"@type":"Organization","name":"AfriQ ArtisanSkills","logo":{"@type":"ImageObject","@id":"https:\/wp-content\/uploads\/2020\/08\/favicon.png","url":"https:\/wp-content\/uploads\/2020\/08\/favicon.png","width":96,"height":96}},"image":{"@type":"ImageObject","@id":"https:\/wp-content\/uploads\/2020\/08\/favicon.png","url":"https:\/wp-content\/uploads\/2020\/08\/favicon.png","height":96,"width":96},"url":"https:\/\/"}</script>
 
 		<script type="text/javascript">
 				window.rocketSplitTest = { 'config': { 'page': { 'base': { 'protocol': 'https://', 'host': '', 'path': '/' } } } };
@@ -1279,10 +1279,10 @@ jQuery(document).ready(function($) {
 					}
 				}
 			</style>
-<link rel="icon" href="/wp-content/uploads/2020/08/favicon.png" sizes="32x32" />
-<link rel="icon" href="/wp-content/uploads/2020/08/favicon.png" sizes="192x192" />
-<link rel="apple-touch-icon" href="/wp-content/uploads/2020/08/favicon.png" />
-<meta name="msapplication-TileImage" content="/wp-content/uploads/2020/08/favicon.png" />
+<link rel="icon" href="wp-content/uploads/2020/08/favicon.png" sizes="32x32" />
+<link rel="icon" href="wp-content/uploads/2020/08/favicon.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="wp-content/uploads/2020/08/favicon.png" />
+<meta name="msapplication-TileImage" content="wp-content/uploads/2020/08/favicon.png" />
 		<style id="wp-custom-css">
 			/* ************************** */
 /* Global Styles */
@@ -2035,11 +2035,11 @@ class="hfeed site" id="page">
 			<div class="elementor-widget-wrap elementor-element-populated">
 						<div class="elementor-element elementor-element-3eed7ed7 elementor-widget__width-initial cstmSeachIcon-search elementor-widget elementor-widget-image" data-id="3eed7ed7" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-															<img width="22" height="22" src="/wp-content/uploads/2024/10/Icon_search.png" class="attachment-large size-large wp-image-7401" alt="a magnifying magnifying icon with a green background" />															</div>
+															<img width="22" height="22" src="wp-content/uploads/2024/10/Icon_search.png" class="attachment-large size-large wp-image-7401" alt="a magnifying magnifying icon with a green background" />															</div>
 				</div>
 				<div class="elementor-element elementor-element-2fa9f307 elementor-widget__width-initial cstmSeachIcon-cross elementor-hidden-desktop elementor-hidden-tablet_extra elementor-hidden-tablet elementor-hidden-mobile elementor-widget elementor-widget-image" data-id="2fa9f307" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-															<img width="28" height="28" src="/wp-content/uploads/2024/10/Icon_close.png" class="attachment-large size-large wp-image-7402" alt="a white x on a green background" />															</div>
+															<img width="28" height="28" src="wp-content/uploads/2024/10/Icon_close.png" class="attachment-large size-large wp-image-7402" alt="a white x on a green background" />															</div>
 				</div>
 				<div class="elementor-element elementor-element-1d73ca66 elementor-widget__width-initial cstmLoginBtn cstmMenuText elementor-widget elementor-widget-heading" data-id="1d73ca66" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
@@ -2105,7 +2105,7 @@ class="hfeed site" id="page">
 				</div>
 				<div class="elementor-element elementor-element-1b14dc5 elementor-widget__width-initial close-bar elementor-widget elementor-widget-image" data-id="1b14dc5" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-															<img width="512" height="512" src="/wp-content/uploads/2024/10/Close-SVG.svg" class="attachment-large size-large wp-image-7400" alt="" />															</div>
+															<img width="512" height="512" src="wp-content/uploads/2024/10/Close-SVG.svg" class="attachment-large size-large wp-image-7400" alt="" />															</div>
 				</div>
 					</div>
 		</div>
@@ -2522,7 +2522,7 @@ class="hfeed site" id="page">
 				</div>
 				<div class="elementor-element elementor-element-8b0f8d9 elementor-widget-tablet__width-initial cstmMobileHamburger elementor-widget elementor-widget-image" data-id="8b0f8d9" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-															<img width="28" height="30" src="/wp-content/uploads/2024/10/Icon_menu.png" class="attachment-large size-large wp-image-7404" alt="a green background with white horizontal lines" />															</div>
+															<img width="28" height="30" src="wp-content/uploads/2024/10/Icon_menu.png" class="attachment-large size-large wp-image-7404" alt="a green background with white horizontal lines" />															</div>
 				</div>
 					</div>
 		</div>
@@ -2538,7 +2538,7 @@ class="hfeed site" id="page">
 				</div>
 				<div class="elementor-element elementor-element-102bd25f elementor-widget__width-initial close-bar-mobile-tab elementor-widget-mobile__width-initial elementor-widget elementor-widget-image" data-id="102bd25f" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-															<img width="512" height="512" src="/wp-content/uploads/2024/10/Close-SVG.svg" class="attachment-large size-large wp-image-7400" alt="" />															</div>
+															<img width="512" height="512" src="wp-content/uploads/2024/10/Close-SVG.svg" class="attachment-large size-large wp-image-7400" alt="" />															</div>
 				</div>
 					</div>
 		</div>
@@ -2562,7 +2562,7 @@ class="hfeed site" id="page">
 			<div class="elementor-widget-wrap elementor-element-populated">
 						<div class="elementor-element elementor-element-1bd32546 cstmIndustriesToggle elementor-widget elementor-widget-image" data-id="1bd32546" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-															<img width="34" height="34" src="/wp-content/uploads/2024/10/Icon_down-1.png" class="attachment-large size-large wp-image-7405" alt="a white v on a green background" />															</div>
+															<img width="34" height="34" src="wp-content/uploads/2024/10/Icon_down-1.png" class="attachment-large size-large wp-image-7405" alt="a white v on a green background" />															</div>
 				</div>
 					</div>
 		</div>
@@ -2714,11 +2714,11 @@ class="hfeed site" id="page">
 			<div class="elementor-widget-wrap elementor-element-populated">
 						<div class="elementor-element elementor-element-4bc97a72 cstmRightArrow elementor-widget elementor-widget-image" data-id="4bc97a72" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-															<img width="18" height="18" src="/wp-content/uploads/2024/10/Vector.png" class="attachment-large size-large wp-image-7486" alt="a black and white photo of a white arrow" />															</div>
+															<img width="18" height="18" src="wp-content/uploads/2024/10/Vector.png" class="attachment-large size-large wp-image-7486" alt="a black and white photo of a white arrow" />															</div>
 				</div>
 				<div class="elementor-element elementor-element-30bb0bb cstmIndustriesToggle elementor-hidden-desktop elementor-hidden-tablet_extra elementor-hidden-tablet elementor-hidden-mobile elementor-widget elementor-widget-image" data-id="30bb0bb" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-															<img width="34" height="34" src="/wp-content/uploads/2024/10/Icon_down-1.png" class="attachment-large size-large wp-image-7405" alt="a white v on a green background" />															</div>
+															<img width="34" height="34" src="wp-content/uploads/2024/10/Icon_down-1.png" class="attachment-large size-large wp-image-7405" alt="a white v on a green background" />															</div>
 				</div>
 					</div>
 		</div>
@@ -2750,7 +2750,7 @@ class="hfeed site" id="page">
 			<div class="elementor-widget-wrap elementor-element-populated">
 						<div class="elementor-element elementor-element-4bd72ca2 cstmIndustriesToggle elementor-widget elementor-widget-image" data-id="4bd72ca2" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-															<img width="34" height="34" src="/wp-content/uploads/2024/10/Icon_down-1.png" class="attachment-large size-large wp-image-7405" alt="a white v on a green background" />															</div>
+															<img width="34" height="34" src="wp-content/uploads/2024/10/Icon_down-1.png" class="attachment-large size-large wp-image-7405" alt="a white v on a green background" />															</div>
 				</div>
 					</div>
 		</div>
@@ -2832,7 +2832,7 @@ class="hfeed site" id="page">
 			<div class="elementor-widget-wrap elementor-element-populated">
 						<div class="elementor-element elementor-element-6275b42d cstmIndustriesToggle elementor-widget elementor-widget-image" data-id="6275b42d" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-															<img width="34" height="34" src="/wp-content/uploads/2024/10/Icon_down-1.png" class="attachment-large size-large wp-image-7405" alt="a white v on a green background" />															</div>
+															<img width="34" height="34" src="wp-content/uploads/2024/10/Icon_down-1.png" class="attachment-large size-large wp-image-7405" alt="a white v on a green background" />															</div>
 				</div>
 					</div>
 		</div>
@@ -2883,7 +2883,7 @@ class="hfeed site" id="page">
 			<div class="elementor-widget-wrap elementor-element-populated">
 						<div class="elementor-element elementor-element-3a36df32 cstmIndustriesToggle elementor-widget elementor-widget-image" data-id="3a36df32" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-															<img width="34" height="34" src="/wp-content/uploads/2024/10/Icon_down-1.png" class="attachment-large size-large wp-image-7405" alt="a white v on a green background" />															</div>
+															<img width="34" height="34" src="wp-content/uploads/2024/10/Icon_down-1.png" class="attachment-large size-large wp-image-7405" alt="a white v on a green background" />															</div>
 				</div>
 					</div>
 		</div>
@@ -2968,7 +2968,7 @@ class="hfeed site" id="page">
 
 		
 					<main id="main" class="site-main">
-				<div class="ast-single-post-featured-section post-thumb ast-article-image-container--wide"><img width="1024" height="470" src="/wp-content/uploads/2022/06/Screen-Shot-2022-06-05-at-8.14.17-PM-1024x470.png" class="attachment-large size-large wp-post-image" alt="AfriQ learning page with a picture of a circuit board" /></div><article
+				<div class="ast-single-post-featured-section post-thumb ast-article-image-container--wide"><img width="1024" height="470" src="wp-content/uploads/2022/06/Screen-Shot-2022-06-05-at-8.14.17-PM-1024x470.png" class="attachment-large size-large wp-post-image" alt="AfriQ learning page with a picture of a circuit board" /></div><article
 class="post-6 page type-page status-publish has-post-thumbnail ast-article-single" id="post-6" itemtype="https://schema.org/CreativeWork" itemscope="itemscope">
 	
 				<header class="entry-header ast-no-thumbnail ast-no-title ast-header-without-markup">
@@ -3075,7 +3075,7 @@ class="post-6 page type-page status-publish has-post-thumbnail ast-article-singl
 			<div class="elementor-widget-wrap elementor-element-populated">
 						<div class="elementor-element elementor-element-5339f21 elementor-widget__width-auto elementor-widget elementor-widget-image" data-id="5339f21" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-															<img decoding="async" width="68" height="68" src="/wp-content/uploads/2024/07/L_lime.svg?v=2" class="attachment-large size-large wp-image-4402" alt="Icon" srcset="" sizes="(max-width: 68px) 100vw, 68px" />															</div>
+															<img decoding="async" width="68" height="68" src="wp-content/uploads/2024/07/L_lime.svg?v=2" class="attachment-large size-large wp-image-4402" alt="Icon" srcset="" sizes="(max-width: 68px) 100vw, 68px" />															</div>
 				</div>
 				<div class="elementor-element elementor-element-fc36cc4 elementor-widget elementor-widget-heading" data-id="fc36cc4" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
@@ -3099,7 +3099,7 @@ class="post-6 page type-page status-publish has-post-thumbnail ast-article-singl
 			<div class="elementor-widget-wrap elementor-element-populated">
 						<div class="elementor-element elementor-element-116f402 elementor-invisible elementor-widget elementor-widget-image" data-id="116f402" data-element_type="widget" data-e-type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-															<img fetchpriority="high" decoding="async" width="393" height="502" src="/wp-content/uploads/2023/05/IMG-23-05-Secondary-393x502-John-HVAC.png?v=2" class="attachment-large size-large wp-image-5535" alt="AfriQ HVAC training preview" srcset="" sizes="(max-width: 393px) 100vw, 393px" />															</div>
+															<img fetchpriority="high" decoding="async" width="393" height="502" src="wp-content/uploads/2023/05/IMG-23-05-Secondary-393x502-John-HVAC.png?v=2" class="attachment-large size-large wp-image-5535" alt="AfriQ HVAC training preview" srcset="" sizes="(max-width: 393px) 100vw, 393px" />															</div>
 				</div>
 					</div>
 		</div>
@@ -3385,7 +3385,7 @@ than before
 			<div class="elementor-widget-wrap elementor-element-populated">
 						<div class="elementor-element elementor-element-2f40672e elementor-widget elementor-widget-image" data-id="2f40672e" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-															<img decoding="async" width="34" height="35" src="/wp-content/uploads/2024/07/L_lime.svg?v=1" class="attachment-large size-large wp-image-5521" alt="Lime and charcoal icon" />															</div>
+															<img decoding="async" width="34" height="35" src="wp-content/uploads/2024/07/L_lime.svg?v=1" class="attachment-large size-large wp-image-5521" alt="Lime and charcoal icon" />															</div>
 				</div>
 				<div class="elementor-element elementor-element-8264310 elementor-widget elementor-widget-heading" data-id="8264310" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
@@ -3417,7 +3417,7 @@ than before
 				<div class="elementor-widget-container">
 							<div class="e-hosted-video elementor-wrapper elementor-open-inline">
 					<div style="display:flex;justify-content:center;">
-					  <video class="afriq-promo-video" muted playsinline webkit-playsinline loop preload="metadata" controls poster="wp-content/uploads/2022/06/Screen-Shot-2022-06-05-at-8.14.17-PM-1024x470.png" aria-label="AfriQ ArtisanSkills promo video" tabindex="0" style="width:min(680px,100%);aspect-ratio:16/9;border-radius:12px;object-fit:contain;display:block;background:#0F1519;cursor:pointer;">
+					  <video class="afriq-promo-video" muted playsinline webkit-playsinline loop preload="none" controls poster="wp-content/uploads/2022/06/Screen-Shot-2022-06-05-at-8.14.17-PM-1024x470.png" aria-label="AfriQ ArtisanSkills promo video" tabindex="0" style="width:min(680px,100%);aspect-ratio:16/9;border-radius:12px;object-fit:contain;display:block;background:#0F1519;cursor:pointer;">
 					  <source src="wp-content/uploads/2024/11/afriq-artisanskills-promo.mp4" type="video/mp4" />
 					  </video>
 					</div>
@@ -3430,7 +3430,7 @@ than before
 			<div class="elementor-widget-wrap elementor-element-populated">
 						<div class="elementor-element elementor-element-5085fdb7 elementor-widget elementor-widget-image" data-id="5085fdb7" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-															<img decoding="async" width="34" height="35" src="/wp-content/uploads/2024/07/L_lime.svg?v=1" class="attachment-large size-large wp-image-5521" alt="Lime and charcoal icon" />															</div>
+															<img decoding="async" width="34" height="35" src="wp-content/uploads/2024/07/L_lime.svg?v=1" class="attachment-large size-large wp-image-5521" alt="Lime and charcoal icon" />															</div>
 				</div>
 				<div class="elementor-element elementor-element-5288da2 elementor-widget elementor-widget-heading" data-id="5288da2" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
@@ -3591,7 +3591,7 @@ than before
 			<div class="elementor-widget-wrap elementor-element-populated">
 						<div class="elementor-element elementor-element-2267a89d elementor-widget elementor-widget-image" data-id="2267a89d" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-															<img loading="lazy" decoding="async" width="393" height="502" src="/wp-content/uploads/2023/05/IMG-23-05-Secondary-393x502-John-HVAC.png" class="attachment-full size-full wp-image-5532" alt="A man in a blue shirt holding a laptop and showing the Skillmill application for skilled trades training" />															</div>
+															<img loading="lazy" decoding="async" width="393" height="502" src="wp-content/uploads/2023/05/IMG-23-05-Secondary-393x502-John-HVAC.png" class="attachment-full size-full wp-image-5532" alt="A man in a blue shirt holding a laptop and showing the Skillmill application for skilled trades training" />															</div>
 				</div>
 					</div>
 		</div>
@@ -3599,7 +3599,7 @@ than before
 			<div class="elementor-widget-wrap elementor-element-populated">
 						<div class="elementor-element elementor-element-ccbcb70 e-transform e-transform elementor-widget elementor-widget-image" data-id="ccbcb70" data-element_type="widget" data-e-type="widget" data-settings="{&quot;_transform_flipX_effect&quot;:&quot;transform&quot;,&quot;_transform_flipY_effect&quot;:&quot;transform&quot;}" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-															<img decoding="async" width="68" height="68" src="/wp-content/uploads/2024/07/L_lime.svg?v=2" class="attachment-large size-large wp-image-4402" alt="Icon" srcset="" sizes="(max-width: 68px) 100vw, 68px" />															</div>
+															<img decoding="async" width="68" height="68" src="wp-content/uploads/2024/07/L_lime.svg?v=2" class="attachment-large size-large wp-image-4402" alt="Icon" srcset="" sizes="(max-width: 68px) 100vw, 68px" />															</div>
 				</div>
 				<div class="elementor-element elementor-element-2a3f2831 elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading" data-id="2a3f2831" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
@@ -3630,7 +3630,7 @@ than before
 			<div class="elementor-widget-wrap elementor-element-populated">
 						<div class="elementor-element elementor-element-653e2660 e-transform e-transform elementor-widget elementor-widget-image" data-id="653e2660" data-element_type="widget" data-e-type="widget" data-settings="{&quot;_transform_flipX_effect&quot;:&quot;transform&quot;,&quot;_transform_flipY_effect&quot;:&quot;transform&quot;}" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-															<img decoding="async" width="68" height="68" src="/wp-content/uploads/2024/07/L_lime.svg?v=2" class="attachment-large size-large wp-image-4402" alt="Icon" srcset="" sizes="(max-width: 68px) 100vw, 68px" />															</div>
+															<img decoding="async" width="68" height="68" src="wp-content/uploads/2024/07/L_lime.svg?v=2" class="attachment-large size-large wp-image-4402" alt="Icon" srcset="" sizes="(max-width: 68px) 100vw, 68px" />															</div>
 				</div>
 				<div class="elementor-element elementor-element-2f338a4f elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading" data-id="2f338a4f" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
@@ -3657,7 +3657,7 @@ than before
 			<div class="elementor-widget-wrap elementor-element-populated">
 						<div class="elementor-element elementor-element-71690ac4 elementor-widget__width-initial elementor-widget-mobile__width-initial elementor-widget elementor-widget-image" data-id="71690ac4" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-															<img loading="lazy" decoding="async" width="393" height="502" src="/wp-content/uploads/2023/05/IMG-23-05-Secondary-393x502-John-HVAC.png" class="attachment-full size-full wp-image-5534" alt="A man in a grey shirt holding a tablet and showing the Skillmill application for skilled trades training" />															</div>
+															<img loading="lazy" decoding="async" width="393" height="502" src="wp-content/uploads/2023/05/IMG-23-05-Secondary-393x502-John-HVAC.png" class="attachment-full size-full wp-image-5534" alt="A man in a grey shirt holding a tablet and showing the Skillmill application for skilled trades training" />															</div>
 				</div>
 					</div>
 		</div>
@@ -3669,7 +3669,7 @@ than before
 			<div class="elementor-widget-wrap elementor-element-populated">
 						<div class="elementor-element elementor-element-a2706ff elementor-widget elementor-widget-image" data-id="a2706ff" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-															<img loading="lazy" decoding="async" width="393" height="502" src="/wp-content/uploads/2023/05/IMG-23-05-Secondary-393x502-John-HVAC.png" class="attachment-full size-full wp-image-5533" alt="A man wearing a virtual reality headset, engaging with the SkillMill application for skilled trades training" />															</div>
+															<img loading="lazy" decoding="async" width="393" height="502" src="wp-content/uploads/2023/05/IMG-23-05-Secondary-393x502-John-HVAC.png" class="attachment-full size-full wp-image-5533" alt="A man wearing a virtual reality headset, engaging with the SkillMill application for skilled trades training" />															</div>
 				</div>
 					</div>
 		</div>
@@ -3677,7 +3677,7 @@ than before
 			<div class="elementor-widget-wrap elementor-element-populated">
 						<div class="elementor-element elementor-element-efb7fbf e-transform e-transform elementor-widget elementor-widget-image" data-id="efb7fbf" data-element_type="widget" data-e-type="widget" data-settings="{&quot;_transform_flipX_effect&quot;:&quot;transform&quot;,&quot;_transform_flipY_effect&quot;:&quot;transform&quot;}" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-															<img decoding="async" width="68" height="68" src="/wp-content/uploads/2024/07/L_lime.svg?v=2" class="attachment-large size-large wp-image-4402" alt="Icon" srcset="" sizes="(max-width: 68px) 100vw, 68px" />															</div>
+															<img decoding="async" width="68" height="68" src="wp-content/uploads/2024/07/L_lime.svg?v=2" class="attachment-large size-large wp-image-4402" alt="Icon" srcset="" sizes="(max-width: 68px) 100vw, 68px" />															</div>
 				</div>
 				<div class="elementor-element elementor-element-7618e05 elementor-widget elementor-widget-heading" data-id="7618e05" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
@@ -3724,7 +3724,7 @@ than before
 			<div class="elementor-widget-wrap elementor-element-populated">
 						<div class="elementor-element elementor-element-2bc4f2f4 elementor-widget elementor-widget-image" data-id="2bc4f2f4" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-															<img loading="lazy" decoding="async" width="68" height="68" src="/wp-content/uploads/2024/07/L_lime.svg?v=1" class="attachment-large size-large" alt="Icon" />															</div>
+															<img loading="lazy" decoding="async" width="68" height="68" src="wp-content/uploads/2024/07/L_lime.svg?v=1" class="attachment-large size-large" alt="Icon" />															</div>
 				</div>
 				<div class="elementor-element elementor-element-1baca1f4 elementor-widget elementor-widget-image-box" data-id="1baca1f4" data-element_type="widget" data-e-type="widget" data-widget_type="image-box.default">
 				<div class="elementor-widget-container">
@@ -3747,7 +3747,7 @@ than before
 			<div class="elementor-widget-wrap elementor-element-populated">
 						<div class="elementor-element elementor-element-72d14e1b elementor-widget elementor-widget-image" data-id="72d14e1b" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-															<img loading="lazy" decoding="async" width="68" height="68" src="/wp-content/uploads/2024/07/L_lime.svg?v=1" class="attachment-large size-large" alt="Icon" />															</div>
+															<img loading="lazy" decoding="async" width="68" height="68" src="wp-content/uploads/2024/07/L_lime.svg?v=1" class="attachment-large size-large" alt="Icon" />															</div>
 				</div>
 				<div class="elementor-element elementor-element-6563baf8 elementor-widget elementor-widget-image-box" data-id="6563baf8" data-element_type="widget" data-e-type="widget" data-widget_type="image-box.default">
 				<div class="elementor-widget-container">
@@ -3770,7 +3770,7 @@ than before
 			<div class="elementor-widget-wrap elementor-element-populated">
 						<div class="elementor-element elementor-element-f6a725 elementor-widget elementor-widget-image" data-id="f6a725" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-															<img loading="lazy" decoding="async" width="68" height="68" src="/wp-content/uploads/2024/07/L_lime.svg?v=1" class="attachment-large size-large" alt="Icon" />															</div>
+															<img loading="lazy" decoding="async" width="68" height="68" src="wp-content/uploads/2024/07/L_lime.svg?v=1" class="attachment-large size-large" alt="Icon" />															</div>
 				</div>
 				<div class="elementor-element elementor-element-3db3e3f elementor-widget elementor-widget-image-box" data-id="3db3e3f" data-element_type="widget" data-e-type="widget" data-widget_type="image-box.default">
 				<div class="elementor-widget-container">
@@ -3793,7 +3793,7 @@ than before
 			<div class="elementor-widget-wrap elementor-element-populated">
 						<div class="elementor-element elementor-element-37185216 elementor-widget elementor-widget-image" data-id="37185216" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-															<img loading="lazy" decoding="async" width="68" height="68" src="/wp-content/uploads/2024/07/L_lime.svg?v=1" class="attachment-large size-large" alt="Icon" />															</div>
+															<img loading="lazy" decoding="async" width="68" height="68" src="wp-content/uploads/2024/07/L_lime.svg?v=1" class="attachment-large size-large" alt="Icon" />															</div>
 				</div>
 				<div class="elementor-element elementor-element-2d41e3c3 elementor-widget elementor-widget-image-box" data-id="2d41e3c3" data-element_type="widget" data-e-type="widget" data-widget_type="image-box.default">
 				<div class="elementor-widget-container">
@@ -3816,7 +3816,7 @@ than before
 			<div class="elementor-widget-wrap elementor-element-populated">
 						<div class="elementor-element elementor-element-5474f890 elementor-widget elementor-widget-image" data-id="5474f890" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-															<img loading="lazy" decoding="async" width="68" height="68" src="/wp-content/uploads/2024/07/L_lime.svg?v=1" class="attachment-large size-large" alt="Icon" />															</div>
+															<img loading="lazy" decoding="async" width="68" height="68" src="wp-content/uploads/2024/07/L_lime.svg?v=1" class="attachment-large size-large" alt="Icon" />															</div>
 				</div>
 				<div class="elementor-element elementor-element-78ccb186 elementor-widget elementor-widget-image-box" data-id="78ccb186" data-element_type="widget" data-e-type="widget" data-widget_type="image-box.default">
 				<div class="elementor-widget-container">
@@ -3839,7 +3839,7 @@ than before
 			<div class="elementor-widget-wrap elementor-element-populated">
 						<div class="elementor-element elementor-element-76bfb2b4 elementor-widget elementor-widget-image" data-id="76bfb2b4" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-															<img loading="lazy" decoding="async" width="68" height="68" src="/wp-content/uploads/2024/07/L_lime.svg?v=1" class="attachment-large size-large" alt="Icon" />															</div>
+															<img loading="lazy" decoding="async" width="68" height="68" src="wp-content/uploads/2024/07/L_lime.svg?v=1" class="attachment-large size-large" alt="Icon" />															</div>
 				</div>
 				<div class="elementor-element elementor-element-34f37bdd elementor-widget elementor-widget-image-box" data-id="34f37bdd" data-element_type="widget" data-e-type="widget" data-widget_type="image-box.default">
 				<div class="elementor-widget-container">
@@ -3862,7 +3862,7 @@ than before
 			<div class="elementor-widget-wrap elementor-element-populated">
 						<div class="elementor-element elementor-element-57386135 elementor-widget elementor-widget-image" data-id="57386135" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-															<img loading="lazy" decoding="async" width="68" height="68" src="/wp-content/uploads/2024/07/L_lime.svg?v=1" class="attachment-large size-large" alt="Icon" />															</div>
+															<img loading="lazy" decoding="async" width="68" height="68" src="wp-content/uploads/2024/07/L_lime.svg?v=1" class="attachment-large size-large" alt="Icon" />															</div>
 				</div>
 				<div class="elementor-element elementor-element-4e46dd0e elementor-widget elementor-widget-image-box" data-id="4e46dd0e" data-element_type="widget" data-e-type="widget" data-widget_type="image-box.default">
 				<div class="elementor-widget-container">
@@ -3909,7 +3909,7 @@ than before
 									</div>
 						<div class="elementor-testimonial__footer">
 									<div class="elementor-testimonial__image">
-						<img decoding="async" src="/wp-content/uploads/2023/03/Mike-Harris_ITI-scaled-e1652216935906.jpeg" alt="Michael Harris">
+						<img decoding="async" src="wp-content/uploads/2023/03/Mike-Harris_ITI-scaled-e1652216935906.jpeg" alt="Michael Harris">
 											</div>
 								<cite class="elementor-testimonial__cite"><span class="elementor-testimonial__name">Michael Harris</span><span class="elementor-testimonial__title">Program Administrator at International Training Institute</span></cite>			</div>
 		</div>
@@ -3922,7 +3922,7 @@ than before
 									</div>
 						<div class="elementor-testimonial__footer">
 									<div class="elementor-testimonial__image">
-						<img decoding="async" src="/wp-content/uploads/2024/05/shane-bryant-willow-bridge.jpeg" alt="Shane Bryant">
+						<img decoding="async" src="wp-content/uploads/2024/05/shane-bryant-willow-bridge.jpeg" alt="Shane Bryant">
 											</div>
 								<cite class="elementor-testimonial__cite"><span class="elementor-testimonial__name">Shane Bryant</span><span class="elementor-testimonial__title">Sr. Director of Property Management Training, Willow Bridge</span></cite>			</div>
 		</div>
@@ -3955,7 +3955,7 @@ than before
 			<div class="elementor-widget-wrap elementor-element-populated">
 						<div class="elementor-element elementor-element-35841807 elementor-widget elementor-widget-image" data-id="35841807" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-															<img loading="lazy" decoding="async" width="834" height="834" src="/wp-content/uploads/2022/11/IMG-22-02-DOL-Color.png" class="elementor-animation-grow attachment-large size-large wp-image-4895" alt="The Department of Labor in USA logo" srcset="/wp-content/uploads/2022/11/IMG-22-02-DOL-Color.png 834w, /wp-content/uploads/2022/11/IMG-22-02-DOL-Color-300x300.png 300w, /wp-content/uploads/2022/11/IMG-22-02-DOL-Color-150x150.png 150w, /wp-content/uploads/2022/11/IMG-22-02-DOL-Color-768x768.png 768w, /wp-content/uploads/2022/11/IMG-22-02-DOL-Color-60x60.png 60w" sizes="(max-width: 834px) 100vw, 834px" />															</div>
+															<img loading="lazy" decoding="async" width="834" height="834" src="wp-content/uploads/2022/11/IMG-22-02-DOL-Color.png" class="elementor-animation-grow attachment-large size-large wp-image-4895" alt="The Department of Labor in USA logo" srcset="wp-content/uploads/2022/11/IMG-22-02-DOL-Color.png 834w, /wp-content/uploads/2022/11/IMG-22-02-DOL-Color-300x300.png 300w, /wp-content/uploads/2022/11/IMG-22-02-DOL-Color-150x150.png 150w, /wp-content/uploads/2022/11/IMG-22-02-DOL-Color-768x768.png 768w, /wp-content/uploads/2022/11/IMG-22-02-DOL-Color-60x60.png 60w" sizes="(max-width: 834px) 100vw, 834px" />															</div>
 				</div>
 					</div>
 		</div>
@@ -3963,7 +3963,7 @@ than before
 			<div class="elementor-widget-wrap elementor-element-populated">
 						<div class="elementor-element elementor-element-1585bf24 elementor-widget elementor-widget-image" data-id="1585bf24" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-															<img loading="lazy" decoding="async" width="848" height="589" src="/wp-content/uploads/2022/11/HBI-logo.png" class="elementor-animation-grow attachment-large size-large wp-image-4896" alt="The logo of HBI with the tagline &quot;Building Careers, Changing Lives&quot;" srcset="/wp-content/uploads/2022/11/HBI-logo.png 848w, /wp-content/uploads/2022/11/HBI-logo-300x208.png 300w, /wp-content/uploads/2022/11/HBI-logo-768x533.png 768w" sizes="(max-width: 848px) 100vw, 848px" />															</div>
+															<img loading="lazy" decoding="async" width="848" height="589" src="wp-content/uploads/2022/11/HBI-logo.png" class="elementor-animation-grow attachment-large size-large wp-image-4896" alt="The logo of HBI with the tagline &quot;Building Careers, Changing Lives&quot;" srcset="wp-content/uploads/2022/11/HBI-logo.png 848w, /wp-content/uploads/2022/11/HBI-logo-300x208.png 300w, /wp-content/uploads/2022/11/HBI-logo-768x533.png 768w" sizes="(max-width: 848px) 100vw, 848px" />															</div>
 				</div>
 					</div>
 		</div>
@@ -3971,7 +3971,7 @@ than before
 			<div class="elementor-widget-wrap elementor-element-populated">
 						<div class="elementor-element elementor-element-5ae0ef69 elementor-widget elementor-widget-image" data-id="5ae0ef69" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-															<img loading="lazy" decoding="async" width="680" height="406" src="/wp-content/uploads/2022/11/IMG-22-01-IACET.png" class="elementor-animation-grow attachment-large size-large wp-image-4802" alt="The logo for the authorized IACET provider" srcset="/wp-content/uploads/2022/11/IMG-22-01-IACET.png 680w, /wp-content/uploads/2022/11/IMG-22-01-IACET-300x179.png 300w" sizes="(max-width: 680px) 100vw, 680px" />															</div>
+															<img loading="lazy" decoding="async" width="680" height="406" src="wp-content/uploads/2022/11/IMG-22-01-IACET.png" class="elementor-animation-grow attachment-large size-large wp-image-4802" alt="The logo for the authorized IACET provider" srcset="wp-content/uploads/2022/11/IMG-22-01-IACET.png 680w, /wp-content/uploads/2022/11/IMG-22-01-IACET-300x179.png 300w" sizes="(max-width: 680px) 100vw, 680px" />															</div>
 				</div>
 					</div>
 		</div>
@@ -3980,7 +3980,7 @@ than before
 						<div class="elementor-element elementor-element-691de6e6 elementor-widget elementor-widget-image" data-id="691de6e6" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
 																<a href="https://natex.org/" target="_blank">
-							<img loading="lazy" decoding="async" width="901" height="901" src="/wp-content/uploads/2023/05/LOG-22-09-NATE_3D_Color-1.png" class="elementor-animation-grow attachment-large size-large wp-image-5529" alt="The North American Technician Excellence logo" srcset="/wp-content/uploads/2023/05/LOG-22-09-NATE_3D_Color-1.png 901w, /wp-content/uploads/2023/05/LOG-22-09-NATE_3D_Color-1-300x300.png 300w, /wp-content/uploads/2023/05/LOG-22-09-NATE_3D_Color-1-150x150.png 150w, /wp-content/uploads/2023/05/LOG-22-09-NATE_3D_Color-1-768x768.png 768w, /wp-content/uploads/2023/05/LOG-22-09-NATE_3D_Color-1-60x60.png 60w" sizes="(max-width: 901px) 100vw, 901px" />								</a>
+							<img loading="lazy" decoding="async" width="901" height="901" src="wp-content/uploads/2023/05/LOG-22-09-NATE_3D_Color-1.png" class="elementor-animation-grow attachment-large size-large wp-image-5529" alt="The North American Technician Excellence logo" srcset="wp-content/uploads/2023/05/LOG-22-09-NATE_3D_Color-1.png 901w, /wp-content/uploads/2023/05/LOG-22-09-NATE_3D_Color-1-300x300.png 300w, /wp-content/uploads/2023/05/LOG-22-09-NATE_3D_Color-1-150x150.png 150w, /wp-content/uploads/2023/05/LOG-22-09-NATE_3D_Color-1-768x768.png 768w, /wp-content/uploads/2023/05/LOG-22-09-NATE_3D_Color-1-60x60.png 60w" sizes="(max-width: 901px) 100vw, 901px" />								</a>
 															</div>
 				</div>
 					</div>
@@ -4022,7 +4022,7 @@ than before
 				<div class="elementor-widget-container">
 							<div class="elementor-image-carousel-wrapper swiper" role="region" aria-roledescription="carousel" aria-label="Image Carousel" dir="ltr">
 			<div class="elementor-image-carousel swiper-wrapper" aria-live="off">
-								<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="1 of 14"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="/wp-content/uploads/2022/11/lowes-logo.webp" alt="lowes-logo.webp" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="2 of 14"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="/wp-content/uploads/2022/11/ruud-logo.png" alt="ruud-logo.png" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="3 of 14"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="/wp-content/uploads/2022/11/carrier-turn-to-the-experts-logo.svg" alt="carrier-turn-to-the-experts-logo.svg" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="4 of 14"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="/wp-content/uploads/2022/11/Southern_Careers_Institute_logo-2.webp" alt="Southern_Careers_Institute_logo-2.webp" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="5 of 14"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="/wp-content/uploads/2022/11/BGSF-Logo.png" alt="BGSF-Logo.png" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="6 of 14"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="/wp-content/uploads/2022/11/Asset-Logo.png" alt="Asset-Logo.png" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="7 of 14"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="/wp-content/uploads/2022/11/daikin_logo.png" alt="AfriQ ArtisanSkills Partner Daikin" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="8 of 14"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="/wp-content/uploads/2022/11/AmanaH-AC_logo_RGB_lr.png" alt="AmanaH-AC_logo_RGB_lr" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="9 of 14"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="/wp-content/uploads/2022/11/equity-residential-logo.webp" alt="equity-residential-logo.webp" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="10 of 14"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="/wp-content/uploads/2022/11/Rheem_Trade_RGB.png" alt="Rheem_Trade_RGB.png" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="11 of 14"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="/wp-content/uploads/2022/11/iti-logo.jpeg" alt="iti-logo.jpeg" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="12 of 14"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="/wp-content/uploads/2022/11/bryant-heating-and-cooling-logo.svg" alt="bryant-heating-and-cooling-logo.svg" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="13 of 14"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="/wp-content/uploads/2022/11/SH-Logo-4c-BlueGrey-1.png" alt="SH-Logo-4c-BlueGrey-1.png" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="14 of 14"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="/wp-content/uploads/2022/11/ferguson-logo.jpeg" alt="ferguson-logo.jpeg" /></figure></div>			</div>
+								<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="1 of 14"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="wp-content/uploads/2022/11/lowes-logo.webp" alt="lowes-logo.webp" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="2 of 14"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="wp-content/uploads/2022/11/ruud-logo.png" alt="ruud-logo.png" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="3 of 14"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="wp-content/uploads/2022/11/carrier-turn-to-the-experts-logo.svg" alt="carrier-turn-to-the-experts-logo.svg" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="4 of 14"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="wp-content/uploads/2022/11/Southern_Careers_Institute_logo-2.webp" alt="Southern_Careers_Institute_logo-2.webp" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="5 of 14"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="wp-content/uploads/2022/11/BGSF-Logo.png" alt="BGSF-Logo.png" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="6 of 14"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="wp-content/uploads/2022/11/Asset-Logo.png" alt="Asset-Logo.png" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="7 of 14"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="wp-content/uploads/2022/11/daikin_logo.png" alt="AfriQ ArtisanSkills Partner Daikin" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="8 of 14"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="wp-content/uploads/2022/11/AmanaH-AC_logo_RGB_lr.png" alt="AmanaH-AC_logo_RGB_lr" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="9 of 14"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="wp-content/uploads/2022/11/equity-residential-logo.webp" alt="equity-residential-logo.webp" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="10 of 14"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="wp-content/uploads/2022/11/Rheem_Trade_RGB.png" alt="Rheem_Trade_RGB.png" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="11 of 14"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="wp-content/uploads/2022/11/iti-logo.jpeg" alt="iti-logo.jpeg" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="12 of 14"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="wp-content/uploads/2022/11/bryant-heating-and-cooling-logo.svg" alt="bryant-heating-and-cooling-logo.svg" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="13 of 14"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="wp-content/uploads/2022/11/SH-Logo-4c-BlueGrey-1.png" alt="SH-Logo-4c-BlueGrey-1.png" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="14 of 14"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="wp-content/uploads/2022/11/ferguson-logo.jpeg" alt="ferguson-logo.jpeg" /></figure></div>			</div>
 							
 									</div>
 						</div>
@@ -4398,7 +4398,7 @@ Development Platform</a>								</div>
 			<div class="elementor-widget-wrap elementor-element-populated">
 						<div class="elementor-element elementor-element-4b590b5f elementor-widget elementor-widget-image" data-id="4b590b5f" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-															<img width="930" height="922" src="/wp-content/uploads/2022/04/c1bba7a0-b0ee-46dd-916d-4c06e3e482a6.png" class="attachment-large size-large wp-image-1460" alt="The North American Technician Excellence logo" srcset="/wp-content/uploads/2022/04/c1bba7a0-b0ee-46dd-916d-4c06e3e482a6.png 930w, /wp-content/uploads/2022/04/c1bba7a0-b0ee-46dd-916d-4c06e3e482a6-300x297.png 300w, /wp-content/uploads/2022/04/c1bba7a0-b0ee-46dd-916d-4c06e3e482a6-150x150.png 150w, /wp-content/uploads/2022/04/c1bba7a0-b0ee-46dd-916d-4c06e3e482a6-768x761.png 768w" sizes="(max-width: 930px) 100vw, 930px" />															</div>
+															<img width="930" height="922" src="wp-content/uploads/2022/04/c1bba7a0-b0ee-46dd-916d-4c06e3e482a6.png" class="attachment-large size-large wp-image-1460" alt="The North American Technician Excellence logo" srcset="wp-content/uploads/2022/04/c1bba7a0-b0ee-46dd-916d-4c06e3e482a6.png 930w, /wp-content/uploads/2022/04/c1bba7a0-b0ee-46dd-916d-4c06e3e482a6-300x297.png 300w, /wp-content/uploads/2022/04/c1bba7a0-b0ee-46dd-916d-4c06e3e482a6-150x150.png 150w, /wp-content/uploads/2022/04/c1bba7a0-b0ee-46dd-916d-4c06e3e482a6-768x761.png 768w" sizes="(max-width: 930px) 100vw, 930px" />															</div>
 				</div>
 					</div>
 		</div>
@@ -4406,7 +4406,7 @@ Development Platform</a>								</div>
 			<div class="elementor-widget-wrap elementor-element-populated">
 						<div class="elementor-element elementor-element-730e4a49 elementor-widget elementor-widget-image" data-id="730e4a49" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-															<img width="1024" height="611" src="/wp-content/uploads/2022/04/8f8157c1-44ec-423f-918c-5b792f0917c7-1024x611.png" class="attachment-large size-large wp-image-1459" alt="A black and white IACET logo" srcset="/wp-content/uploads/2022/04/8f8157c1-44ec-423f-918c-5b792f0917c7-1024x611.png 1024w, /wp-content/uploads/2022/04/8f8157c1-44ec-423f-918c-5b792f0917c7-300x179.png 300w, /wp-content/uploads/2022/04/8f8157c1-44ec-423f-918c-5b792f0917c7-768x459.png 768w, /wp-content/uploads/2022/04/8f8157c1-44ec-423f-918c-5b792f0917c7-1536x917.png 1536w, /wp-content/uploads/2022/04/8f8157c1-44ec-423f-918c-5b792f0917c7.png 1638w" sizes="(max-width: 1024px) 100vw, 1024px" />															</div>
+															<img width="1024" height="611" src="wp-content/uploads/2022/04/8f8157c1-44ec-423f-918c-5b792f0917c7-1024x611.png" class="attachment-large size-large wp-image-1459" alt="A black and white IACET logo" srcset="wp-content/uploads/2022/04/8f8157c1-44ec-423f-918c-5b792f0917c7-1024x611.png 1024w, /wp-content/uploads/2022/04/8f8157c1-44ec-423f-918c-5b792f0917c7-300x179.png 300w, /wp-content/uploads/2022/04/8f8157c1-44ec-423f-918c-5b792f0917c7-768x459.png 768w, /wp-content/uploads/2022/04/8f8157c1-44ec-423f-918c-5b792f0917c7-1536x917.png 1536w, /wp-content/uploads/2022/04/8f8157c1-44ec-423f-918c-5b792f0917c7.png 1638w" sizes="(max-width: 1024px) 100vw, 1024px" />															</div>
 				</div>
 					</div>
 		</div>
@@ -4414,7 +4414,7 @@ Development Platform</a>								</div>
 			<div class="elementor-widget-wrap elementor-element-populated">
 						<div class="elementor-element elementor-element-4c54b5a3 elementor-widget elementor-widget-image" data-id="4c54b5a3" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-															<img width="834" height="834" src="/wp-content/uploads/2022/04/6f028dae-82e5-443c-8037-08f943c6e026.png" class="attachment-large size-large wp-image-1458" alt="The Department of Labor in USA logo" srcset="/wp-content/uploads/2022/04/6f028dae-82e5-443c-8037-08f943c6e026.png 834w, /wp-content/uploads/2022/04/6f028dae-82e5-443c-8037-08f943c6e026-300x300.png 300w, /wp-content/uploads/2022/04/6f028dae-82e5-443c-8037-08f943c6e026-150x150.png 150w, /wp-content/uploads/2022/04/6f028dae-82e5-443c-8037-08f943c6e026-768x768.png 768w" sizes="(max-width: 834px) 100vw, 834px" />															</div>
+															<img width="834" height="834" src="wp-content/uploads/2022/04/6f028dae-82e5-443c-8037-08f943c6e026.png" class="attachment-large size-large wp-image-1458" alt="The Department of Labor in USA logo" srcset="wp-content/uploads/2022/04/6f028dae-82e5-443c-8037-08f943c6e026.png 834w, /wp-content/uploads/2022/04/6f028dae-82e5-443c-8037-08f943c6e026-300x300.png 300w, /wp-content/uploads/2022/04/6f028dae-82e5-443c-8037-08f943c6e026-150x150.png 150w, /wp-content/uploads/2022/04/6f028dae-82e5-443c-8037-08f943c6e026-768x768.png 768w" sizes="(max-width: 834px) 100vw, 834px" />															</div>
 				</div>
 					</div>
 		</div>
@@ -4966,4 +4966,3 @@ const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(
 <!-- be_ixf, sdk, is -->
 	<script type="text/plain">(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9e11d616197b4530',t:'MTc3NDMxNTA0Ny4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
-

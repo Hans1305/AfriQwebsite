@@ -35,6 +35,10 @@ body{
   background: var(--afriq-charcoal-deep) !important;
   background-image: none !important;
 }
+html,
+body{
+  overflow-x:hidden;
+}
 
 .be-ix-link-block{
   background-image: url("wp-content/uploads/2020/08/footer_BG.png?v=4") !important;
