@@ -96,6 +96,11 @@ a.btn{
   padding:12px 28px !important;
   min-width:180px;
 }
+.elementor a.elementor-button.elementor-button-link.elementor-size-sm[href*="see-it-in-action.html"],
+.elementor a.elementor-button.elementor-button-link.elementor-size-sm[href*="contact.html"]{
+  min-width: unset !important;
+  width: auto !important;
+}
 .elementor .elementor-button .elementor-button-text,
 .elementor .elementor-button-link .elementor-button-text{
   text-transform:none !important;
