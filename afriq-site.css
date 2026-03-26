@@ -273,6 +273,11 @@ video{
   .elementor-element-3c22a0e h2.elementor-heading-title{
     font-size:34px !important;
   }
+  .elementor-element-fc36cc4 .elementor-heading-title{
+    font-size:28px !important;
+    line-height:1.15 !important;
+    letter-spacing:-0.01em !important;
+  }
   .elementor-element-3c22a0e p{
     font-size:16px !important;
   }
