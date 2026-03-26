@@ -49,15 +49,45 @@
   color:inherit;
 }
 .afriq-header__logo img{
-  width:170px;
-  height:auto;
+  width:166px !important;
+  height:66px !important;
   display:block;
+  object-fit:contain;
 }
 .afriq-nav{
   display:flex;
   align-items:center;
   gap:18px;
   flex-wrap:wrap;
+}
+
+@media (max-width: 1024px){
+  .afriq-header__row{
+    flex-wrap:wrap;
+    justify-content:center;
+    padding:12px 0;
+  }
+  .afriq-nav{
+    justify-content:center;
+    gap:12px;
+  }
+}
+@media (max-width: 767px){
+  .afriq-container{
+    width:calc(100% - 28px);
+  }
+  .afriq-hero{
+    padding:40px 0 18px;
+  }
+  .afriq-hero__title{
+    font-size:34px;
+  }
+  .afriq-hero__subtitle{
+    font-size:16px;
+  }
+  .afriq-nav a{
+    font-size:12px;
+  }
 }
 .afriq-nav a{
   color: rgba(255,255,255,.86);

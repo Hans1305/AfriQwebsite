@@ -37,19 +37,19 @@ body{
 }
 
 .be-ix-link-block{
-  background-image: url(/wp-content/uploads/2020/08/footer_BG.png?v=4) !important;
+  background-image: url("wp-content/uploads/2020/08/footer_BG.png?v=4") !important;
 }
 
 .elementor-element-720f7902:not(.elementor-motion-effects-element-type-background),
 .elementor-element-720f7902 > .elementor-motion-effects-container > .elementor-motion-effects-layer{
-  background-image: url("/wp-content/uploads/2022/11/footer_BG.png?v=4") !important;
+  background-image: url("wp-content/uploads/2022/11/footer_BG.png?v=4") !important;
   background-size: cover !important;
   background-position: 50% 50% !important;
 }
 
 .elementor-2420 .elementor-element.elementor-element-01b9e5b:not(.elementor-motion-effects-element-type-background),
 .elementor-2420 .elementor-element.elementor-element-01b9e5b > .elementor-motion-effects-container > .elementor-motion-effects-layer{
-  background-image: url("/wp-content/uploads/2020/08/footer_BG.png?v=4") !important;
+  background-image: url("wp-content/uploads/2020/08/footer_BG.png?v=4") !important;
   background-size: cover !important;
   background-position: top center !important;
   background-repeat: no-repeat !important;
@@ -63,7 +63,7 @@ body{
 
 .elementor-element-14ef515d:not(.elementor-motion-effects-element-type-background),
 .elementor-element-14ef515d > .elementor-motion-effects-container > .elementor-motion-effects-layer{
-  background-image: url("/wp-content/uploads/2022/11/1920x92_bg.png?v=2") !important;
+  background-image: url("wp-content/uploads/2022/11/1920x92_bg.png?v=2") !important;
 }
 
 .elementor-element-7499a87d .card,
@@ -242,4 +242,38 @@ a.btn{
 }
 .elementor-element-7c1a1a0 .elementor-heading-title{
   color: var(--afriq-lime) !important;
+}
+
+img{
+  max-width:100%;
+  height:auto;
+}
+video{
+  max-width:100%;
+  height:auto;
+}
+@media (max-width: 1024px){
+  .elementor-element-3c22a0e{
+    width:calc(100% - 32px) !important;
+  }
+  .elementor-element-3c22a0e .elementor-column{
+    padding:36px 22px !important;
+  }
+  .elementor-element-3c22a0e h2.elementor-heading-title{
+    font-size:40px !important;
+  }
+}
+@media (max-width: 767px){
+  .elementor-element-3c22a0e{
+    width:calc(100% - 24px) !important;
+  }
+  .elementor-element-3c22a0e .elementor-column{
+    padding:28px 18px !important;
+  }
+  .elementor-element-3c22a0e h2.elementor-heading-title{
+    font-size:34px !important;
+  }
+  .elementor-element-3c22a0e p{
+    font-size:16px !important;
+  }
 }
