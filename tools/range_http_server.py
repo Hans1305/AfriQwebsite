@@ -100,12 +100,14 @@ class RangeRequestHandler(http.server.SimpleHTTPRequestHandler):
 
 def main() -> None:
     parser = argparse.ArgumentParser()
+    parser.add_argument("--host", type=str, default="127.0.0.1")
     parser.add_argument("--port", type=int, default=5500)
     args = parser.parse_args()
 
     mimetypes.add_type("video/mp4", ".mp4")
     handler = RangeRequestHandler
-    with socketserver.TCPServer(("", args.port), handler) as httpd:
+    socketserver.TCPServer.allow_reuse_address = True
+    with socketserver.ThreadingTCPServer((args.host, args.port), handler) as httpd:
         httpd.serve_forever()
 
 
