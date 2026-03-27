@@ -61,6 +61,46 @@ body{
   object-fit:cover !important;
 }
 
+.banner-video,
+.elementor-element-720f7902,
+.elementor-element-01b9e5b,
+.elementor-element-14ef515d,
+.elementor-element-7499a87d,
+.elementor-element-41a791fb{
+  color: #FFFFFF !important;
+}
+.banner-video h1,
+.banner-video h2,
+.banner-video h3,
+.banner-video h4,
+.banner-video p,
+.banner-video li{
+  color: #FFFFFF !important;
+  text-shadow: 0 12px 30px rgba(0,0,0,.55);
+}
+.elementor-element-14ef515d .elementor-heading-title,
+.elementor-element-14ef515d .elementor-widget-text-editor,
+.elementor-element-14ef515d .elementor-widget-text-editor p,
+.elementor-element-14ef515d .elementor-widget-text-editor span,
+.elementor-element-14ef515d .elementor-widget-text-editor li{
+  color: #FFFFFF !important;
+}
+.elementor-element-7499a87d .elementor-heading-title,
+.elementor-element-7499a87d .elementor-widget-text-editor,
+.elementor-element-7499a87d .elementor-widget-text-editor p,
+.elementor-element-7499a87d .elementor-widget-text-editor span,
+.elementor-element-7499a87d .elementor-widget-text-editor li{
+  color: #FFFFFF !important;
+}
+.elementor-element-14ef515d a,
+.elementor-element-7499a87d a{
+  color: var(--afriq-lime) !important;
+}
+.elementor-element-14ef515d a:hover,
+.elementor-element-7499a87d a:hover{
+  color: var(--afriq-green) !important;
+}
+
 .elementor-2420 .elementor-element.elementor-element-01b9e5b:not(.elementor-motion-effects-element-type-background),
 .elementor-2420 .elementor-element.elementor-element-01b9e5b > .elementor-motion-effects-container > .elementor-motion-effects-layer{
   background-image: url("wp-content/uploads/2020/08/footer_BG.png?v=4") !important;
