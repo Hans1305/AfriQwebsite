@@ -307,7 +307,8 @@ video{
     overflow-wrap: normal !important;
     hyphens: none !important;
     white-space: normal !important;
-    max-width: 14ch;
+    max-width: 18ch;
+    text-wrap: balance;
   }
   .elementor-element-fc36cc4 .elementor-heading-title{
     font-size:28px !important;
