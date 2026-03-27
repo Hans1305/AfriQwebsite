@@ -133,6 +133,51 @@ body{
   color: var(--afriq-green) !important;
 }
 
+body.page-id-6 .elementor-element-67157c12:not(.elementor-motion-effects-element-type-background),
+body.page-id-6 .elementor-element-67157c12 > .elementor-motion-effects-container > .elementor-motion-effects-layer,
+body.page-id-6 .elementor-element-3ac0a374:not(.elementor-motion-effects-element-type-background),
+body.page-id-6 .elementor-element-3ac0a374 > .elementor-motion-effects-container > .elementor-motion-effects-layer{
+  background: var(--afriq-charcoal-deep) !important;
+}
+body.page-id-6 .elementor-element-67157c12 > .elementor-background-overlay,
+body.page-id-6 .elementor-element-3ac0a374 > .elementor-background-overlay{
+  background: radial-gradient(700px 360px at 20% 20%, rgba(177,255,9,.18), transparent 62%) !important;
+  opacity: 1 !important;
+}
+body.page-id-6 .elementor-element-67157c12 .elementor-heading-title,
+body.page-id-6 .elementor-element-67157c12 p,
+body.page-id-6 .elementor-element-3ac0a374 .elementor-heading-title,
+body.page-id-6 .elementor-element-3ac0a374 p{
+  color: #FFFFFF !important;
+}
+body.page-id-6 .elementor-element-67157c12 .elementor-widget-image img,
+body.page-id-6 .elementor-element-3ac0a374 .elementor-widget-image img{
+  background: rgba(255,255,255,.92) !important;
+  border-radius: 16px !important;
+  padding: 14px !important;
+  border: 1px solid rgba(255,255,255,.16) !important;
+  max-height: 110px !important;
+  width: auto !important;
+  object-fit: contain !important;
+}
+body.page-id-6 .elementor-element-67157c12 .elementor-button.elementor-button-link,
+body.page-id-6 .elementor-element-3ac0a374 .elementor-button.elementor-button-link{
+  background: var(--afriq-lime) !important;
+  color: var(--afriq-charcoal-deep) !important;
+  border-radius: 999px !important;
+  border: 1px solid rgba(0,0,0,.14) !important;
+}
+body.page-id-6 .elementor-element-67157c12 .elementor-button.elementor-button-link:hover,
+body.page-id-6 .elementor-element-3ac0a374 .elementor-button.elementor-button-link:hover{
+  background: var(--afriq-green) !important;
+  color: var(--afriq-charcoal-deep) !important;
+}
+body.page-id-6 .elementor-element-67157c12 .elementor-button .elementor-button-text,
+body.page-id-6 .elementor-element-3ac0a374 .elementor-button .elementor-button-text{
+  color: inherit !important;
+  font-weight: 900 !important;
+}
+
 .elementor-2420 .elementor-element.elementor-element-01b9e5b:not(.elementor-motion-effects-element-type-background),
 .elementor-2420 .elementor-element.elementor-element-01b9e5b > .elementor-motion-effects-container > .elementor-motion-effects-layer{
   background-image: url("wp-content/uploads/2020/08/footer_BG.png?v=4") !important;
