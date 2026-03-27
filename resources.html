@@ -446,6 +446,61 @@
         background: var(--AfriQ-lime);
         vertical-align:middle;
       }
+
+      .table-wrap{
+        overflow-x:auto;
+        -webkit-overflow-scrolling:touch;
+      }
+      .cert-table{
+        width:100%;
+        border-collapse:separate;
+        border-spacing:0;
+        background:#fff;
+        border:1px solid var(--border);
+        border-radius:var(--radius);
+        overflow:hidden;
+        box-shadow:var(--shadow);
+      }
+      .cert-table th,
+      .cert-table td{
+        padding:12px 14px;
+        text-align:left;
+        vertical-align:top;
+      }
+      .cert-table th{
+        font-size:12px;
+        letter-spacing:.06em;
+        text-transform:uppercase;
+        background:rgba(42,53,61,.06);
+        color:rgba(15,23,42,.86);
+        white-space:nowrap;
+      }
+      .cert-table td{
+        border-top:1px solid var(--border);
+        color:rgba(15,23,42,.86);
+        font-size:14px;
+        line-height:1.45;
+      }
+      .cert-pill{
+        display:inline-flex;
+        align-items:center;
+        gap:8px;
+        padding:6px 10px;
+        border-radius:999px;
+        background:rgba(216,255,0,.20);
+        border:1px solid rgba(216,255,0,.35);
+        font-weight:800;
+        font-size:12px;
+        color:var(--ink);
+        white-space:nowrap;
+      }
+      .cert-note{
+        margin-top:14px;
+        color:rgba(15,23,42,.68);
+        font-size:13.5px;
+        line-height:1.55;
+        max-width:80ch;
+      }
     </style>
   </head>
 
@@ -642,6 +697,79 @@
       </div>
     </section>
 
+    <section class="section alt" id="certifications" aria-label="AfriQ ArtisanSkills full summary certifications">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <h2 class="section-title">AfriQ ArtisanSkills — Full Summary (Certifications)</h2>
+            <p class="section-lede">
+              Certification readiness pathways can be aligned to South African equivalents. This mapping is used to guide training design,
+              assessments, and evidence collection for job readiness.
+            </p>
+          </div>
+        </div>
+
+        <div class="table-wrap" role="region" aria-label="Certification equivalency table" tabindex="0">
+          <table class="cert-table">
+            <thead>
+              <tr>
+                <th>Certification</th>
+                <th>Discipline</th>
+                <th>AfriQ ZA Equivalent</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="cert-pill">EPA 608</span></td>
+                <td>HVAC / Refrigerant</td>
+                <td>SAQCC Gas + Refrigerant Technician Certificate</td>
+              </tr>
+              <tr>
+                <td><span class="cert-pill">QCTO Core + Specialty</span></td>
+                <td>HVAC</td>
+                <td>SAQCC Gas: CGA-qualified technician</td>
+              </tr>
+              <tr>
+                <td><span class="cert-pill">OSHA 10</span></td>
+                <td>All Trades (Safety)</td>
+                <td>OHSA Act 85: Health &amp; Safety Representative</td>
+              </tr>
+              <tr>
+                <td><span class="cert-pill">OSHA 30</span></td>
+                <td>All Trades (Safety)</td>
+                <td>OHSA: Supervisor Competency Certificate</td>
+              </tr>
+              <tr>
+                <td><span class="cert-pill">EPA 609 (MVAC)</span></td>
+                <td>Automotive HVAC</td>
+                <td>SAQCC MVAC Certificate</td>
+              </tr>
+              <tr>
+                <td><span class="cert-pill">NABCEP (Solar)</span></td>
+                <td>Solar PV</td>
+                <td>SAPVIA PV Greencard + NERSA installer registration</td>
+              </tr>
+              <tr>
+                <td><span class="cert-pill">NEC Electrical</span></td>
+                <td>Electrical</td>
+                <td>Certificate of Compliance (CoC) — ECA of SA</td>
+              </tr>
+              <tr>
+                <td><span class="cert-pill">NCCER Core + Electrical</span></td>
+                <td>Electrical</td>
+                <td>QCTO: Electrician NQF L3 (under EWSETA)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="cert-note">
+          This section is a planning reference for AfriQ ArtisanSkills program design. Final certification requirements depend on the relevant
+          South African bodies, unit standards, and workplace evidence.
+        </p>
+      </div>
+    </section>
+
     <section class="section alt" id="faq" aria-label="Frequently asked questions">
       <div class="container">
         <div class="section-header">
@@ -693,6 +821,7 @@
           <div style="font-weight:900; letter-spacing:-.01em; color:#fff;">AfriQ ArtisanSkills</div>
           <div style="display:flex; gap:14px; flex-wrap:wrap;">
             <a href="#tour">Product</a>
+            <a href="#certifications">Certifications</a>
             <a href="#faq">FAQs</a>
             <a href="#demo">Demo</a>
           </div>
