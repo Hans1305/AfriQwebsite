@@ -152,6 +152,15 @@ body{
   font-weight: 900 !important;
 }
 
+.elementor-element-14ef515d .elementor-widget-image img{
+  width: 40px !important;
+  height: 40px !important;
+}
+.elementor-element-14ef515d .elementor-image-box-title{
+  font-size: 18px !important;
+  line-height: 1.2 !important;
+}
+
 .elementor-element-407efb4d .elementor-heading-title,
 .elementor-element-407efb4d,
 .elementor-element-407efb4d a,
