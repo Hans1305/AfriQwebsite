@@ -163,6 +163,11 @@ body{
 
 body.page-id-6 .elementor-element-14ef515d .elementor-image-box-title{
   color: var(--afriq-lime) !important;
+  text-shadow: 0 10px 26px rgba(0,0,0,.55);
+}
+
+body.page-id-6.elementor-page-6 .elementor-element-14ef515d h3.elementor-image-box-title{
+  color: var(--afriq-lime) !important;
 }
 
 body.page-id-6 .elementor-element-14ef515d .elementor-element-35002e1c .elementor-image-box-title{
