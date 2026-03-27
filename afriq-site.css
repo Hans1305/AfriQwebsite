@@ -286,11 +286,28 @@ video{
   .elementor-element-3c22a0e{
     width:calc(100% - 24px) !important;
   }
+  .elementor-element-9815f7c > .elementor-container{
+    flex-wrap:wrap !important;
+  }
+  .elementor-element-9815f7c > .elementor-container > .elementor-column{
+    width:100% !important;
+    max-width:100% !important;
+    flex: 0 0 100% !important;
+  }
+  .elementor-element-23d8e81{
+    display:none !important;
+  }
   .elementor-element-3c22a0e .elementor-column{
     padding:28px 18px !important;
   }
   .elementor-element-3c22a0e h2.elementor-heading-title{
     font-size:34px !important;
+    line-height:1.08 !important;
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+    hyphens: none !important;
+    white-space: normal !important;
+    max-width: 14ch;
   }
   .elementor-element-fc36cc4 .elementor-heading-title{
     font-size:28px !important;
