@@ -5,6 +5,8 @@
   --afriq-text: #FFFFFF;
   --afriq-muted: rgba(255,255,255,.72);
   --afriq-border: rgba(255,255,255,.12);
+  --afriq-orange: #F58A1F;
+  --afriq-orange-deep: #E07710;
 }
 
 .afriq-page{
@@ -88,6 +90,14 @@
   .afriq-nav a{
     font-size:12px;
   }
+  .afriq-hero-card__actions{
+    flex-direction:column;
+    align-items:stretch;
+  }
+  .afriq-hero-card__actions .afriq-btn{
+    width:100%;
+    min-height:52px;
+  }
 }
 .afriq-nav a{
   color: rgba(255,255,255,.86);
@@ -104,6 +114,116 @@
 .afriq-hero{
   padding:64px 0 28px;
   border-bottom:1px solid var(--afriq-border);
+}
+
+.afriq-hero--interplay{
+  position:relative;
+  padding:0;
+  background:
+    radial-gradient(700px 360px at 20% 20%, rgba(245,138,31,.24), transparent 62%),
+    var(--afriq-surface);
+  background-size: cover;
+  background-position: center;
+}
+.afriq-hero--interplay:before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(180deg, rgba(15,21,25,.52), rgba(15,21,25,.82)),
+    var(--afriq-hero-bg, none);
+  background-size: cover;
+  background-position: center;
+  filter: saturate(1.05);
+}
+.afriq-hero--interplay > *{
+  position:relative;
+}
+.afriq-hero-interplay{
+  padding:78px 0 64px;
+}
+.afriq-hero-interplay__content{
+  max-width:760px;
+}
+.afriq-hero-interplay__brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  color: rgba(255,255,255,.86);
+  font-weight:900;
+  letter-spacing:.02em;
+}
+.afriq-hero-interplay__title{
+  margin:16px 0 12px;
+  font-size:54px;
+  line-height:1.02;
+  font-weight:950;
+  letter-spacing:-0.02em;
+  color:#fff;
+}
+.afriq-hero-interplay__subtitle{
+  margin:0;
+  font-size:18px;
+  line-height:1.65;
+  color: rgba(255,255,255,.82);
+}
+.afriq-cta-stack{
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+  margin-top:26px;
+  width:min(520px, 100%);
+}
+.afriq-cta-stack .afriq-btn{
+  width:100%;
+  min-height:56px;
+  border-radius:8px;
+  font-size:14px;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  font-family: "Oswald", "Montserrat", system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+.afriq-hero--interplay .afriq-btn{
+  background: var(--afriq-orange);
+  color:#fff;
+}
+.afriq-hero--interplay .afriq-btn:hover{
+  background: var(--afriq-orange-deep);
+}
+.afriq-hero--interplay .afriq-btn--outline{
+  background: transparent;
+  border: 2px solid rgba(245,138,31,.72);
+  color:#fff;
+}
+.afriq-hero--interplay .afriq-btn--outline:hover{
+  background: rgba(245,138,31,.14);
+}
+.afriq-benefits{
+  display:grid;
+  grid-template-columns: 1fr;
+  gap:18px;
+  margin-top:22px;
+}
+.afriq-benefit{
+  font-size:17px;
+  line-height:1.65;
+  color: rgba(15,23,42,.86);
+}
+.afriq-benefit strong{
+  color: var(--afriq-orange);
+  font-weight:950;
+}
+
+@media (max-width: 767px){
+  .afriq-hero-interplay{
+    padding:64px 0 52px;
+  }
+  .afriq-hero-interplay__title{
+    font-size:42px;
+  }
+  .afriq-hero-interplay__subtitle{
+    font-size:16px;
+  }
 }
 .afriq-hero__kicker{
   color: var(--afriq-lime, #B1FF09);
