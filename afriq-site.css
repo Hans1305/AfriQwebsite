@@ -101,6 +101,38 @@ body{
   color: var(--afriq-green) !important;
 }
 
+.afriq-charcoal-tint,
+[style*="rgba(26,34,40"],
+[style*="var(--afriq-charcoal-deep"],
+[style*="var(--afriq-charcoal"]{
+  color: #FFFFFF !important;
+}
+.afriq-charcoal-tint h1,
+.afriq-charcoal-tint h2,
+.afriq-charcoal-tint h3,
+.afriq-charcoal-tint h4,
+.afriq-charcoal-tint p,
+.afriq-charcoal-tint li,
+[style*="rgba(26,34,40"] h1,
+[style*="rgba(26,34,40"] h2,
+[style*="rgba(26,34,40"] h3,
+[style*="rgba(26,34,40"] h4,
+[style*="rgba(26,34,40"] p,
+[style*="rgba(26,34,40"] li{
+  color: #FFFFFF !important;
+  text-shadow: 0 10px 26px rgba(0,0,0,.55);
+}
+.afriq-charcoal-tint a,
+[style*="rgba(26,34,40"] a,
+[style*="var(--afriq-charcoal"] a{
+  color: var(--afriq-lime) !important;
+}
+.afriq-charcoal-tint a:hover,
+[style*="rgba(26,34,40"] a:hover,
+[style*="var(--afriq-charcoal"] a:hover{
+  color: var(--afriq-green) !important;
+}
+
 .elementor-2420 .elementor-element.elementor-element-01b9e5b:not(.elementor-motion-effects-element-type-background),
 .elementor-2420 .elementor-element.elementor-element-01b9e5b > .elementor-motion-effects-container > .elementor-motion-effects-layer{
   background-image: url("wp-content/uploads/2020/08/footer_BG.png?v=4") !important;
