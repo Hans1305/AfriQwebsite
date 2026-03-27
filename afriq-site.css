@@ -46,9 +46,19 @@ body{
 
 .elementor-element-720f7902:not(.elementor-motion-effects-element-type-background),
 .elementor-element-720f7902 > .elementor-motion-effects-container > .elementor-motion-effects-layer{
-  background-image: url("wp-content/uploads/2022/11/footer_BG.png?v=4") !important;
+  background-image: none !important;
   background-size: cover !important;
   background-position: 50% 50% !important;
+}
+
+.banner-video .elementor-background-video-container,
+.banner-video .elementor-background-video-container video{
+  opacity:1 !important;
+}
+.banner-video .elementor-background-video-container video{
+  width:100% !important;
+  height:100% !important;
+  object-fit:cover !important;
 }
 
 .elementor-2420 .elementor-element.elementor-element-01b9e5b:not(.elementor-motion-effects-element-type-background),
