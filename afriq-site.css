@@ -71,19 +71,36 @@ body{
 
 .elementor-element-14ef515d .card,
 .elementor-element-14ef515d .card > .elementor-widget-wrap.elementor-element-populated{
-  background-color: var(--afriq-lime-soft) !important;
+  background-color: rgba(255,255,255,.06) !important;
   background-image: none !important;
+  border: 1px solid rgba(255,255,255,.14) !important;
+  border-radius: 16px !important;
 }
 
 .elementor-element-14ef515d:not(.elementor-motion-effects-element-type-background),
 .elementor-element-14ef515d > .elementor-motion-effects-container > .elementor-motion-effects-layer{
-  background-image: url("wp-content/uploads/2022/11/1920x92_bg.png?v=2") !important;
+  background-image: none !important;
 }
 
 .elementor-element-7499a87d .card,
 .elementor-element-7499a87d .card > .elementor-widget-wrap.elementor-element-populated{
-  background-color: var(--afriq-lime-soft) !important;
+  background-color: rgba(255,255,255,.06) !important;
   background-image: none !important;
+  border: 1px solid rgba(255,255,255,.14) !important;
+  border-radius: 16px !important;
+}
+
+.elementor-element-14ef515d h2.elementor-heading-title{
+  font-size: 34px !important;
+  line-height: 1.1 !important;
+}
+.elementor-element-14ef515d h4.elementor-heading-title{
+  font-size: 16px !important;
+  line-height: 1.5 !important;
+}
+.elementor-element-14ef515d .elementor-image-box-title{
+  font-size: 16px !important;
+  line-height: 1.25 !important;
 }
 
 .elementor-element-407efb4d .elementor-heading-title,
