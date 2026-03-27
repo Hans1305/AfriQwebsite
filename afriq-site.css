@@ -178,14 +178,14 @@ body.page-id-6 .elementor-element-14ef515d .elementor-element-35002e1c .elemento
 
 body.page-id-6 .elementor-element-3f1b0483 h2.elementor-heading-title{
   text-transform: uppercase !important;
-  font-size: 46px !important;
+  font-size: 56px !important;
   line-height: 1.05 !important;
-  letter-spacing: 0.08em !important;
+  letter-spacing: 0.04em !important;
 }
 
 @media (max-width: 767px){
   body.page-id-6 .elementor-element-3f1b0483 h2.elementor-heading-title{
-    font-size: 36px !important;
+    font-size: 44px !important;
   }
 }
 
