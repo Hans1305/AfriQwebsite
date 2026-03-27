@@ -137,6 +137,21 @@ body{
   line-height: 1.25 !important;
 }
 
+.elementor-element-14ef515d .elementor-button.elementor-button-link{
+  background: var(--afriq-lime) !important;
+  color: var(--afriq-charcoal-deep) !important;
+  border-radius: 999px !important;
+  border: 1px solid rgba(0,0,0,.14) !important;
+}
+.elementor-element-14ef515d .elementor-button.elementor-button-link:hover{
+  background: var(--afriq-green) !important;
+  color: var(--afriq-charcoal-deep) !important;
+}
+.elementor-element-14ef515d .elementor-button .elementor-button-text{
+  color: inherit !important;
+  font-weight: 900 !important;
+}
+
 .elementor-element-407efb4d .elementor-heading-title,
 .elementor-element-407efb4d,
 .elementor-element-407efb4d a,
