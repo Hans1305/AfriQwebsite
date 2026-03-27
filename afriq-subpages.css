@@ -125,6 +125,15 @@
   background-size: cover;
   background-position: center;
 }
+.afriq-hero-bgvideo{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  z-index:0;
+  filter: saturate(1.05);
+}
 .afriq-hero--interplay:before{
   content:"";
   position:absolute;
@@ -134,10 +143,11 @@
     var(--afriq-hero-bg, none);
   background-size: cover;
   background-position: center;
-  filter: saturate(1.05);
+  z-index:1;
 }
 .afriq-hero--interplay > *{
   position:relative;
+  z-index:2;
 }
 .afriq-hero-interplay{
   padding:78px 0 64px;
