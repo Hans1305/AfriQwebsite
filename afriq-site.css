@@ -40,6 +40,89 @@ body{
   overflow-x:hidden;
 }
 
+html{
+  text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+:focus-visible{
+  outline: 3px solid var(--afriq-lime);
+  outline-offset: 3px;
+}
+
+.afriq-page{
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+}
+
+@supports (width: env(viewport-segment-width 0 0)){
+  .afriq-page{
+    padding-left: max(env(safe-area-inset-left), 0px);
+    padding-right: max(env(safe-area-inset-right), 0px);
+  }
+}
+
+@media (pointer: coarse){
+  .afriq-btn,
+  .elementor-button,
+  button,
+  [role="button"],
+  input[type="button"],
+  input[type="submit"],
+  input[type="reset"]{
+    min-height: 44px;
+    min-width: 44px;
+  }
+  .hfe-nav-menu a.hfe-menu-item,
+  .afriq-nav a{
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
+}
+
+canvas[data-afriq-webgl],
+.afriq-webgl{
+  touch-action: none;
+}
+
+@media (max-width: 767px){
+  body.page-id-6 .elementor-element-3c22a0e{
+    width: calc(100% - 28px) !important;
+  }
+  body.page-id-6 .elementor-element-3c22a0e:before{
+    width: 92px !important;
+    height: 92px !important;
+    transform: scale(.88);
+    transform-origin: top left;
+  }
+  body.page-id-6 .elementor-element-3c22a0e .elementor-column{
+    padding: 28px 18px !important;
+  }
+  body.page-id-6 .elementor-element-3c22a0e .elementor-column.elementor-col-50.elementor-inner-column.elementor-element-6fb0a38{
+    padding: 18px !important;
+  }
+  body.page-id-6 .elementor-element-3c22a0e h2.elementor-heading-title{
+    font-size: clamp(1.65rem, 6.2vw, 2.25rem) !important;
+    line-height: 1.08 !important;
+  }
+  body.page-id-6 .elementor-element-3c22a0e p{
+    font-size: 15px !important;
+    line-height: 1.55 !important;
+    overflow-wrap: anywhere;
+  }
+  body.page-id-6 .elementor-element-3c22a0e .elementor-widget-text-editor p{
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  body.page-id-6 .elementor-element-3c22a0e .lime-dot{
+    margin-right: 0;
+    margin-top: .52em;
+    flex: 0 0 10px;
+  }
+}
+
 .be-ix-link-block{
   background-image: url("wp-content/uploads/2020/08/footer_BG.png?v=4") !important;
 }
