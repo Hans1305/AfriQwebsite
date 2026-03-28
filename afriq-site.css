@@ -1,9 +1,24 @@
 :root{
-  --afriq-charcoal-deep:#1A2228;
-  --afriq-charcoal:#2D3436;
-  --afriq-lime:#B1FF09;
-  --afriq-green:#86E715;
-  --afriq-lime-soft:#D9FF66;
+  --afriq-charcoal:#36454F;
+  --afriq-charcoal-deep:#1F2A30;
+  --afriq-lime:#D8FF00;
+  --afriq-green:#B1FF09;
+  --afriq-lime-soft:#E7FF7A;
+  --afriq-bg-dark: var(--afriq-charcoal-deep);
+  --afriq-surface-dark: rgba(31,42,48,.92);
+  --afriq-text-dark: #FFFFFF;
+  --afriq-muted-dark: rgba(255,255,255,.78);
+  --afriq-border-dark: rgba(255,255,255,.12);
+  --afriq-bg-light: rgb(250,250,250);
+  --afriq-surface-light: #FFFFFF;
+  --afriq-text-light: #0F1519;
+  --afriq-muted-light: rgba(15,21,25,.72);
+  --afriq-border-light: rgba(15,21,25,.14);
+  --afriq-bg: var(--afriq-bg-dark);
+  --afriq-surface: var(--afriq-surface-dark);
+  --afriq-text: var(--afriq-text-dark);
+  --afriq-muted: var(--afriq-muted-dark);
+  --afriq-border: var(--afriq-border-dark);
 }
 
 /* Override theme/global palette to remove non-AfriQ blues sitewide */
@@ -11,29 +26,42 @@
 .elementor-kit-354{
   --e-global-color-primary: var(--afriq-lime) !important;
   --e-global-color-secondary: var(--afriq-charcoal) !important;
-  --e-global-color-text: #FFFFFF !important;
-  --e-global-color-background: var(--afriq-charcoal-deep) !important;
+  --e-global-color-text: var(--afriq-text) !important;
+  --e-global-color-background: var(--afriq-bg) !important;
   --e-global-color-astglobalcolor0: var(--afriq-lime) !important;
   --e-global-color-astglobalcolor1: var(--afriq-charcoal) !important;
   --e-global-color-astglobalcolor2: var(--afriq-charcoal-deep) !important;
   --e-global-color-astglobalcolor3: var(--afriq-charcoal) !important;
   --e-global-color-astglobalcolor4: var(--afriq-lime) !important;
   --e-global-color-astglobalcolor5: var(--afriq-green) !important;
-  --e-global-color-astglobalcolor6: #FFFFFF !important;
-  --e-global-color-astglobalcolor7: var(--afriq-charcoal-deep) !important;
+  --e-global-color-astglobalcolor6: var(--afriq-text) !important;
+  --e-global-color-astglobalcolor7: var(--afriq-bg) !important;
   --ast-global-color-0: var(--afriq-lime) !important;
   --ast-global-color-1: var(--afriq-charcoal) !important;
   --ast-global-color-2: var(--afriq-charcoal-deep) !important;
   --ast-global-color-3: var(--afriq-charcoal) !important;
   --ast-global-color-4: var(--afriq-lime) !important;
   --ast-global-color-5: var(--afriq-green) !important;
-  --ast-global-color-6: #FFFFFF !important;
-  --ast-global-color-7: var(--afriq-charcoal-deep) !important;
+  --ast-global-color-6: var(--afriq-text) !important;
+  --ast-global-color-7: var(--afriq-bg) !important;
+}
+
+@media (prefers-color-scheme: light){
+  :root,
+  .elementor-kit-354{
+    --afriq-bg: var(--afriq-bg-light);
+    --afriq-surface: var(--afriq-surface-light);
+    --afriq-text: var(--afriq-text-light);
+    --afriq-muted: var(--afriq-muted-light);
+    --afriq-border: var(--afriq-border-light);
+  }
 }
 
 body{
-  background: var(--afriq-charcoal-deep) !important;
+  background: var(--afriq-bg) !important;
   background-image: none !important;
+  color: var(--afriq-text) !important;
+  line-height: 1.5;
 }
 html,
 body{
@@ -43,6 +71,7 @@ body{
 html{
   text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  font-size: clamp(16px, 15px + 0.25vw, 18px);
 }
 
 :focus-visible{
@@ -195,7 +224,7 @@ canvas[data-afriq-webgl],
 .elementor-element-14ef515d,
 .elementor-element-7499a87d,
 .elementor-element-41a791fb{
-  color: #FFFFFF !important;
+  color: var(--afriq-text) !important;
 }
 .banner-video h1,
 .banner-video h2,
@@ -203,7 +232,7 @@ canvas[data-afriq-webgl],
 .banner-video h4,
 .banner-video p,
 .banner-video li{
-  color: #FFFFFF !important;
+  color: var(--afriq-text) !important;
   text-shadow: 0 12px 30px rgba(0,0,0,.55);
 }
 .elementor-element-14ef515d .elementor-heading-title,
@@ -211,14 +240,14 @@ canvas[data-afriq-webgl],
 .elementor-element-14ef515d .elementor-widget-text-editor p,
 .elementor-element-14ef515d .elementor-widget-text-editor span,
 .elementor-element-14ef515d .elementor-widget-text-editor li{
-  color: #FFFFFF !important;
+  color: var(--afriq-text) !important;
 }
 .elementor-element-7499a87d .elementor-heading-title,
 .elementor-element-7499a87d .elementor-widget-text-editor,
 .elementor-element-7499a87d .elementor-widget-text-editor p,
 .elementor-element-7499a87d .elementor-widget-text-editor span,
 .elementor-element-7499a87d .elementor-widget-text-editor li{
-  color: #FFFFFF !important;
+  color: var(--afriq-text) !important;
 }
 .elementor-element-14ef515d a,
 .elementor-element-7499a87d a{
@@ -233,7 +262,7 @@ canvas[data-afriq-webgl],
 [style*="rgba(26,34,40"],
 [style*="var(--afriq-charcoal-deep"],
 [style*="var(--afriq-charcoal"]{
-  color: #FFFFFF !important;
+  color: var(--afriq-text) !important;
 }
 .afriq-charcoal-tint h1,
 .afriq-charcoal-tint h2,
@@ -247,7 +276,7 @@ canvas[data-afriq-webgl],
 [style*="rgba(26,34,40"] h4,
 [style*="rgba(26,34,40"] p,
 [style*="rgba(26,34,40"] li{
-  color: #FFFFFF !important;
+  color: var(--afriq-text) !important;
   text-shadow: 0 10px 26px rgba(0,0,0,.55);
 }
 .afriq-charcoal-tint a,

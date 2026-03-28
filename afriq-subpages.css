@@ -12,8 +12,8 @@
 .afriq-page{
   min-height:100vh;
   min-height:100dvh;
-  background: var(--afriq-bg);
-  color: var(--afriq-text);
+  background: var(--afriq-bg, var(--afriq-charcoal-deep, #1F2A30));
+  color: var(--afriq-text, #FFFFFF);
   font-family: "Montserrat", system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
 }
 
@@ -22,6 +22,32 @@
 .afriq-page h3,
 .afriq-page h4{
   font-family: "Oswald", "Montserrat", system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+.afriq-page h1{
+  font-size: clamp(2.25rem, 4.8vw, 3.75rem);
+  line-height: 1.06;
+}
+.afriq-page h2{
+  font-size: clamp(1.75rem, 3.4vw, 3rem);
+  line-height: 1.12;
+}
+.afriq-page h3{
+  font-size: clamp(1.25rem, 2.3vw, 1.75rem);
+  line-height: 1.18;
+}
+.afriq-page p,
+.afriq-page li{
+  font-size: clamp(1rem, 0.96rem + 0.25vw, 1.125rem);
+  line-height: 1.5;
+}
+.afriq-section__lede,
+.afriq-card__text,
+.afriq-feature__text,
+.afriq-panel__text,
+.afriq-hero-card__subtitle,
+.afriq-rich p{
+  max-inline-size: 66ch;
 }
 
 .afriq-container{
