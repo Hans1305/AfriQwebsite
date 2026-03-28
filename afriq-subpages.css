@@ -322,17 +322,18 @@
   padding:56px 0;
 }
 .afriq-section__title{
-  font-size:34px;
+  font-size:clamp(1.75rem, 3.2vw, 2.4rem);
+  line-height:1.12;
   margin:0 0 18px;
   font-weight:950;
   letter-spacing:-0.02em;
 }
 .afriq-section__lede{
   margin:0 0 24px;
-  max-width:900px;
+  max-inline-size:66ch;
   color: var(--afriq-muted);
-  font-size:16px;
-  line-height:1.65;
+  font-size:clamp(0.95rem, 0.92rem + 0.25vw, 1.05rem);
+  line-height:1.6;
 }
 
 .afriq-grid{
@@ -342,28 +343,31 @@
 }
 .afriq-card{
   border:1px solid var(--afriq-border);
-  background: rgba(255,255,255,.06);
+  background: var(--afriq-surface);
   border-radius:16px;
   padding:18px 18px;
+  box-shadow: var(--afriq-shadow, 0 6px 18px rgba(0,0,0,.08));
+  transition: background-color .3s ease, color .3s ease, border-color .3s ease, box-shadow .3s ease, transform .18s ease;
 }
 .afriq-card--white{
-  background: #FFFFFF;
-  color: #2D3436;
-  border-color: rgba(45,52,54,.10);
+  background: var(--afriq-surface);
+  color: var(--afriq-text);
+  border-color: var(--afriq-border);
 }
 .afriq-card__title{
   margin:0 0 10px;
-  font-size:18px;
+  font-size:clamp(1.05rem, 0.98rem + 0.35vw, 1.25rem);
+  line-height:1.2;
   font-weight:950;
 }
 .afriq-card__text{
   margin:0;
-  color: rgba(255,255,255,.78);
-  font-size:14px;
-  line-height:1.65;
+  color: var(--afriq-muted);
+  font-size:clamp(0.875rem, 0.85rem + 0.2vw, 1rem);
+  line-height:1.6;
 }
 .afriq-card--white .afriq-card__text{
-  color: rgba(45,52,54,.78);
+  color: var(--afriq-muted);
 }
 .afriq-pill{
   display:inline-flex;
