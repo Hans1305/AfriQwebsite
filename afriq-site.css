@@ -2,9 +2,15 @@
   --afriq-charcoal-deep:#1A2228;
   --afriq-charcoal:#2D3436;
   --afriq-lime:#84CC16;
-  --afriq-green:#86E715;
+  --afriq-green:var(--afriq-lime);
   --afriq-lime-soft:rgba(132,204,22,0.15);
   --african-gold: var(--afriq-lime);
+  --afriq-deep-charcoal: var(--afriq-charcoal-deep);
+  --afriq-white: #FFFFFF;
+  --rgb-lime: 132, 204, 22;
+  --rgb-charcoal: 45, 52, 54;
+  --rgb-deep-charcoal: 26, 34, 40;
+  --rgb-white: 255, 255, 255;
 }
 
 /* Override theme/global palette to remove non-AfriQ blues sitewide */
@@ -49,6 +55,14 @@
 .elementor-widget-heading .elementor-heading-title::after,
 .elementor-widget-heading .elementor-heading-title::before{
   background-color: var(--afriq-lime) !important;
+}
+
+img[src*="Screen-Shot-2022-06-05-at-8.14.17-PM-1024x470"]{
+  display: none !important;
+  visibility: hidden !important;
+  width: 0 !important;
+  height: 0 !important;
+  opacity: 0 !important;
 }
 
 body{

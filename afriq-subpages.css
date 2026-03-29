@@ -1,12 +1,19 @@
 :root{
   --afriq-bg: var(--afriq-charcoal-deep, #1A2228);
-  --afriq-surface: #0F1519;
+  --afriq-surface: var(--afriq-charcoal-deep, #1A2228);
   --afriq-card: #FFFFFF;
   --afriq-text: #FFFFFF;
   --afriq-muted: rgba(255,255,255,.72);
   --afriq-border: rgba(255,255,255,.12);
   --afriq-lime: #84CC16;
   --african-gold: var(--afriq-lime);
+  --afriq-charcoal: #2D3436;
+  --afriq-deep-charcoal: #1A2228;
+  --afriq-white: #FFFFFF;
+  --rgb-lime: 132, 204, 22;
+  --rgb-charcoal: 45, 52, 54;
+  --rgb-deep-charcoal: 26, 34, 40;
+  --rgb-white: 255, 255, 255;
 }
 
 .elementor-icon i,
@@ -20,6 +27,14 @@
 .elementor-divider-separator{
   border-color: var(--afriq-lime) !important;
   border-top-color: var(--afriq-lime) !important;
+}
+
+img[src*="Screen-Shot-2022-06-05-at-8.14.17-PM-1024x470"]{
+  display: none !important;
+  visibility: hidden !important;
+  width: 0 !important;
+  height: 0 !important;
+  opacity: 0 !important;
 }
 
 .afriq-page{
@@ -83,7 +98,7 @@
   text-transform:none;
 }
 .afriq-nav a:hover{
-  color: var(--afriq-lime, #B1FF09);
+  color: var(--afriq-lime);
 }
 
 .afriq-hero{
@@ -91,7 +106,7 @@
   border-bottom:1px solid var(--afriq-border);
 }
 .afriq-hero__kicker{
-  color: var(--afriq-lime, #B1FF09);
+  color: var(--afriq-lime);
   font-weight:900;
   letter-spacing:.08em;
   text-transform:uppercase;
@@ -121,7 +136,7 @@
   text-decoration:none;
 }
 .afriq-hero__crumbs a:hover{
-  color: var(--afriq-lime, #B1FF09);
+  color: var(--afriq-lime);
 }
 
 .afriq-section{
@@ -186,7 +201,7 @@
   width:10px;
   height:10px;
   border-radius:3px;
-  background: var(--afriq-lime, #B1FF09);
+  background: var(--afriq-lime);
 }
 
 .afriq-cta{
@@ -196,9 +211,9 @@
   gap:18px;
   padding:22px;
   border-radius:18px;
-  border:1px solid rgba(177,255,9,.28);
+  border:1px solid rgba(132,204,22,.28);
   background:
-    radial-gradient(900px 260px at 10% 10%, rgba(177,255,9,.24), transparent 60%),
+    radial-gradient(900px 260px at 10% 10%, rgba(132,204,22,.24), transparent 60%),
     rgba(255,255,255,.05);
 }
 .afriq-cta__title{
@@ -218,7 +233,7 @@
   justify-content:center;
   padding:12px 22px;
   border-radius:12px;
-  background: var(--afriq-lime, #B1FF09);
+  background: var(--afriq-lime);
   color:#1A2228;
   text-decoration:none;
   font-weight:950;
@@ -227,23 +242,23 @@
   white-space:nowrap;
 }
 .afriq-btn:hover{
-  background: var(--afriq-green, #86E715);
+  background: var(--afriq-lime);
 }
 
 .afriq-btn--outline{
   background: transparent;
-  color: var(--afriq-lime, #B1FF09);
-  border: 2px solid rgba(177,255,9,.55);
+  color: var(--afriq-lime);
+  border: 2px solid rgba(132,204,22,.55);
 }
 .afriq-btn--outline:hover{
-  background: rgba(177,255,9,.14);
+  background: rgba(132,204,22,.14);
 }
 
 .afriq-hero-card{
   border-radius:18px;
   background: #FFFFFF;
   border:1px solid rgba(45,52,54,.10);
-  box-shadow: 0 18px 48px rgba(0,0,0,.22);
+  box-shadow: 0 18px 48px rgba(26,34,40,.22);
   overflow:hidden;
 }
 .afriq-hero-card__grid{
@@ -259,9 +274,9 @@
   position:relative;
   padding:22px;
   background:
-    radial-gradient(520px 280px at 30% 20%, rgba(177,255,9,.22), transparent 60%),
-    radial-gradient(520px 280px at 70% 80%, rgba(134,231,21,.18), transparent 60%),
-    #10171B;
+    radial-gradient(520px 280px at 30% 20%, rgba(132,204,22,.22), transparent 60%),
+    radial-gradient(520px 280px at 70% 80%, rgba(132,204,22,.18), transparent 60%),
+    #1A2228;
 }
 .afriq-hero-card__kicker{
   display:inline-flex;
@@ -278,7 +293,7 @@
   width:10px;
   height:10px;
   border-radius:3px;
-  background: var(--afriq-lime, #B1FF09);
+  background: var(--afriq-lime);
 }
 .afriq-hero-card__title{
   margin:14px 0 12px;
@@ -307,8 +322,8 @@
   border:1px solid rgba(255,255,255,.14);
   background:
     linear-gradient(135deg, rgba(255,255,255,.08), rgba(255,255,255,0)),
-    linear-gradient(0deg, rgba(0,0,0,.18), rgba(0,0,0,.18)),
-    repeating-linear-gradient(135deg, rgba(177,255,9,.22) 0 14px, rgba(255,255,255,.04) 14px 28px);
+    linear-gradient(0deg, rgba(26,34,40,.18), rgba(26,34,40,.18)),
+    repeating-linear-gradient(135deg, rgba(132,204,22,.22) 0 14px, rgba(255,255,255,.04) 14px 28px);
 }
 
 .afriq-video{
@@ -318,7 +333,7 @@
   border-radius:16px;
   border:1px solid rgba(255,255,255,.14);
   object-fit: cover;
-  background: #0F1519;
+  background: #1A2228;
   display:block;
 }
 .afriq-surface{
@@ -335,7 +350,7 @@
 .afriq-accent-line{
   height:4px;
   width:92px;
-  background: var(--afriq-lime, #B1FF09);
+  background: var(--afriq-lime);
   border-radius:999px;
   margin:0 0 18px;
 }
@@ -346,16 +361,16 @@
   font-size:14px;
 }
 .afriq-rich a{
-  color: var(--afriq-lime, #B1FF09);
+  color: var(--afriq-lime);
   text-decoration:none;
   font-weight:900;
 }
 .afriq-rich a:hover{
-  color: var(--afriq-green, #86E715);
+  color: var(--afriq-lime);
 }
 
 .afriq-em{
-  color: var(--afriq-lime, #B1FF09);
+  color: var(--afriq-lime);
   font-weight:900;
 }
 
@@ -379,7 +394,7 @@
   padding:0 0 18px;
 }
 .afriq-strip__band{
-  background: #0E161A;
+  background: #1A2228;
   border-top:1px solid var(--afriq-border);
   border-bottom:1px solid var(--afriq-border);
   padding:26px 0;
@@ -405,8 +420,8 @@
   border:1px solid rgba(255,255,255,.12);
   background:
     linear-gradient(135deg, rgba(255,255,255,.08), rgba(255,255,255,0)),
-    linear-gradient(0deg, rgba(0,0,0,.18), rgba(0,0,0,.18)),
-    repeating-linear-gradient(135deg, rgba(177,255,9,.18) 0 14px, rgba(255,255,255,.03) 14px 28px);
+    linear-gradient(0deg, rgba(26,34,40,.18), rgba(26,34,40,.18)),
+    repeating-linear-gradient(135deg, rgba(132,204,22,.18) 0 14px, rgba(255,255,255,.03) 14px 28px);
   aspect-ratio: 16 / 9;
 }
 .afriq-case-study__title{
@@ -419,7 +434,7 @@
   display:inline-flex;
   align-items:center;
   gap:10px;
-  color: var(--afriq-lime, #B1FF09);
+  color: var(--afriq-lime);
   text-decoration:none;
   font-weight:950;
   letter-spacing:.06em;
@@ -427,7 +442,7 @@
   font-size:12px;
 }
 .afriq-case-study__link:hover{
-  color: var(--afriq-green, #86E715);
+  color: var(--afriq-lime);
 }
 .afriq-case-study__link:after{
   content:"";
@@ -482,9 +497,9 @@
   height:72px;
   border-radius:999px;
   background:
-    radial-gradient(circle at 30% 25%, rgba(177,255,9,.30), transparent 55%),
-    radial-gradient(circle at 70% 80%, rgba(134,231,21,.22), transparent 60%),
-    #11181C;
+    radial-gradient(circle at 30% 25%, rgba(132,204,22,.30), transparent 55%),
+    radial-gradient(circle at 70% 80%, rgba(132,204,22,.22), transparent 60%),
+    #1A2228;
   border:1px solid rgba(45,52,54,.12);
 }
 .afriq-testimonials__person{
@@ -517,14 +532,14 @@
   background: rgba(45,52,54,.18);
 }
 .afriq-dot--active{
-  background: var(--afriq-lime, #B1FF09);
+  background: var(--afriq-lime);
 }
 
 .afriq-panel{
   padding:64px 0;
   background:
-    radial-gradient(820px 360px at 70% 30%, rgba(177,255,9,.12), transparent 60%),
-    radial-gradient(820px 360px at 20% 80%, rgba(134,231,21,.10), transparent 60%),
+    radial-gradient(820px 360px at 70% 30%, rgba(132,204,22,.12), transparent 60%),
+    radial-gradient(820px 360px at 20% 80%, rgba(132,204,22,.10), transparent 60%),
     repeating-linear-gradient(135deg, rgba(255,255,255,.03) 0 18px, rgba(255,255,255,0) 18px 36px),
     var(--afriq-surface);
   border-top:1px solid var(--afriq-border);
@@ -564,7 +579,7 @@
   border:1px solid rgba(255,255,255,.12);
   background:
     linear-gradient(135deg, rgba(255,255,255,.08), rgba(255,255,255,0)),
-    repeating-linear-gradient(135deg, rgba(177,255,9,.18) 0 16px, rgba(255,255,255,.03) 16px 32px);
+    repeating-linear-gradient(135deg, rgba(132,204,22,.18) 0 16px, rgba(255,255,255,.03) 16px 32px);
   aspect-ratio: 4 / 3;
 }
 .afriq-feature__title{
@@ -587,7 +602,7 @@
 }
 
 .afriq-benefits{
-  background: #0E161A;
+  background: #1A2228;
   border-top:1px solid var(--afriq-border);
   border-bottom:1px solid var(--afriq-border);
 }
@@ -651,8 +666,8 @@
   justify-content:center;
   padding:12px 20px;
   border-radius:12px;
-  border:2px solid rgba(177,255,9,.55);
-  color: var(--afriq-lime, #B1FF09);
+  border:2px solid rgba(132,204,22,.55);
+  color: var(--afriq-lime);
   font-weight:950;
   letter-spacing:.08em;
   text-transform:uppercase;
@@ -660,9 +675,9 @@
   width:max-content;
 }
 .afriq-course__cta:hover{
-  background: rgba(177,255,9,.10);
-  color: var(--afriq-green, #86E715);
-  border-color: rgba(134,231,21,.60);
+  background: rgba(132,204,22,.10);
+  color: var(--afriq-lime);
+  border-color: rgba(132,204,22,.60);
 }
 
 .afriq-faq__title{
@@ -734,8 +749,8 @@
   aspect-ratio: 16 / 9;
   background:
     linear-gradient(135deg, rgba(45,52,54,.10), rgba(45,52,54,0)),
-    repeating-linear-gradient(135deg, rgba(177,255,9,.18) 0 16px, rgba(45,52,54,.04) 16px 32px),
-    #0F1519;
+    repeating-linear-gradient(135deg, rgba(132,204,22,.18) 0 16px, rgba(45,52,54,.04) 16px 32px),
+    #1A2228;
 }
 .afriq-learn__content{
   padding:22px;
@@ -758,7 +773,7 @@
   justify-content:center;
   padding:12px 18px;
   border-radius:12px;
-  background: var(--afriq-lime, #B1FF09);
+  background: var(--afriq-lime);
   color:#1A2228;
   font-weight:950;
   text-decoration:none;
@@ -768,7 +783,7 @@
   width:max-content;
 }
 .afriq-learn__cta:hover{
-  background: var(--afriq-green, #86E715);
+  background: var(--afriq-lime);
 }
 .afriq-learn__grid .afriq-learn__card--full{
   grid-column: span 2;
@@ -776,7 +791,7 @@
 }
 
 .afriq-schedule{
-  background: #0E161A;
+  background: #1A2228;
   border-top:1px solid var(--afriq-border);
   border-bottom:1px solid var(--afriq-border);
   padding:26px 0;
@@ -797,7 +812,7 @@
 }
 
 .afriq-prefooter{
-  background: #0B1418;
+  background: #1A2228;
   border-top:1px solid var(--afriq-border);
   padding:40px 0;
 }
@@ -807,7 +822,7 @@
   letter-spacing:.10em;
   text-transform:uppercase;
   font-weight:950;
-  color: var(--afriq-lime, #B1FF09);
+  color: var(--afriq-lime);
 }
 .afriq-form{
   display:flex;
@@ -855,7 +870,7 @@
   font-size:13px;
 }
 .afriq-prefooter a:hover{
-  color: var(--afriq-lime, #B1FF09);
+  color: var(--afriq-lime);
 }
 .afriq-prefooter__sales{
   margin-top:18px;
@@ -863,7 +878,7 @@
   font-weight:900;
 }
 .afriq-prefooter__sales a{
-  color: var(--afriq-lime, #B1FF09);
+  color: var(--afriq-lime);
 }
 
 .afriq-footer{
