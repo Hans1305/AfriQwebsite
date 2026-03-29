@@ -287,3 +287,15 @@ p,li{ font-size: var(--body-size); line-height: 1.55; }
   outline: 3px solid var(--african-gold);
   outline-offset: 2px;
 }
+
+img[src*="wp-content/uploads/2024/07/L_lime.svg"]{
+  width: 82px;
+  height: auto;
+  max-width: 100%;
+}
+img[src*="wp-content/uploads/2024/07/L_lime.svg"][width="68"]{
+  width: 82px;
+}
+img[src*="wp-content/uploads/2024/07/L_lime.svg"][width="34"]{
+  width: 44px;
+}
