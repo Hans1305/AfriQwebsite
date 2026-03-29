@@ -350,6 +350,14 @@ img[src*="wp-content/uploads/2024/07/L_lime.svg"][width="34"]{
   width: 56px;
 }
 
+img.wp-image-5521,
+img[src*="L_lime.svg"]{
+  width: 68px !important;
+  height: auto !important;
+  max-width: none !important;
+  display: inline-block;
+}
+
 .be-ix-link-block,
 .elementor-element-6b96c53c{
   background: var(--primary-green);
