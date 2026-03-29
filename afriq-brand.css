@@ -366,6 +366,23 @@ img[src*="L_lime.svg"]:hover{
   filter: drop-shadow(0 16px 32px rgba(212, 175, 55, 0.8)) !important;
 }
 
+.elementor-widget-image img[src*="L_lime.svg"],
+.elementor-image img[src*="L_lime.svg"],
+.elementor-container img[src*="L_lime.svg"]{
+  width: clamp(150px, 20vw, 300px) !important;
+  height: auto !important;
+  max-width: none !important;
+  display: block !important;
+  margin: 3rem auto !important;
+  filter: drop-shadow(0 12px 24px rgba(212, 175, 55, 0.5)) !important;
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), filter 0.4s ease !important;
+}
+.elementor-widget-image img[src*="L_lime.svg"]:hover,
+.elementor-image img[src*="L_lime.svg"]:hover{
+  transform: scale(1.05) translateY(-5px) !important;
+  filter: drop-shadow(0 16px 32px rgba(212, 175, 55, 0.8)) !important;
+}
+
 .be-ix-link-block,
 .elementor-element-6b96c53c{
   background: var(--primary-green);
