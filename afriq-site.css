@@ -1,18 +1,4 @@
-:root{
-  --afriq-charcoal:#36454F;
-  --afriq-charcoal-deep:#1F2A30;
-  --afriq-lime:#D8FF00;
-  --afriq-green:#B1FF09;
-  --afriq-lime-soft:#E7FF7A;
-  --afriq-shadow: 0 6px 18px rgba(0,0,0,.08);
-  --afriq-shadow-strong: 0 18px 48px rgba(0,0,0,.18);
-
-  --afriq-bg: var(--afriq-charcoal);
-  --afriq-surface: rgba(255,255,255,.08);
-  --afriq-text: #FFFFFF;
-  --afriq-muted: rgba(255,255,255,.78);
-  --afriq-border: rgba(255,255,255,.14);
-}
+@import url("afriq-brand.css?v=1");
 
 /* Override theme/global palette to remove non-AfriQ blues sitewide */
 :root,
@@ -59,7 +45,7 @@ html{
 }
 
 :focus-visible{
-  outline: 3px solid var(--afriq-lime);
+  outline: 3px solid var(--afriq-accent, var(--afriq-lime));
   outline-offset: 3px;
 }
 
@@ -207,7 +193,7 @@ canvas[data-afriq-webgl],
 .elementor-element-14ef515d,
 .elementor-element-7499a87d,
 .elementor-element-41a791fb{
-  color: var(--afriq-text) !important;
+  color: var(--afriq-on-dark, #FFFFFF) !important;
 }
 .banner-video{
   color: #FFFFFF !important;
@@ -250,14 +236,14 @@ canvas[data-afriq-webgl],
 .elementor-element-14ef515d .elementor-widget-text-editor p,
 .elementor-element-14ef515d .elementor-widget-text-editor span,
 .elementor-element-14ef515d .elementor-widget-text-editor li{
-  color: var(--afriq-text) !important;
+  color: var(--afriq-on-dark, #FFFFFF) !important;
 }
 .elementor-element-7499a87d .elementor-heading-title,
 .elementor-element-7499a87d .elementor-widget-text-editor,
 .elementor-element-7499a87d .elementor-widget-text-editor p,
 .elementor-element-7499a87d .elementor-widget-text-editor span,
 .elementor-element-7499a87d .elementor-widget-text-editor li{
-  color: var(--afriq-text) !important;
+  color: var(--afriq-on-dark, #FFFFFF) !important;
 }
 .elementor-element-14ef515d a,
 .elementor-element-7499a87d a{
@@ -272,7 +258,7 @@ canvas[data-afriq-webgl],
 [style*="rgba(26,34,40"],
 [style*="var(--afriq-charcoal-deep"],
 [style*="var(--afriq-charcoal"]{
-  color: var(--afriq-text) !important;
+  color: var(--afriq-on-dark, #FFFFFF) !important;
 }
 .afriq-charcoal-tint h1,
 .afriq-charcoal-tint h2,
@@ -286,7 +272,7 @@ canvas[data-afriq-webgl],
 [style*="rgba(26,34,40"] h4,
 [style*="rgba(26,34,40"] p,
 [style*="rgba(26,34,40"] li{
-  color: var(--afriq-text) !important;
+  color: var(--afriq-on-dark, #FFFFFF) !important;
   text-shadow: 0 10px 26px rgba(0,0,0,.55);
 }
 .afriq-charcoal-tint a,
