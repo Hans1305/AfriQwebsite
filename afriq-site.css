@@ -106,12 +106,51 @@ body{
   background-image: none !important;
 }
 
+.elementor-element-7499a87d .elementor-image-box-title,
+.elementor-element-3db1c763 .elementor-image-box-title{
+  color: var(--afriq-lime) !important;
+}
+
+.elementor-element-14ef515d .elementor-heading-title{
+  color: var(--afriq-lime) !important;
+}
+
+.elementor-element-636ec9a .elementor-heading-title{
+  color: var(--afriq-lime) !important;
+}
+.elementor-element-636ec9a .elementor-counter-number,
+.elementor-element-636ec9a .elementor-counter-number-suffix,
+.elementor-element-636ec9a .elementor-counter-number-prefix{
+  color: var(--afriq-lime) !important;
+}
+
+.elementor-element-67157c12 .elementor-heading-title{
+  color: var(--afriq-lime) !important;
+}
+
 .elementor-element-407efb4d .elementor-heading-title,
 .elementor-element-407efb4d,
 .elementor-element-407efb4d a,
 .elementor-element-407efb4d p,
 .elementor-element-407efb4d li,
 .elementor-element-407efb4d span{
+  color: var(--afriq-lime) !important;
+}
+
+.elementor-element-6d0314b1,
+.elementor-element-6d0314b1 .uael-nav-menu,
+.elementor-element-6d0314b1 .uael-nav-menu a,
+.elementor-element-6d0314b1 .uael-menu-item{
+  color: var(--afriq-lime) !important;
+}
+
+.elementor-element-01b9e5b .hfe-copyright-wrapper,
+.elementor-element-01b9e5b .hfe-copyright-wrapper span{
+  color: var(--afriq-lime) !important;
+}
+
+.edac-accessibility-statement,
+.edac-accessibility-statement *{
   color: var(--afriq-lime) !important;
 }
 
@@ -276,4 +315,134 @@ a.btn{
 }
 .elementor-element-7c1a1a0 .elementor-heading-title{
   color: var(--afriq-lime) !important;
+}
+
+.afriq-career{
+  background: #FFFFFF;
+  color: var(--afriq-charcoal);
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+.afriq-career__container{
+  width: min(1200px, calc(100% - 48px));
+  margin: 0 auto;
+}
+.afriq-career__hero{
+  background: var(--afriq-charcoal-deep);
+  color: #FFFFFF;
+  padding: clamp(56px, 8vw, 96px) 0;
+}
+.afriq-career__q{
+  width: clamp(120px, 18vw, 200px);
+  height: auto;
+  display: block;
+  margin: 0 0 22px;
+  filter: drop-shadow(0 18px 36px rgba(132,204,22,.35));
+}
+.afriq-career__hero-title{
+  font-family: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: clamp(2.25rem, 5vw, 3.5rem);
+  line-height: 1.05;
+  margin: 0 0 14px;
+  color: #FFFFFF;
+}
+.afriq-career__hero-lead{
+  margin: 0;
+  max-width: 70ch;
+  line-height: 1.7;
+  color: rgba(255,255,255,.86);
+  font-size: clamp(1rem, 1rem + 0.4vw, 1.15rem);
+}
+.afriq-career__actions{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 22px;
+}
+.afriq-career__btn{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 12px clamp(14px, 2vw, 22px);
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 900;
+  letter-spacing: 0.02em;
+  font-family: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+.afriq-career__btn--primary{
+  background: var(--afriq-lime);
+  color: var(--afriq-charcoal);
+  border: 2px solid var(--afriq-lime);
+}
+.afriq-career__btn--primary:hover{
+  background: #FFFFFF;
+  color: var(--afriq-lime);
+}
+.afriq-career__btn--secondary{
+  background: transparent;
+  color: #FFFFFF;
+  border: 2px solid rgba(255,255,255,.28);
+}
+.afriq-career__btn--secondary:hover{
+  border-color: var(--afriq-lime);
+  color: var(--afriq-lime);
+}
+.afriq-career__section{
+  padding: clamp(42px, 6vw, 72px) 0;
+}
+.afriq-career__section--alt{
+  background: rgba(45,52,54,.04);
+}
+.afriq-career__heading{
+  font-family: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: var(--afriq-lime);
+  margin: 0 0 14px;
+  font-size: clamp(1.5rem, 2.2vw, 2rem);
+  line-height: 1.15;
+}
+.afriq-career__copy{
+  margin: 0;
+  max-width: 70ch;
+  line-height: 1.7;
+  color: var(--afriq-charcoal);
+}
+.afriq-career__grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 18px;
+  margin-top: 22px;
+}
+.afriq-career__card{
+  background: #FFFFFF;
+  border: 1px solid rgba(45,52,54,.12);
+  border-radius: 16px;
+  padding: 18px;
+  box-shadow: 0 18px 48px rgba(26,34,40,.18);
+}
+.afriq-career__card-title{
+  margin: 0 0 8px;
+  font-family: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: var(--afriq-lime);
+  font-size: 1.15rem;
+  line-height: 1.2;
+}
+.afriq-career__card-copy{
+  margin: 0;
+  max-width: 70ch;
+  line-height: 1.7;
+  color: var(--afriq-charcoal);
+}
+.afriq-career__cta{
+  margin-top: 28px;
+  padding: 22px;
+  border-radius: 16px;
+  background: var(--afriq-charcoal-deep);
+  color: #FFFFFF;
+}
+.afriq-career__cta .afriq-career__copy{
+  color: rgba(255,255,255,.86);
+}
+.afriq-career__cta .afriq-career__heading{
+  color: var(--afriq-lime);
 }
