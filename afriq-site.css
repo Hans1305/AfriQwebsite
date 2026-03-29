@@ -1,9 +1,10 @@
 :root{
   --afriq-charcoal-deep:#1A2228;
   --afriq-charcoal:#2D3436;
-  --afriq-lime:#B1FF09;
+  --afriq-lime:#84CC16;
   --afriq-green:#86E715;
-  --afriq-lime-soft:#D9FF66;
+  --afriq-lime-soft:rgba(132,204,22,0.15);
+  --african-gold: var(--afriq-lime);
 }
 
 /* Override theme/global palette to remove non-AfriQ blues sitewide */
@@ -13,6 +14,7 @@
   --e-global-color-secondary: var(--afriq-charcoal) !important;
   --e-global-color-text: #FFFFFF !important;
   --e-global-color-background: var(--afriq-charcoal-deep) !important;
+  --e-global-color-accent: var(--afriq-lime) !important;
   --e-global-color-astglobalcolor0: var(--afriq-lime) !important;
   --e-global-color-astglobalcolor1: var(--afriq-charcoal) !important;
   --e-global-color-astglobalcolor2: var(--afriq-charcoal-deep) !important;
@@ -29,6 +31,24 @@
   --ast-global-color-5: var(--afriq-green) !important;
   --ast-global-color-6: #FFFFFF !important;
   --ast-global-color-7: var(--afriq-charcoal-deep) !important;
+}
+
+.elementor-icon i,
+.elementor-icon svg,
+.elementor-widget-icon-list-icon i,
+.elementor-widget-icon-list-icon svg{
+  color: var(--afriq-lime) !important;
+  fill: var(--afriq-lime) !important;
+}
+
+.elementor-divider-separator{
+  border-color: var(--afriq-lime) !important;
+  border-top-color: var(--afriq-lime) !important;
+}
+
+.elementor-widget-heading .elementor-heading-title::after,
+.elementor-widget-heading .elementor-heading-title::before{
+  background-color: var(--afriq-lime) !important;
 }
 
 body{

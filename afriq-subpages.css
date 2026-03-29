@@ -5,6 +5,21 @@
   --afriq-text: #FFFFFF;
   --afriq-muted: rgba(255,255,255,.72);
   --afriq-border: rgba(255,255,255,.12);
+  --afriq-lime: #84CC16;
+  --african-gold: var(--afriq-lime);
+}
+
+.elementor-icon i,
+.elementor-icon svg,
+.elementor-widget-icon-list-icon i,
+.elementor-widget-icon-list-icon svg{
+  color: var(--afriq-lime) !important;
+  fill: var(--afriq-lime) !important;
+}
+
+.elementor-divider-separator{
+  border-color: var(--afriq-lime) !important;
+  border-top-color: var(--afriq-lime) !important;
 }
 
 .afriq-page{
