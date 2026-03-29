@@ -122,6 +122,23 @@ p,li{ font-size: var(--body-size); line-height: 1.55; }
   box-shadow: var(--afriq-shadow);
 }
 
+.hfe-nav-menu a.hfe-menu-item{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: var(--touch-target);
+  padding: clamp(0.5rem, 0.45rem + 0.35vw, 0.75rem) clamp(0.75rem, 0.7rem + 0.5vw, 1rem);
+  border-radius: 999px;
+  text-decoration: none;
+}
+.hfe-nav-menu a.hfe-menu-item:focus-visible{
+  outline: 3px solid var(--afriq-accent);
+  outline-offset: 3px;
+}
+.hfe-nav-menu a.hfe-menu-item:hover{
+  color: var(--afriq-accent);
+}
+
 .afriq-btn{
   display: inline-flex;
   align-items: center;
@@ -159,6 +176,14 @@ p,li{ font-size: var(--body-size); line-height: 1.55; }
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   padding: 1rem;
+}
+
+.artisan-card{
+  background: var(--afriq-surface);
+  color: var(--afriq-text);
+  border: 1px solid var(--afriq-border);
+  border-radius: var(--afriq-radius);
+  box-shadow: var(--afriq-shadow);
 }
 
 .btn-primary{
