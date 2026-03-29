@@ -89,6 +89,63 @@ body p{
   max-inline-size: 70ch;
 }
 
+.elementor-widget-call-to-action .elementor-cta{
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: var(--afriq-shadow-strong);
+}
+
+.elementor-widget-call-to-action .elementor-cta__content{
+  background: var(--card-bg, var(--afriq-surface));
+  color: var(--text-color, var(--afriq-text));
+  padding: clamp(1rem, 0.9rem + 0.8vw, 1.5rem);
+  border-left: 4px solid var(--afriq-accent);
+}
+
+.elementor-widget-call-to-action .elementor-cta__title{
+  color: var(--primary-green, var(--afriq-primary));
+  font-family: var(--font-heading);
+  font-weight: 900;
+  margin-bottom: 0.5rem;
+}
+
+.elementor-cta__description{
+  line-height: 1.6;
+  text-align: left;
+  max-inline-size: 70ch;
+  color: var(--text-color, var(--afriq-text));
+}
+
+.elementor-cta__description br{
+  display: block;
+  margin: 0.55rem 0;
+  content: "";
+}
+
+@media (max-width: 767px){
+  .elementor-cta__description{
+    text-align: left;
+    margin-inline: auto;
+  }
+}
+
+.elementor-widget-call-to-action .elementor-cta__button{
+  background: var(--burnt-orange);
+  color: #FFFFFF;
+  border-radius: 999px;
+  padding: 0.75rem 1.25rem;
+  min-height: var(--touch-target);
+  font-family: var(--font-heading);
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  box-shadow: var(--afriq-shadow);
+}
+
+.elementor-widget-call-to-action .elementor-cta__button:hover{
+  background: color-mix(in srgb, var(--burnt-orange), #000 10%);
+}
+
 :focus-visible{
   outline: 3px solid var(--afriq-accent);
   outline-offset: 2px;
