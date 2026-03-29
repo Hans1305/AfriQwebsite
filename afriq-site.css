@@ -57,6 +57,16 @@
   background-color: var(--afriq-lime) !important;
 }
 
+.elementor-heading-title,
+.elementor-widget-heading .elementor-heading-title,
+h2.elementor-heading-title{
+  color: var(--afriq-lime) !important;
+}
+
+.elementor-element-720f7902 .elementor-heading-title{
+  color: #FFFFFF !important;
+}
+
 img[src*="Screen-Shot-2022-06-05-at-8.14.17-PM-1024x470"]{
   display: none !important;
   visibility: hidden !important;
