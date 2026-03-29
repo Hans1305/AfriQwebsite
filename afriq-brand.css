@@ -352,10 +352,18 @@ img[src*="wp-content/uploads/2024/07/L_lime.svg"][width="34"]{
 
 img.wp-image-5521,
 img[src*="L_lime.svg"]{
-  width: 68px !important;
+  width: 136px !important;
   height: auto !important;
   max-width: none !important;
   display: inline-block;
+  margin: 1rem 0;
+  filter: drop-shadow(0 4px 8px rgba(212, 175, 55, 0.4)) !important;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+img.wp-image-5521:hover,
+img[src*="L_lime.svg"]:hover{
+  transform: translateY(-4px);
+  filter: drop-shadow(0 8px 16px rgba(212, 175, 55, 0.6)) !important;
 }
 
 .be-ix-link-block,
