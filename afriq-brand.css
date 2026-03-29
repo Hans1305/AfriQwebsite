@@ -110,16 +110,17 @@ body p{
 }
 
 .elementor-cta__description{
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
   line-height: 1.6;
   text-align: left;
   max-inline-size: 70ch;
   color: var(--text-color, var(--afriq-text));
 }
 
-.elementor-cta__description br{
+.elementor-cta__description .afriq-cta-line{
   display: block;
-  margin: 0.55rem 0;
-  content: "";
 }
 
 @media (max-width: 767px){
