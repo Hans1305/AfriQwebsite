@@ -211,13 +211,14 @@ p,li{ font-size: var(--body-size); line-height: 1.55; }
 .hfe-nav-menu a.hfe-menu-item{
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   min-height: var(--touch-target);
   padding: 0.75rem clamp(1rem, 2vw, 2rem);
   font-family: var(--font-heading);
   color: var(--primary-green) !important;
   text-decoration: none;
   border-radius: 999px;
-  transition: color .3s ease;
+  transition: all 0.3s ease;
 }
 .hfe-menu-item:focus-visible,
 .hfe-nav-menu a.hfe-menu-item:focus-visible{
@@ -227,6 +228,38 @@ p,li{ font-size: var(--body-size); line-height: 1.55; }
 .hfe-menu-item:hover,
 .hfe-nav-menu a.hfe-menu-item:hover{
   color: var(--burnt-orange) !important;
+  background-color: rgba(212, 175, 55, 0.1);
+  border-radius: 4px;
+}
+
+.afriq-bullet{
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  background: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border-left: 4px solid var(--african-gold);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  max-width: 70ch;
+  margin: 1.5rem auto;
+  font-family: var(--font-body);
+  line-height: 1.7;
+}
+.afriq-bullet strong{
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  color: var(--primary-green);
+  margin-bottom: 0.25rem;
+}
+.lime-dot{
+  width: 12px;
+  height: 12px;
+  background-color: var(--african-gold) !important;
+  border-radius: 50%;
+  margin-top: 0.5rem;
+  flex-shrink: 0;
 }
 
 .afriq-btn{
@@ -384,4 +417,79 @@ img[src*="wp-content/uploads/2024/07/L_lime.svg"][width="34"]{
 .elementor-element-6b96c53c a.elementor-social-icon:hover{
   border-color: var(--african-gold);
   color: var(--african-gold);
+}
+
+.site-footer,
+footer.elementor-location-footer,
+footer#colophon,
+footer.afriq-footer,
+footer.footer{
+  background-color: var(--primary-green, #2e4d32);
+  color: #f9f9f9;
+  padding: clamp(2rem, 5vw, 4rem) 1rem;
+  font-family: var(--font-main, "Inter", system-ui, sans-serif);
+  border-top: 4px solid var(--african-gold, #d4af37);
+}
+
+.site-footer h2,
+.site-footer h3,
+.site-footer h4,
+.footer-widget-title,
+footer.elementor-location-footer h2,
+footer.elementor-location-footer h3,
+footer.elementor-location-footer h4,
+footer#colophon h2,
+footer#colophon h3,
+footer#colophon h4,
+footer.afriq-footer h2,
+footer.afriq-footer h3,
+footer.afriq-footer h4,
+footer.footer h2,
+footer.footer h3,
+footer.footer h4{
+  font-family: var(--font-heading, "Montserrat", system-ui, sans-serif);
+  color: var(--african-gold, #d4af37);
+  margin-bottom: 1.25rem;
+  font-size: 1.25rem;
+}
+
+.site-footer .footer-widgets,
+.site-footer .footer-widgets-wrap{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.site-footer a,
+footer.elementor-location-footer a,
+footer#colophon a,
+footer.afriq-footer a,
+footer.footer a{
+  color: #f9f9f9;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding-right: 1rem;
+  transition: color 0.3s ease;
+}
+
+.site-footer a:hover,
+footer.elementor-location-footer a:hover,
+footer#colophon a:hover,
+footer.afriq-footer a:hover,
+footer.footer a:hover{
+  color: var(--african-gold, #d4af37);
+}
+
+.site-footer a:focus-visible,
+footer.elementor-location-footer a:focus-visible,
+footer#colophon a:focus-visible,
+footer.afriq-footer a:focus-visible,
+footer.footer a:focus-visible{
+  outline: 2px solid var(--african-gold, #d4af37);
+  outline-offset: 4px;
+  border-radius: 4px;
 }

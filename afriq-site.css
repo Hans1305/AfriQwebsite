@@ -1,4 +1,4 @@
-@import url("afriq-brand.css?v=3");
+@import url("afriq-brand.css?v=4");
 
 /* Override theme/global palette to remove non-AfriQ blues sitewide */
 :root,
@@ -169,11 +169,11 @@ canvas[data-afriq-webgl],
 }
 
 body.page-id-6 .elementor-element-3c22a0e .elementor-widget-text-editor .elementor-widget-container{
-  background: var(--card-bg, var(--afriq-surface)) !important;
-  border: 1px solid var(--afriq-border) !important;
-  border-radius: 18px !important;
-  box-shadow: var(--afriq-shadow, 0 6px 18px rgba(0,0,0,.08));
-  padding: 18px 18px !important;
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  padding: 0 !important;
 }
 body.page-id-6 .elementor-element-3c22a0e .elementor-widget-text-editor p{
   display: grid;
@@ -204,9 +204,6 @@ body.page-id-6 .elementor-element-3c22a0e .lime-dot{
 }
 
 body.page-id-6 .elementor-element-3c22a0e p.afriq-bullet{
-  display: flex !important;
-  align-items: flex-start !important;
-  gap: 0.75rem !important;
   max-inline-size: 70ch;
 }
 body.page-id-6 .elementor-element-3c22a0e p.afriq-bullet .afriq-bullet__text{
