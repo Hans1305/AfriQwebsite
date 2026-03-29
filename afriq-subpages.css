@@ -1,56 +1,24 @@
 :root{
-  --primary-green:#2E4D32;
-  --african-gold:#D4AF37;
-  --lime-accent:#84CC16;
-  --pure-white:#FFFFFF;
-  --bg-day:#F9F9F9;
-  --bg-night:#1A1A1A;
-  --text-day:#2D2D2D;
-  --text-night:#E0E0E0;
-  --card-bg:#FFFFFF;
-  --touch-target:44px;
-  --font-heading:"Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
-  --font-body:"Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
-  --bg-color:var(--bg-day);
-  --text-color:var(--text-day);
-  --afriq-border:rgba(45,45,45,.14);
-  --afriq-shadow:0 6px 18px rgba(0,0,0,.08);
-  --afriq-shadow-strong:0 18px 48px rgba(0,0,0,.18);
-  --afriq-bg:var(--bg-color);
-  --afriq-surface:var(--card-bg);
-  --afriq-text:var(--text-color);
-  --afriq-muted:rgba(45,45,45,.72);
-  --afriq-charcoal-deep:var(--bg-night);
-  --afriq-charcoal:#2D3436;
-  --afriq-lime:var(--african-gold);
-  --afriq-green:var(--primary-green);
-}
-
-@media (prefers-color-scheme: dark){
-  :root{
-    --bg-color:var(--bg-night);
-    --text-color:var(--text-night);
-    --card-bg:#242424;
-    --afriq-border:rgba(224,224,224,.14);
-    --afriq-shadow:0 8px 24px rgba(0,0,0,.45);
-    --afriq-shadow-strong:0 22px 60px rgba(0,0,0,.55);
-    --afriq-muted:rgba(224,224,224,.78);
-  }
+  --afriq-bg: var(--afriq-charcoal-deep, #1A2228);
+  --afriq-surface: #0F1519;
+  --afriq-card: #FFFFFF;
+  --afriq-text: #FFFFFF;
+  --afriq-muted: rgba(255,255,255,.72);
+  --afriq-border: rgba(255,255,255,.12);
 }
 
 .afriq-page{
   min-height:100vh;
-  background: var(--bg-color);
-  color: var(--text-color);
-  font-family: var(--font-body);
-  line-height: 1.6;
+  background: var(--afriq-bg);
+  color: var(--afriq-text);
+  font-family: "Montserrat", system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
 }
 
 .afriq-page h1,
 .afriq-page h2,
 .afriq-page h3,
 .afriq-page h4{
-  font-family: var(--font-heading);
+  font-family: "Oswald", "Montserrat", system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
 }
 
 .afriq-container{
@@ -909,68 +877,4 @@
   .afriq-learn__grid .afriq-learn__card--full{grid-column:auto; width:auto;}
   .afriq-prefooter__grid{grid-template-columns: 1fr 1fr;}
   .afriq-schedule__row{flex-direction:column; align-items:flex-start;}
-}
-
-:focus-visible{
-  outline: 3px solid var(--lime-accent);
-  outline-offset: 2px;
-}
-
-@media (pointer: coarse){
-  a,
-  button,
-  [role="button"],
-  input,
-  select,
-  textarea{
-    min-height: var(--touch-target);
-    min-width: var(--touch-target);
-  }
-}
-
-.afriq-prefooter a:hover{
-  color: var(--african-gold);
-}
-
-.afriq-footer{
-  background-color: var(--primary-green);
-  color: #f9f9f9;
-  padding: clamp(2rem, 5vw, 4rem) 0;
-  border-top: 4px solid var(--african-gold);
-}
-.afriq-footer a{
-  color: #f9f9f9;
-  display: inline-flex;
-  align-items: center;
-  min-height: var(--touch-target);
-}
-.afriq-footer a:hover{
-  color: var(--african-gold);
-}
-
-img[src*="wp-content/uploads/2024/07/L_lime.svg"]{
-  width: 96px;
-  height: auto;
-  max-width: 100%;
-}
-img[src*="wp-content/uploads/2024/07/L_lime.svg"][width="34"]{
-  width: 68px;
-}
-img[src*="wp-content/uploads/2024/07/L_lime.svg"][width="68"]{
-  width: 96px;
-}
-img.wp-image-5521,
-.elementor-widget-image img.wp-image-5521{
-  width: clamp(150px, 20vw, 300px) !important;
-  height: auto !important;
-  max-width: none !important;
-  display: block !important;
-  margin: 3rem auto !important;
-  filter: drop-shadow(0 12px 24px rgba(212, 175, 55, 0.5)) !important;
-  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), filter 0.4s ease;
-}
-img.wp-image-5521:hover,
-.elementor-widget-image img.wp-image-5521:hover{
-  transform: scale(1.05) translateY(-5px);
-  filter: drop-shadow(0 16px 32px rgba(212, 175, 55, 0.8)) !important;
 }

@@ -834,10 +834,20 @@ label.edac-generated-label[data-edac-generated-label-from="title"] {
 document.addEventListener('DOMContentLoaded', function () {
   document.querySelectorAll('a[href*="#"]').forEach(link => {
     link.addEventListener('click', function (e) {
-      const targetHash = this.hash;
-      if (targetHash && window.location.hash !== targetHash) {
-        window.location.href = window.location.pathname + targetHash;
-        window.location.reload();
+      const href = this.getAttribute("href") || "";
+      if (!href.includes("#")) return;
+      const url = new URL(this.href, window.location.href);
+      if (url.origin !== window.location.origin) return;
+      if (url.pathname !== window.location.pathname) return;
+      const targetHash = url.hash;
+      if (!targetHash) return;
+      if (window.location.hash === targetHash) return;
+      e.preventDefault();
+      if (history && history.pushState) history.pushState(null, "", targetHash);
+      else window.location.hash = targetHash;
+      const target = document.querySelector(targetHash);
+      if (target && typeof target.scrollIntoView === "function") {
+        target.scrollIntoView({ behavior: "smooth", block: "start" });
       }
     });
   });
