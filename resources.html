@@ -15,16 +15,16 @@
     <link rel="stylesheet" href="wp-content/plugins/elementor/assets/css/widget-video.min.css" />
     <style>
       :root{
-        --charcoal:#2A353D;
-        --lime:#D8FF00;
-        --yellow:#FFE600;
-        --ink:#2A353D;
+        --charcoal:#2D3436;
+        --lime:#84CC16;
+        --yellow:#84CC16;
+        --ink:#2D3436;
         --hero-bg:#1A2228;
         --card-bg:#FFFFFF;
         --surface:#FFFFFF;
-        --muted:#F3F6FB;
-        --border:rgba(15,23,42,.12);
-        --shadow:0 10px 30px rgba(0,0,0,.18);
+        --muted:#FFFFFF;
+        --border:rgba(45,52,54,.12);
+        --shadow:0 10px 30px rgba(26,34,40,.18);
         --radius:16px;
       }
       *{box-sizing:border-box}
@@ -32,7 +32,7 @@
         margin:0;
         font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
         color:var(--ink);
-        background:#F7F9FC;
+        background:#FFFFFF;
       }
       a{color:inherit}
       .container{
@@ -41,7 +41,7 @@
       }
 
       .hero{
-        background:radial-gradient(1000px 500px at 15% 20%, rgba(216,255,0,.22), transparent 60%),
+        background:radial-gradient(1000px 500px at 15% 20%, rgba(132,204,22,.22), transparent 60%),
                    radial-gradient(900px 520px at 85% 15%, rgba(255,255,255,.08), transparent 60%),
                    var(--hero-bg);
         color:#FFFFFF;
@@ -73,7 +73,7 @@
       }
       .eyebrow .dot{
         width:10px;height:10px;border-radius:999px;background:var(--lime);
-        box-shadow:0 0 0 6px rgba(216,255,0,.18);
+        box-shadow:0 0 0 6px rgba(132,204,22,.18);
       }
 
       h1{
@@ -112,13 +112,13 @@
       .btn-primary{
         background:var(--lime);
         color:var(--hero-bg);
-        box-shadow:0 10px 18px rgba(216,255,0,.28);
+        box-shadow:0 10px 18px rgba(132,204,22,.28);
       }
       .btn-primary:hover{
         background:var(--yellow);
       }
       .btn-primary:focus-visible{
-        outline:3px solid rgba(216,255,0,.55);
+        outline:3px solid rgba(132,204,22,.55);
         outline-offset:3px;
       }
       .btn-secondary{
@@ -232,7 +232,7 @@
       .section-lede{
         margin:8px 0 0;
         max-width:70ch;
-        color:rgba(15,23,42,.75);
+        color:rgba(45,52,54,.75);
         line-height:1.6;
       }
 
@@ -257,7 +257,7 @@
         align-items:center;
         justify-content:center;
         min-height:52px;
-        color:rgba(15,23,42,.72);
+        color:rgba(45,52,54,.72);
         font-weight:700;
         letter-spacing:.02em;
       }
@@ -276,7 +276,7 @@
         background:var(--surface);
         border:1px solid var(--border);
         border-radius:var(--radius);
-        box-shadow:0 10px 24px rgba(15,23,42,.08);
+        box-shadow:0 10px 24px rgba(26,34,40,.08);
         padding:18px;
       }
 
@@ -292,7 +292,7 @@
       .stat{
         border:1px solid var(--border);
         border-radius:14px;
-        background:linear-gradient(180deg, #FFFFFF, #FBFCFF);
+        background:linear-gradient(180deg, #FFFFFF, #FFFFFF);
         padding:14px;
       }
       .stat .value{
@@ -303,7 +303,7 @@
       }
       .stat .label{
         margin-top:6px;
-        color:rgba(15,23,42,.74);
+        color:rgba(45,52,54,.74);
         line-height:1.45;
         font-size:13.5px;
       }
@@ -331,7 +331,7 @@
       }
       .mini-card p{
         margin:0;
-        color:rgba(15,23,42,.78);
+        color:rgba(45,52,54,.78);
         line-height:1.55;
         font-size:14px;
       }
@@ -339,8 +339,8 @@
         width:46px;
         height:10px;
         border-radius:999px;
-        background:rgba(216,255,0,.22);
-        border:1px solid rgba(216,255,0,.35);
+        background:rgba(132,204,22,.22);
+        border:1px solid rgba(132,204,22,.35);
         margin-bottom:12px;
       }
 
@@ -361,12 +361,12 @@
         display:flex;
         gap:12px;
         align-items:center;
-        color:rgba(15,23,42,.72);
+        color:rgba(45,52,54,.72);
         font-weight:650;
       }
       .avatar{
         width:42px;height:42px;border-radius:999px;
-        background:linear-gradient(180deg, rgba(216,255,0,.35), rgba(15,23,42,.12));
+        background:linear-gradient(180deg, rgba(132,204,22,.35), rgba(45,52,54,.12));
         border:1px solid var(--border);
       }
 
@@ -391,13 +391,13 @@
       summary::-webkit-details-marker{display:none}
       details p{
         margin:10px 0 0;
-        color:rgba(15,23,42,.78);
+        color:rgba(45,52,54,.78);
         line-height:1.6;
       }
 
       .footer{
         padding:28px 0;
-        background:#0B1220;
+        background:#1A2228;
         color:rgba(255,255,255,.82);
       }
       .footer-row{
@@ -416,8 +416,8 @@
       }
 
       :root{
-        --AfriQ-lime:#D8FF00;
-        --AfriQ-charcoal:#2A353D;
+        --AfriQ-lime:#84CC16;
+        --AfriQ-charcoal:#2D3436;
         --ast-global-color-0: var(--AfriQ-lime);
         --e-global-color-astglobalcolor0: var(--AfriQ-lime);
       }
@@ -461,12 +461,12 @@
 
             <h1>Upskill African artisans for job-ready performance.</h1>
             <p class="subhead">
-              Practical, hands-on learning pathways for HVAC, electrical, plumbing, solar, and facilitiesâ€”built for employability and impact.
+              Practical, hands-on learning pathways for HVAC, electrical, plumbing, solar, facilities, automotive, welding, construction, and entrepreneurialâ€”built for employability and impact.
             </p>
 
             <div class="cta-row">
               <a class="btn btn-primary" href="#demo">Explore Programs</a>
-              <a class="btn btn-secondary" href="#tour">See Learning Pathways</a>
+              <a class="btn btn-secondary" href="#disciplines">See Learning Pathways</a>
             </div>
           </div>
 
@@ -507,6 +507,131 @@
             <div class="kicker"><span class="bar" aria-hidden="true"></span>Scale</div>
             <h3>Built for large deployments</h3>
             <p>Standardize training across teams without slowing operations.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="disciplines" aria-label="Disciplines">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <h2 class="section-title">Disciplines</h2>
+            <p class="section-lede">AfriQ-only disciplines are built from scratch for local standards and trade test requirements.</p>
+          </div>
+        </div>
+
+        <div class="cards" aria-label="Disciplines list">
+          <article class="feature-card" id="hvac">
+            <div class="kicker"><span class="bar" aria-hidden="true"></span>Discipline</div>
+            <h3>HVAC</h3>
+            <p><a href="industries/hvac/">Explore</a></p>
+          </article>
+          <article class="feature-card" id="commercial-hvac">
+            <div class="kicker"><span class="bar" aria-hidden="true"></span>Discipline</div>
+            <h3>Commercial HVAC</h3>
+            <p><a href="industries/commercial-hvac/">Explore</a></p>
+          </article>
+          <article class="feature-card" id="plumbing">
+            <div class="kicker"><span class="bar" aria-hidden="true"></span>Discipline</div>
+            <h3>Plumbing</h3>
+            <p><a href="industries/plumbing/">Explore</a></p>
+          </article>
+          <article class="feature-card" id="electrical">
+            <div class="kicker"><span class="bar" aria-hidden="true"></span>Discipline</div>
+            <h3>Electrical</h3>
+            <p><a href="industries/electrical/">Explore</a></p>
+          </article>
+          <article class="feature-card" id="solar">
+            <div class="kicker"><span class="bar" aria-hidden="true"></span>Discipline</div>
+            <h3>Solar</h3>
+            <p><a href="industries/solar/">Explore</a></p>
+          </article>
+          <article class="feature-card" id="safety">
+            <div class="kicker"><span class="bar" aria-hidden="true"></span>Discipline</div>
+            <h3>Safety</h3>
+            <p><a href="industries/safety/">Explore</a></p>
+          </article>
+          <article class="feature-card" id="multi-family-maintenance">
+            <div class="kicker"><span class="bar" aria-hidden="true"></span>Discipline</div>
+            <h3>Multi-Family Maintenance</h3>
+            <p><a href="industries/multi-family-maintenance/">Explore</a></p>
+          </article>
+          <article class="feature-card" id="facilities-maintenance">
+            <div class="kicker"><span class="bar" aria-hidden="true"></span>Discipline</div>
+            <h3>Facilities Maintenance</h3>
+            <p><a href="industries/facilities-maintenance/">Explore</a></p>
+          </article>
+          <article class="feature-card" id="industrial-maintenance">
+            <div class="kicker"><span class="bar" aria-hidden="true"></span>Discipline</div>
+            <h3>Industrial Maintenance</h3>
+            <p><a href="industries/industrial-maintenance/">Explore</a></p>
+          </article>
+          <article class="feature-card" id="crane-and-rigging">
+            <div class="kicker"><span class="bar" aria-hidden="true"></span>Discipline</div>
+            <h3>Crane &amp; Rigging</h3>
+            <p><a href="industries/crane-and-rigging/">Explore</a></p>
+          </article>
+          <article class="feature-card" id="hospitality">
+            <div class="kicker"><span class="bar" aria-hidden="true"></span>Topic</div>
+            <h3>Hospitality</h3>
+            <p><a href="industries/facilities-maintenance/">Explore</a></p>
+          </article>
+          <article class="feature-card" id="reimagining-training">
+            <div class="kicker"><span class="bar" aria-hidden="true"></span>Topic</div>
+            <h3>Reimagining Training</h3>
+            <p><a href="training/career-development-platform/">Explore</a></p>
+          </article>
+
+          <article class="feature-card" id="diesel-mechanics">
+            <div class="kicker"><span class="bar" aria-hidden="true"></span>AfriQ-only</div>
+            <h3>Diesel Mechanics</h3>
+            <p><a href="industries/diesel-mechanics/">Explore</a></p>
+          </article>
+          <article class="feature-card" id="motor-mechanics">
+            <div class="kicker"><span class="bar" aria-hidden="true"></span>AfriQ-only</div>
+            <h3>Motor Mechanics</h3>
+            <p><a href="industries/motor-mechanics/">Explore</a></p>
+          </article>
+          <article class="feature-card" id="auto-electrician">
+            <div class="kicker"><span class="bar" aria-hidden="true"></span>AfriQ-only</div>
+            <h3>Auto Electrician</h3>
+            <p><a href="industries/auto-electrician/">Explore</a></p>
+          </article>
+          <article class="feature-card" id="automotive">
+            <div class="kicker"><span class="bar" aria-hidden="true"></span>AfriQ-only</div>
+            <h3>Automotive (MVAC)</h3>
+            <p><a href="industries/automotive/">Explore</a></p>
+          </article>
+          <article class="feature-card" id="welding">
+            <div class="kicker"><span class="bar" aria-hidden="true"></span>AfriQ-only</div>
+            <h3>Welding</h3>
+            <p><a href="industries/welding/">Explore</a></p>
+          </article>
+          <article class="feature-card" id="construction">
+            <div class="kicker"><span class="bar" aria-hidden="true"></span>AfriQ-only</div>
+            <h3>Construction</h3>
+            <p><a href="industries/construction/">Explore</a></p>
+          </article>
+          <article class="feature-card" id="bricklaying">
+            <div class="kicker"><span class="bar" aria-hidden="true"></span>AfriQ-only</div>
+            <h3>Bricklaying</h3>
+            <p><a href="industries/bricklaying/">Explore</a></p>
+          </article>
+          <article class="feature-card" id="plastering">
+            <div class="kicker"><span class="bar" aria-hidden="true"></span>AfriQ-only</div>
+            <h3>Plastering</h3>
+            <p><a href="industries/plastering/">Explore</a></p>
+          </article>
+          <article class="feature-card" id="carpentry">
+            <div class="kicker"><span class="bar" aria-hidden="true"></span>AfriQ-only</div>
+            <h3>Carpentry</h3>
+            <p><a href="industries/carpentry/">Explore</a></p>
+          </article>
+          <article class="feature-card" id="entrepreneurial">
+            <div class="kicker"><span class="bar" aria-hidden="true"></span>AfriQ-only</div>
+            <h3>Entrepreneurial</h3>
+            <p><a href="industries/entrepreneurial/">Explore</a></p>
           </article>
         </div>
       </div>
@@ -582,24 +707,24 @@
                 <a class="btn btn-primary" href="#demo">Get Started</a>
               </div>
 
-              <div style="border:1px solid var(--border); border-radius:14px; background:linear-gradient(180deg, rgba(216,255,0,.10), rgba(15,23,42,.02)); height:260px;"></div>
+              <div style="border:1px solid var(--border); border-radius:14px; background:linear-gradient(180deg, rgba(132,204,22,.10), rgba(45,52,54,.02)); height:260px;"></div>
 
               <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:10px;">
                 <div style="border:1px solid var(--border); border-radius:14px; padding:12px; background:#fff;">
                   <div style="font-weight:900; color:var(--ink);">Assignments</div>
-                  <div style="margin-top:6px; color:rgba(15,23,42,.74); font-size:13.5px; line-height:1.4;">
+                  <div style="margin-top:6px; color:rgba(45,52,54,.74); font-size:13.5px; line-height:1.4;">
                     Set pathways by role
                   </div>
                 </div>
                 <div style="border:1px solid var(--border); border-radius:14px; padding:12px; background:#fff;">
                   <div style="font-weight:900; color:var(--ink);">Progress</div>
-                  <div style="margin-top:6px; color:rgba(15,23,42,.74); font-size:13.5px; line-height:1.4;">
+                  <div style="margin-top:6px; color:rgba(45,52,54,.74); font-size:13.5px; line-height:1.4;">
                     Track completion
                   </div>
                 </div>
                 <div style="border:1px solid var(--border); border-radius:14px; padding:12px; background:#fff;">
                   <div style="font-weight:900; color:var(--ink);">Reporting</div>
-                  <div style="margin-top:6px; color:rgba(15,23,42,.74); font-size:13.5px; line-height:1.4;">
+                  <div style="margin-top:6px; color:rgba(45,52,54,.74); font-size:13.5px; line-height:1.4;">
                     Prove outcomes
                   </div>
                 </div>
@@ -623,7 +748,7 @@
               <div class="avatar" aria-hidden="true"></div>
               <div>
                 <div>Training & Operations Leader</div>
-                <div style="font-weight:650; color:rgba(15,23,42,.62);">Skilled Trades Organization</div>
+                <div style="font-weight:650; color:rgba(45,52,54,.62);">Skilled Trades Organization</div>
               </div>
             </div>
           </div>
@@ -690,7 +815,10 @@
     <footer class="footer" aria-label="Footer">
       <div class="container">
         <div class="footer-row">
-          <div style="font-weight:900; letter-spacing:-.01em; color:#fff;">AfriQ ArtisanSkills</div>
+          <div style="display:flex; flex-direction:column; align-items:center; gap:10px;">
+            <img src="wp-content/uploads/2020/08/Q%20-%202.png" alt="AfriQ ArtisanSkills" style="width:min(58px, 17vw); height:auto; display:block;" />
+            <div style="font-weight:900; letter-spacing:-.01em; color:#fff;">AfriQ ArtisanSkills</div>
+          </div>
           <div style="display:flex; gap:14px; flex-wrap:wrap;">
             <a href="#tour">Product</a>
             <a href="#faq">FAQs</a>

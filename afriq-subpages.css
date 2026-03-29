@@ -227,6 +227,13 @@ img[src*="Screen-Shot-2022-06-05-at-8.14.17-PM-1024x470"]{
   line-height:1.65;
   font-size:14px;
 }
+.afriq-cta__actions{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:flex-end;
+}
 .afriq-btn{
   display:inline-flex;
   align-items:center;
