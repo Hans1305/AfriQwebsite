@@ -227,6 +227,27 @@ img[src*="Screen-Shot-2022-06-05-at-8.14.17-PM-1024x470"]{
   line-height:1.65;
   font-size:14px;
 }
+.afriq-strip[data-afriq-resources="true"] .afriq-cta__title,
+.afriq-strip[data-afriq-resources="true"] .afriq-cta__text{
+  color: var(--afriq-lime) !important;
+  text-shadow: 0 1px 0 rgba(0,0,0,.55);
+}
+.afriq-strip[data-afriq-resources="true"] .afriq-cta__text a,
+.afriq-strip[data-afriq-resources="true"] .afriq-cta__text a:visited{
+  color: var(--afriq-lime) !important;
+  text-decoration: none;
+  font-weight: 900;
+}
+.afriq-strip[data-afriq-resources="true"] .afriq-cta__text a:hover{
+  color: var(--afriq-lime) !important;
+  text-decoration: underline;
+}
+.afriq-strip[data-afriq-resources="true"] .afriq-cta__text{
+  font-size: 15px;
+  font-weight: 850;
+  letter-spacing: 0.01em;
+  color: var(--afriq-lime) !important;
+}
 .afriq-cta__actions{
   display:flex;
   gap:12px;
