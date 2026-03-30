@@ -1,0 +1,1 @@
+chrome-extension://kobncfkmjelbefaoohoblamnbackjggk/build/app.js

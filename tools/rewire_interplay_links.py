@@ -22,6 +22,9 @@ REPLACEMENTS: list[tuple[str, str]] = [
     ("https://www.interplaylearning.com/careers/", "careers/"),
     ("https://www.interplaylearning.com/contact/", "contact/"),
     ("https://www.interplaylearning.com/privacy/", "privacy/"),
+    ("https://www.interplaylearning.com/webinar/", "webinar/"),
+    ("https://interplaylearning.tourial.com/pages/interplay-learning-overview-tour", "tourial/overview/"),
+    ("https://interplaylearning.tourial.com/pages/interplay-learning-overview-tour/", "tourial/overview/"),
     ("https://www.iti.com/courses/industries", "industries/crane-and-rigging/"),
 ]
 

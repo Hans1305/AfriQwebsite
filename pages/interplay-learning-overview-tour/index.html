@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Overview Tour | AfriQ ArtisanSkills</title>
+    <link rel="stylesheet" href="../../wp-content/astra-local-fonts/astra-local-fonts.css" />
+    <link rel="stylesheet" href="../../afriq-site.css?v=7" />
+    <link rel="stylesheet" href="../../afriq-subpages.css?v=4" />
+    <script src="../../afriq-header-fix.js?v=1" defer></script>
+    <meta property="og:image" content="/wp-content/uploads/2020/08/Q%20-%202.png" />
+    <style>
+      .afriq-tour-wrap{
+        padding: 24px 0 56px;
+      }
+      .tour-frame{
+        width: 100%;
+        height: min(85vh, 980px);
+        border: 1px solid rgba(45,52,54,.14);
+        border-radius: 14px;
+        background: #ffffff;
+      }
+    </style>
+  </head>
+  <body class="afriq-page">
+    <header class="afriq-header">
+      <div class="afriq-container">
+        <div class="afriq-header__row">
+          <a class="afriq-header__logo" href="../../index_new.html">
+            <div style="display:flex; flex-direction:column; align-items:flex-start;">
+              <img src="../../wp-content/uploads/2020/08/Q%20-%202.png" alt="AfriQ ArtisanSkills" style="width:min(29px, 8.5vw); height:auto; display:block;" />
+              <div style="font-weight:900; letter-spacing:-.01em; color:#fff; margin-top:10px;">AfriQ ArtisanSkills</div>
+            </div>
+          </a>
+          <nav class="afriq-nav" aria-label="Primary">
+            <a href="../../solutions/">Solutions</a>
+            <a href="../../industries/">Industries</a>
+            <a href="../../training/courses/catalog/">Course Catalogue</a>
+            <a href="../../resources.html">Resources</a>
+            <a href="../../about/">About</a>
+            <a href="../../contact/">Contact</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="afriq-hero">
+        <div class="afriq-container">
+          <div class="afriq-hero-card">
+            <div class="afriq-hero-card__grid">
+              <div class="afriq-hero-card__left">
+                <div class="afriq-hero-card__kicker">Tour</div>
+                <h1 class="afriq-hero-card__title">Overview Tour</h1>
+                <p class="afriq-hero-card__subtitle">
+                  Interactive walkthrough, shown in an AfriQ branded wrapper.
+                </p>
+                <div class="afriq-hero__crumbs">
+                  <a href="../../index_new.html">Home</a> / <span>Overview Tour</span>
+                </div>
+              </div>
+              <div class="afriq-hero-card__right">
+                <div class="afriq-media" role="img" aria-label="Tour placeholder"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="afriq-tour-wrap">
+        <div class="afriq-container">
+          <iframe class="tour-frame" src="./embed.html" title="Interplay Overview Tour" loading="lazy"></iframe>
+        </div>
+      </section>
+
+      <section class="afriq-section afriq-surface">
+        <div class="afriq-container">
+          <div class="afriq-card" style="grid-column: span 12;">
+            <h2 class="afriq-card__title">How This Tour Is Integrated</h2>
+            <p class="afriq-card__text">
+              This page loads the Tourial runtime locally and wraps it with AfriQ ArtisanSkills branding.
+            </p>
+            <details>
+              <summary>Step-by-step + ready-to-copy prompt</summary>
+              <pre style="white-space:pre-wrap; margin:12px 0 0; font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace; font-size:13px; line-height:1.5;">
+Step-by-step (bring the Tourial link into this site + brand it AfriQ)
+
+1. Identify what the Tourial page actually is
+- Open https://interplaylearning.tourial.com/pages/interplay-learning-overview-tour
+- Confirm it’s a “shell” page that loads:
+  - /tourial-assets/main.css
+  - /tourial-assets/animations.css
+  - /tourial-assets/product.js
+  - and only has &lt;div id="product-page"&gt;&lt;/div&gt;
+
+2. Copy/host the Tourial assets locally
+- Put Tourial’s tourial-assets/ folder inside this site root so it can be served at:
+  - http://localhost:5501/tourial-assets/...
+- Locally, reference the exported folder:
+  - E:\interplaylearning.tourial.com 1\interplaylearning.tourial.com\tourial-assets
+- For local dev, use a junction so the assets appear at:
+  - E:\www.interplaylearning.com\tourial-assets\...
+
+3. Create a local page under this site
+- Create:
+  - E:\www.interplaylearning.com\pages\interplay-learning-overview-tour\index.html
+
+4. Wrap Tourial’s runtime inside AfriQ branding
+- Include AfriQ CSS (afriq-site.css, afriq-subpages.css)
+- Include the AfriQ header rule (afriq-header-fix.js)
+- Add AfriQ sticky header + nav (Solutions, Industries, Course Catalogue, Resources, About, Contact)
+- Add an AfriQ hero section above the tour
+- Keep Tourial’s required mount point: &lt;div id="product-page"&gt;&lt;/div&gt;
+
+5. Load Tourial assets from your site
+- Use:
+  - &lt;link href="/tourial-assets/main.css" ...&gt;
+  - &lt;link href="/tourial-assets/animations.css" ...&gt;
+  - &lt;script src="/tourial-assets/product.js"&gt;&lt;/script&gt;
+
+6. Update links site-wide
+- Replace:
+  - https://interplaylearning.tourial.com/pages/interplay-learning-overview-tour
+- With:
+  - tourial/overview/ (or pages/interplay-learning-overview-tour/)
+
+7. Verify locally
+- Visit:
+  - http://localhost:5501/pages/interplay-learning-overview-tour/?nocache=1
+- Confirm:
+  - AfriQ header/hero display
+  - Tour loads inside #product-page
+  - No missing /tourial-assets/... files in console
+
+8. Deploy note (important)
+- Junctions do not deploy. For production/GitHub Pages you must copy tourial-assets/ into the repo (or host it on your own CDN and update paths).
+
+Ready-to-copy prompt
+
+Bring https://interplaylearning.tourial.com/pages/interplay-learning-overview-tour into this AfriQ site and brand it:
+- Create a local page at pages/interplay-learning-overview-tour/index.html.
+- Keep Tourial’s mount point &lt;div id="product-page"&gt;&lt;/div&gt; and load Tourial runtime assets from this site at /tourial-assets/main.css, /tourial-assets/animations.css, and /tourial-assets/product.js.
+- Ensure tourial-assets/ is available in the site root (copy it into the repo or map it locally from E:\interplaylearning.tourial.com 1\interplaylearning.tourial.com\tourial-assets).
+- Wrap the tour page with AfriQ ArtisanSkills branding: include afriq-site.css, afriq-subpages.css, and afriq-header-fix.js; add the AfriQ sticky header (logo above text) and nav: Solutions, Industries, Course Catalogue, Resources, About, Contact; add an AfriQ hero section.
+- Add a rewrite rule so any link to the Tourial URL is replaced with tourial/overview/ (or pages/interplay-learning-overview-tour/).
+- Verify locally with http://localhost:5501/pages/interplay-learning-overview-tour/?nocache=1 and confirm no missing assets.
+              </pre>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -71,6 +71,27 @@ h2.elementor-heading-title{
   color: var(--afriq-charcoal-deep) !important;
 }
 
+.elementor-element-3c22a0e .elementor-element-0a4624a{
+  padding-right: 0 !important;
+}
+.elementor-element-3c22a0e > .elementor-container{
+  gap: 10mm !important;
+}
+.elementor-element-3c22a0e .elementor-element-fc36cc4 .elementor-heading-title{
+  max-width: 22ch !important;
+}
+@media (max-width: 860px){
+  .elementor-element-3c22a0e .elementor-element-0a4624a{
+    padding-right: 0 !important;
+  }
+  .elementor-element-3c22a0e > .elementor-container{
+    gap: 18px !important;
+  }
+  .elementor-element-3c22a0e .elementor-element-fc36cc4 .elementor-heading-title{
+    max-width: none !important;
+  }
+}
+
 .cstmDesktopHeader .elementor-element-5a87ef8e .elementor-button-text,
 .cstmDesktopHeader .elementor-element-19d406cc .elementor-button-text{
   text-transform: uppercase !important;
@@ -83,8 +104,38 @@ h2.elementor-heading-title{
   cursor: pointer;
 }
 
+/* AfriQ header brand (logo above text, left-aligned) */
+.afriq-header__logo > div{
+  display:flex !important;
+  flex-direction:column !important;
+  align-items:flex-start !important;
+  gap:8px !important;
+}
+.afriq-header__logo > div > img{
+  width:min(58px, 17vw) !important;
+  height:auto !important;
+  display:block !important;
+}
+.afriq-header__logo > div > div{
+  font-weight:900 !important;
+  letter-spacing:-.01em !important;
+  color:#fff !important;
+  margin-top:10px !important;
+}
+
+/* Highlight Resources link in header nav */
+.afriq-nav a[href*="resources.html"],
+.afriq-nav a[href*="resources.html"]:visited{
+  color: var(--afriq-lime) !important;
+  font-weight: 800 !important;
+}
+.afriq-nav a[href*="resources.html"]:hover{
+  color: #ffffff !important;
+}
+
 .banner-video{
   position: relative !important;
+  min-height: clamp(220px, 30vh, 380px) !important;
 }
 .banner-video .afriq-hero-float-video{
   position: absolute;
@@ -98,7 +149,11 @@ h2.elementor-heading-title{
   border-top: 1px solid rgba(255,255,255,.18);
   border-bottom: 1px solid rgba(255,255,255,.12);
   box-shadow: 0 18px 48px rgba(0,0,0,.45);
-  z-index: 2;
+  z-index: 10;
+}
+.banner-video .elementor-background-overlay{
+  z-index: 0 !important;
+  pointer-events: none !important;
 }
 .banner-video .afriq-hero-float-video__player{
   width: 100%;
