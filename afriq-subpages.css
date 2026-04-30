@@ -42,6 +42,13 @@ img[src*="Screen-Shot-2022-06-05-at-8.14.17-PM-1024x470"]{
   background: var(--afriq-bg);
   color: var(--afriq-text);
   font-family: "Montserrat", system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  overflow-x:hidden;
+}
+
+.afriq-page *,
+.afriq-page *::before,
+.afriq-page *::after{
+  box-sizing:border-box;
 }
 
 .afriq-page h1,
@@ -52,7 +59,8 @@ img[src*="Screen-Shot-2022-06-05-at-8.14.17-PM-1024x470"]{
 }
 
 .afriq-container{
-  width:min(1180px, calc(100% - 48px));
+  width:calc(100% - 48px);
+  max-width:1180px;
   margin:0 auto;
 }
 
@@ -79,7 +87,7 @@ img[src*="Screen-Shot-2022-06-05-at-8.14.17-PM-1024x470"]{
   color:inherit;
 }
 .afriq-header__logo img{
-  width:170px;
+  width:32px !important;
   height:auto;
   display:block;
 }
@@ -226,6 +234,8 @@ img[src*="Screen-Shot-2022-06-05-at-8.14.17-PM-1024x470"]{
   color: rgba(255,255,255,.78);
   line-height:1.65;
   font-size:14px;
+  overflow-wrap:anywhere;
+  word-break:break-word;
 }
 .afriq-strip[data-afriq-resources="true"] .afriq-cta__title,
 .afriq-strip[data-afriq-resources="true"] .afriq-cta__text{
@@ -346,6 +356,7 @@ img[src*="Screen-Shot-2022-06-05-at-8.14.17-PM-1024x470"]{
 .afriq-media{
   width:100%;
   aspect-ratio: 4 / 5;
+  min-height:260px;
   border-radius:16px;
   border:1px solid rgba(255,255,255,.14);
   background:
@@ -919,7 +930,8 @@ img[src*="Screen-Shot-2022-06-05-at-8.14.17-PM-1024x470"]{
 @media (max-width: 920px){
   .afriq-hero__title{font-size:40px;}
   .afriq-cta{flex-direction:column; align-items:stretch;}
-  .afriq-header__logo img{width:150px;}
+  .afriq-header__row{flex-wrap:wrap;}
+  .afriq-nav{width:100%; justify-content:flex-start;}
   .afriq-hero-card__grid{grid-template-columns: 1fr;}
   .afriq-hero-card__title{font-size:42px;}
   .afriq-surface__grid{grid-template-columns: 1fr;}
@@ -935,4 +947,18 @@ img[src*="Screen-Shot-2022-06-05-at-8.14.17-PM-1024x470"]{
   .afriq-learn__grid .afriq-learn__card--full{grid-column:auto; width:auto;}
   .afriq-prefooter__grid{grid-template-columns: 1fr 1fr;}
   .afriq-schedule__row{flex-direction:column; align-items:flex-start;}
+}
+
+@media (max-width: 520px){
+  .afriq-container{width:calc(100% - 32px);}
+  .afriq-header__row{padding:10px 0; gap:12px;}
+  .afriq-header__logo > div{flex-direction:row !important; align-items:center !important; gap:10px;}
+  .afriq-header__logo > div > div{margin-top:0 !important; font-size:14px; line-height:1.1;}
+  .afriq-nav{gap:12px;}
+  .afriq-nav a{font-size:12px;}
+  .afriq-hero{padding:44px 0 22px;}
+  .afriq-hero-card__left{padding:22px;}
+  .afriq-hero-card__right{padding:16px;}
+  .afriq-hero-card__title{font-size:34px;}
+  .afriq-hero-card__right .afriq-media{min-height:180px;}
 }

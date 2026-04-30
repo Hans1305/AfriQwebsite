@@ -23,7 +23,7 @@
       '    <div class="afriq-header__row">' +
       '      <a class="afriq-header__logo" href="' + prefix + 'index_new.html">' +
       '        <div>' +
-      '          <img src="' + prefix + 'wp-content/uploads/2020/08/Q%20-%202.png" alt="AfriQ ArtisanSkills" style="width:min(29px, 8.5vw); height:auto; display:block;" />' +
+      '          <img src="' + prefix + 'wp-content/uploads/2020/08/Q%20-%202.png" alt="AfriQ ArtisanSkills" style="width:32px; height:auto; display:block;" />' +
       '          <div style="font-weight:900; letter-spacing:-.01em; color:#fff; margin-top:10px;">AfriQ ArtisanSkills</div>' +
       '        </div>' +
       '      </a>' +
@@ -50,7 +50,7 @@
     eyebrow.setAttribute("style", "display:flex; align-items:flex-start;");
     eyebrow.innerHTML =
       '<div style="display:flex; flex-direction:column; align-items:flex-start; gap:8px;">' +
-      '  <img src="' + prefix + 'wp-content/uploads/2020/08/Q%20-%202.png" alt="AfriQ ArtisanSkills" style="width:min(58px, 17vw); height:auto; display:block;">' +
+      '  <img src="' + prefix + 'wp-content/uploads/2020/08/Q%20-%202.png" alt="AfriQ ArtisanSkills" style="width:58px; height:auto; display:block;">' +
       '  <div style="font-weight:900; letter-spacing:-.01em; color:#fff; margin-top:10px;">AfriQ ArtisanSkills</div>' +
       '</div>';
   }
