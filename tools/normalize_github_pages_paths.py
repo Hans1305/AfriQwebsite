@@ -56,7 +56,7 @@ def normalize_html(content: str, prefix: str, site_root: pathlib.Path) -> str:
         if target_path.exists():
             return f"{prefix}{base.lstrip('/')}{suffix}"
 
-        return f"https://www.interplaylearning.com{base}{suffix}"
+        return f"https://www.afriqartisanskills.com{base}{suffix}"
 
     content = re.sub(
         r"""(=)(["'])/(wp-content/[^"']+)""",
