@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AfriQ ArtisanSkills | Local Preview</title>
+    <style>
+      html, body { height: 100%; }
+      body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; background: #0f1519; color: #fff; }
+      .wrap { height: 100%; display: flex; flex-direction: column; gap: 12px; padding: 12px; box-sizing: border-box; }
+      .bar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px; }
+      .title { font-weight: 800; letter-spacing: -0.01em; }
+      .links { display: flex; flex-wrap: wrap; gap: 10px; }
+      .links a { color: #84cc16; text-decoration: none; font-weight: 700; }
+      .links a:hover { text-decoration: underline; }
+      .grid { flex: 1; display: grid; grid-template-columns: 1fr; grid-template-rows: 1fr 1fr; gap: 12px; min-height: 0; }
+      .panel { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.10); border-radius: 14px; overflow: hidden; min-height: 0; display: flex; flex-direction: column; }
+      .panel h2 { margin: 0; padding: 10px 12px; font-size: 14px; font-weight: 900; color: rgba(255,255,255,0.86); border-bottom: 1px solid rgba(255,255,255,0.10); }
+      iframe { width: 100%; height: 100%; border: 0; background: #fff; }
+      @media (min-width: 1024px) {
+        .grid { grid-template-columns: 2fr 1fr; grid-template-rows: 1fr; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="bar">
+        <div class="title">AfriQ ArtisanSkills – Local Preview</div>
+        <div class="links">
+          <a id="openHome" href="index_new.html" target="_blank" rel="noopener">Open Home</a>
+          <a id="openCareers" href="careers/" target="_blank" rel="noopener">Open Careers</a>
+        </div>
+      </div>
+      <div class="grid">
+        <section class="panel">
+          <h2>Home (index_new.html)</h2>
+          <iframe id="homeFrame" title="Home Preview"></iframe>
+        </section>
+        <section class="panel">
+          <h2>Careers (/careers/)</h2>
+          <iframe id="careersFrame" title="Careers Preview"></iframe>
+        </section>
+      </div>
+    </div>
+    <script>
+      (function () {
+        var params = new URLSearchParams(location.search || "");
+        var nocache = params.get("nocache");
+        var q = nocache ? ("?nocache=" + encodeURIComponent(nocache)) : "";
+        var homeUrl = "index_new.html" + q;
+        var careersUrl = "careers/" + q;
+        document.getElementById("homeFrame").src = homeUrl;
+        document.getElementById("careersFrame").src = careersUrl;
+        document.getElementById("openHome").href = homeUrl;
+        document.getElementById("openCareers").href = careersUrl;
+      })();
+    </script>
+  </body>
+</html>
