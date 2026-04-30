@@ -1,11 +1,11 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Overview Tour | AfriQ ArtisanSkills</title>
     <link rel="stylesheet" href="../../wp-content/astra-local-fonts/astra-local-fonts.css" />
-    <link rel="stylesheet" href="../../afriq-site.css?v=7" />
+    <link rel="stylesheet" href="../../afriq-site.css?v=8" />
     <link rel="stylesheet" href="../../afriq-subpages.css?v=4" />
     <script src="../../afriq-header-fix.js?v=1" defer></script>
     <meta property="og:image" content="/wp-content/uploads/2020/08/Q%20-%202.png" />
@@ -86,14 +86,14 @@ Step-by-step (bring the Tourial link into this site + brand it AfriQ)
 
 1. Identify what the Tourial page actually is
 - Open https://interplaylearning.tourial.com/pages/interplay-learning-overview-tour
-- Confirm it’s a “shell” page that loads:
+- Confirm itâ€™s a â€œshellâ€ page that loads:
   - /tourial-assets/main.css
   - /tourial-assets/animations.css
   - /tourial-assets/product.js
   - and only has &lt;div id="product-page"&gt;&lt;/div&gt;
 
 2. Copy/host the Tourial assets locally
-- Put Tourial’s tourial-assets/ folder inside this site root so it can be served at:
+- Put Tourialâ€™s tourial-assets/ folder inside this site root so it can be served at:
   - http://localhost:5501/tourial-assets/...
 - Locally, reference the exported folder:
   - E:\interplaylearning.tourial.com 1\interplaylearning.tourial.com\tourial-assets
@@ -104,12 +104,12 @@ Step-by-step (bring the Tourial link into this site + brand it AfriQ)
 - Create:
   - E:\www.interplaylearning.com\pages\interplay-learning-overview-tour\index.html
 
-4. Wrap Tourial’s runtime inside AfriQ branding
+4. Wrap Tourialâ€™s runtime inside AfriQ branding
 - Include AfriQ CSS (afriq-site.css, afriq-subpages.css)
 - Include the AfriQ header rule (afriq-header-fix.js)
 - Add AfriQ sticky header + nav (Solutions, Industries, Course Catalogue, Resources, About, Contact)
 - Add an AfriQ hero section above the tour
-- Keep Tourial’s required mount point: &lt;div id="product-page"&gt;&lt;/div&gt;
+- Keep Tourialâ€™s required mount point: &lt;div id="product-page"&gt;&lt;/div&gt;
 
 5. Load Tourial assets from your site
 - Use:
@@ -138,7 +138,7 @@ Ready-to-copy prompt
 
 Bring https://interplaylearning.tourial.com/pages/interplay-learning-overview-tour into this AfriQ site and brand it:
 - Create a local page at pages/interplay-learning-overview-tour/index.html.
-- Keep Tourial’s mount point &lt;div id="product-page"&gt;&lt;/div&gt; and load Tourial runtime assets from this site at /tourial-assets/main.css, /tourial-assets/animations.css, and /tourial-assets/product.js.
+- Keep Tourialâ€™s mount point &lt;div id="product-page"&gt;&lt;/div&gt; and load Tourial runtime assets from this site at /tourial-assets/main.css, /tourial-assets/animations.css, and /tourial-assets/product.js.
 - Ensure tourial-assets/ is available in the site root (copy it into the repo or map it locally from E:\interplaylearning.tourial.com 1\interplaylearning.tourial.com\tourial-assets).
 - Wrap the tour page with AfriQ ArtisanSkills branding: include afriq-site.css, afriq-subpages.css, and afriq-header-fix.js; add the AfriQ sticky header (logo above text) and nav: Solutions, Industries, Course Catalogue, Resources, About, Contact; add an AfriQ hero section.
 - Add a rewrite rule so any link to the Tourial URL is replaced with tourial/overview/ (or pages/interplay-learning-overview-tour/).
@@ -151,3 +151,4 @@ Bring https://interplaylearning.tourial.com/pages/interplay-learning-overview-to
     </main>
   </body>
 </html>
+

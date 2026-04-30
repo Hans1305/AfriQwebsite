@@ -408,6 +408,22 @@ a.btn{
   transform:none !important;
 }
 
+@media (max-width: 767px){
+  .elementor-element-3c22a0e{
+    width:calc(100% - 32px) !important;
+  }
+  .elementor-element-3c22a0e > .elementor-container{
+    flex-wrap:wrap !important;
+  }
+  .elementor-element-3c22a0e .elementor-column{
+    width:100% !important;
+    padding:24px 20px !important;
+  }
+  .elementor-element-3c22a0e h2.elementor-heading-title{
+    font-size:38px !important;
+  }
+}
+
 /* Home: Save Time, Get Results block text to white */
 .elementor-element-8264310 .elementor-heading-title{
   color:#FFFFFF !important;

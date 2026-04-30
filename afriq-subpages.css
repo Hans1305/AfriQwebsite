@@ -962,3 +962,9 @@ img[src*="Screen-Shot-2022-06-05-at-8.14.17-PM-1024x470"]{
   .afriq-hero-card__title{font-size:34px;}
   .afriq-hero-card__right .afriq-media{min-height:180px;}
 }
+
+@media (max-width: 768px){
+  .afriq-grid > *{
+    grid-column: span 12 !important;
+  }
+}
